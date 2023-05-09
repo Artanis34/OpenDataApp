@@ -19,7 +19,7 @@ selected_columns = ['BEZEICHNUNG_OFFIZIELL', 'E_WGS84', 'N_WGS84']
 df_selected = df_from_csv[selected_columns]
 
 # Rename the selected columns
-new_column_names = {'BEZEICHNUNG_OFFIZIELL': 'name', 'E_WGS84': 'x', 'N_WGS84': 'y'}
+new_column_names = {'BEZEICHNUNG_OFFIZIELL': 'name', 'E_WGS84': 'y', 'N_WGS84': 'x'}
 df_renamed = df_selected.rename(columns=new_column_names)
 
 ### ONLY FOR TEST
@@ -27,6 +27,6 @@ df_renamed = df_selected.rename(columns=new_column_names)
 df_renamed['status'] = np.random.randint(1, 4, size=len(df_renamed))
 ###
 
-# Save renamed columns as JSON file
+# Save renamed columns as data JSON file
 json_file = 'data.json'
 df_renamed.to_json(json_file, orient='records')
