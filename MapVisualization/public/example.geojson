@@ -1,0 +1,62 @@
+{ 
+    "type":"FeatureCollection",
+    "features": [
+        {
+            "type":"Feature",
+            "geometry": {
+                "type":"Point",
+                "coordinates":[7.43873,46.95124]
+            },
+            "properties": {
+                "name":"ExWi",
+                "status":1
+            }
+        },
+        {
+            "type":"Feature",
+            "geometry": {
+                "type":"Point",
+                "coordinates":[7.43786,46.95068]
+            },
+            "properties": {
+                "name":"bibliothek",
+                "status":2
+            }
+        },
+        {
+            "type":"Feature",
+            "geometry": {
+                "type":"Point",
+                "coordinates":[7.43832,46.95173]
+            },
+            "properties": {
+                "name":"Mensa",
+                "status":3
+            }
+        },
+        {
+            "type":"Feature",
+            "geometry": {
+                "type":"Point",
+                "coordinates":[7.43819,46.95039]
+            },
+            "properties": {
+                "name":"Hauptgebäude",
+                "status":1
+            }
+        },
+        {
+            "type":"Feature",
+            "geometry": {
+                "type":"Point",
+                "coordinates":[7.4369,46.94869]
+            },
+            "properties": {
+                "name":"Bahnhof",
+                "status":3
+            }
+        }
+    ]
+}
+ 
+
