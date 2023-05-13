@@ -1,2 +1,0 @@
-# OpenDataApp
-OpenDataApp UniBern
