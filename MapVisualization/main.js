@@ -68,7 +68,7 @@ var markers = L.DonutCluster(
 
 
 var example = "/example.geojson";
-var pUrl = "/data/geodata.geojson";
+var pUrl = "/data/geodata(small).geojson";
 
 // Use jQuery to load date from GeoJSON file
 $.getJSON(pUrl, function(data) {
