@@ -5,6 +5,7 @@ import '@kalisio/leaflet.donutcluster/src/Leaflet.DonutCluster.css'
 import '@kalisio/leaflet.donutcluster/src/Leaflet.DonutCluster.js'
 
 import * as fct from './functions.js';
+import { tileLayer } from 'leaflet';
 //import { CircleMarker } from 'leaflet';
  
 
@@ -17,8 +18,10 @@ let mapOptions = {
 
 let map = new L.map('mapid', mapOptions);
 
-let layer = new L.TileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png');
-map.addLayer(layer);
+var mapLayer = new L.TileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>',
+});
+map.addLayer(mapLayer);
 
 /* var markers = L.markerClusterGroup({
   spiderfyOnMaxZoom: true,

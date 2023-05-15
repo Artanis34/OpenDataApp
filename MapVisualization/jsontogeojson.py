@@ -1,6 +1,7 @@
 import json 
+import sys
 
-input_file = json.load(open("./public/data/data(small).json", "r", encoding="utf-8"))
+input_file = json.load(open(sys.args[1], "r", encoding="utf-8"))
 
 geojs={
      "type": "FeatureCollection",
@@ -20,7 +21,7 @@ geojs={
     ]  
  }
 
-output_file=open("./public/data/geodata.geojson", "w", encoding="utf-8")
+output_file=open("./public/data/" + sys.args[2], "w", encoding="utf-8")
 json.dump(geojs, output_file)
 
 
