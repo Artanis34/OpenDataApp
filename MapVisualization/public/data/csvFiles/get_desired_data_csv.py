@@ -38,7 +38,7 @@ try:
     merged_df = pd.merge(df_from_csv_dienst, df_from_csv_prm, left_on='SLOID', right_on='SLOID', how='left')
 
     # Replace NaN values with null and set status to 9 for null SLOID
-    merged_df.loc[merged_df['SLOID'].isnull(), 'status'] = 9
+    merged_df.loc[merged_df['status'].isnull(), 'status'] = 9
     merged_df = merged_df.fillna(99)
 
     # Create a new CSV file with the selected columns
