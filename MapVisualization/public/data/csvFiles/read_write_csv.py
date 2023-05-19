@@ -15,14 +15,6 @@ df_from_csv = pd.read_csv(csv_path, sep=',', low_memory=False)
 # Create a list of GeoJSON features
 features = []
 for index, row in df_from_csv.iterrows():
-    # Check if the coordinates are valid numbers
-    if math.isnan(row['Longitude']) or math.isnan(row['Latitude']):
-        continue
-
-    # Check if the coordinates are within a reasonable range
-    if abs(row['Longitude']) > 180 or abs(row['Latitude']) > 90:
-        continue
-
     geometry = geojson.Point((row['Longitude'], row['Latitude']))
     properties = {
         'status': row['status'],
