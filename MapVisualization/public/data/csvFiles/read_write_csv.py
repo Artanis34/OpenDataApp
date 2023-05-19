@@ -36,6 +36,7 @@ for index, row in df_selected.iterrows():
 
     geometry = geojson.Point((row['Longitude'], row['Latitude']))
     properties = {
+        'Status': row['Status'],
         'Name': row['Name']
     }
     feature = geojson.Feature(geometry=geometry, properties=properties)
