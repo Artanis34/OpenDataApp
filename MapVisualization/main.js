@@ -4,7 +4,7 @@ import 'leaflet.markercluster';
 import '@kalisio/leaflet.donutcluster/src/Leaflet.DonutCluster.css'
 import '@kalisio/leaflet.donutcluster/src/Leaflet.DonutCluster.js'
 
-import * as fct from './functions.js';
+import * as colors from './colors.js';
 import { tileLayer } from 'leaflet';
 import { valHooks } from 'jquery';
 import { drawChart } from './d3handler.js';
@@ -23,12 +23,21 @@ let mapOptions = {
     className: 'map-tiles'
 }
 
-/* var markers = L.markerClusterGroup({
-  spiderfyOnMaxZoom: true,
-  showCoverageOnHover: false,
-  zoomToBoundsOnClick: true,
-  reremoveOutsideVisibleBoundsmoveOut: true,
-}); */
+const mapLightBackground = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+//const mapBackground = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+
+let map = new L.map('mapid', mapOptions);
+var mapLayer = new L.TileLayer(mapLightBackground, {
+    attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  });
+map.addLayer(mapLayer);
+
+
+var OpenRailwayMap = L.tileLayer('https://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Map style: &copy; <a href="https://www.OpenRailwayMap.org">OpenRailwayMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+});
+
 
 // Create the markercluster
 var markers = L.DonutCluster(
@@ -47,55 +56,46 @@ var markers = L.DonutCluster(
     {
         // Mandotary, indicates the field to group items by in order to create donut' sections.
         key: 'status',
-        order: ['1', '2', '3', '0'],
+        order: colors.color.values,
         // Mandotary, the arc color for each donut section.
         // If array of colors will loop over it to pick color of each section sequentially.
-        arcColorDict: {
-            1: 'red',
-            2: 'orange',
-            3: 'green',
-            4: 'gray'
-        },
+        arcColorDict: colors.color,
         hideLegend: false,
         textClassName: 'donut-text',
         // Optional, the style of the donut
         style: {
             size: 60,
             fill: 'white',
-            opacity: .5,
-            weight: 14
+            opacity: 1,
+            weight: 2 
         },
         // Function used to customize legend output
-        getLegend: (title, color, percentage, value) => `<span>${title}:&nbsp;${percentage}%</span>`
+        getLegend: (title, color, percentage, value) => `<spans style='color:black;'>${title}:&nbsp;${parseInt(percentage)}%</span>`
     }
 );
 
-let map = new L.map('mapid', mapOptions);
-var mapLayer = new L.TileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-    attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  });
-map.addLayer(mapLayer);
 
 loadMarkers();
 function loadMarkers() {
 
   //var pUrl = "/data/example.geojson";
-  //var pUrl = "/data/geoData.geojson"
-  var pUrl = "/data/geodata(small).geojson";
+  var pUrl = "/data/geoData.geojson"
+  //var pUrl = "/data/geodata(small).geojson";
 
   // Use jQuery to load date from GeoJSON file
 
   $.getJSON(pUrl, function(data) {
 
-    var dataArray = {'0':0,'1':0,'2':0,'3':0,};
+    //var dataArray = {'0':0,'1':0,'2':0,'3':0,};
 
     var geoJsonLayer = L.geoJson(data, {
       filter: function(feature, layer) {
+        if (feature.geometry.coordinates[0] == 99) {return false;}
         return filterMarker(feature, layer);
       },
       pointToLayer: function(feature, latlng) {
 
-        dataArray[feature.properties.status] += 1;
+        //dataArray[feature.properties.status] += 1;
 
         var label = '<h4>' + feature.properties.name + '<br>Status: ' + feature.properties.status + '</h4>';
             label += feature.properties.address + '<br>';
@@ -113,7 +113,7 @@ function loadMarkers() {
           weight: 2,
           fillOpacity: 0.5,
           status: feature.properties.status,
-          fillColor: fct.getColorFromStatus(feature.properties.status)
+          fillColor: colors.color[feature.properties.status]
         });
         pMarker.bindPopup(label);
         markers.addLayer(pMarker);
@@ -133,7 +133,7 @@ function loadMarkers() {
 
     // Add the markercluster group to the map
     map.addLayer(markers);
-    drawChart(dataArray);
+    //drawChart(dataArray);
   });
   
 }
@@ -146,8 +146,10 @@ function filterMarker(feature, layer) {
   }
   for (var key in filters) {
     var filter = filters[key] || '';
-    var actual = feature.properties[key] || '';
+    var actual = feature.properties[key];
+    console.log(actual);
     if (filter != '' && actual.toString().toLowerCase() != filter.toString().toLowerCase()) {
+      
       return false;
     }
   }
@@ -170,6 +172,7 @@ function updateFilter() {
 }
 
 function reloadMap() {
+
   map.removeLayer(markers)
   markers.clearLayers()
   updateFilter();
