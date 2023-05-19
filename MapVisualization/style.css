@@ -15,10 +15,37 @@
 
 }
 
+.horizontal {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.map {
+  padding: 10px 10px 10px 10px;
+  align-items: center;
+  grid-column: 2 / span 8;
+}
+
 #mapid {
   height: 90vh;
 }
 
 .donut-text {
   font-weight: bold;
+}
+
+.left {
+  grid-column: 1 / span 1 ;
+}
+.right {
+  grid-column: 10 / span 3;
+}
+
+.container {
+  background-color: whitesmoke;
+  color: #242424;
+}
+
+.chart {
+  align-items: center;
 }
