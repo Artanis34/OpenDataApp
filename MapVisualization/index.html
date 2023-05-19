@@ -18,7 +18,31 @@
       <nav>
         <h1>SBB APP</h1>
       </nav>
-      <div id="mapid"></div>
+
+      <div class="horizontal">
+        <div class="left container">left</div>
+        <div class="map">
+          <div id="mapid"></div>
+        </div>
+        <div class="right container">
+          Checkbox: <input type="checkbox"><br>
+          Service: 
+          <select name="service" id="service">
+            <option value="">All</option>
+            <option value="sbb">SBB</option>
+            <option value="aar">AAR</option>
+          </select><br>
+          Status: 
+          <select name="status" id="status">
+            <option value="">All</option>
+            <option value="0">Unavailable</option>
+            <option value="1">Bad</option>
+            <option value="2">Medium</option>
+            <option value="3">Good</option>
+          </select>
+          <svg class="chart" width="500" height="400"></svg> 
+        </div>
+      </div>
     </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
