@@ -1,0 +1,50 @@
+import os
+import pandas as pd
+
+# Get the current directory (where the Python file is located)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Get the csv_file paths (in the same directory as the Python file)
+csv_path_dienst = os.path.join(current_dir, "dienststellen_actualdate.csv")
+csv_path_prm = os.path.join(current_dir, "prm_platforms.csv")
+
+# Set the columns to select from the CSV file
+selected_columns_dienst = ['SLOID', 'BEZEICHNUNG_OFFIZIELL', 'KANTONSKUERZEL', 'E_WGS84', 'N_WGS84']
+selected_columns_prm = ['SLOID', 'STATUS']
+
+# Rename for the columns
+new_column_names_dienst = {
+    'BEZEICHNUNG_OFFIZIELL': 'name',
+    'KANTONSKUERZEL': 'kanton',
+    'E_WGS84': 'Longitude',
+    'N_WGS84': 'Latitude'
+}
+new_column_names_prm = {
+    'STATUS': 'status'
+}
+
+try:
+    # Read the CSV file and select the specified columns
+    df_from_csv_dienst = pd.read_csv(csv_path_dienst, sep=';', skiprows=6, low_memory=False, usecols=selected_columns_dienst)
+    df_from_csv_prm = pd.read_csv(csv_path_prm, sep=';', skiprows=6, low_memory=False, usecols=selected_columns_prm)
+
+    # Rename the columns
+    df_from_csv_dienst.rename(columns=new_column_names_dienst, inplace=True)
+    df_from_csv_prm.rename(columns=new_column_names_prm, inplace=True)
+
+    # Create a new CSV file with the selected columns
+    file = df_from_csv_dienst
+    new_csv_file_dienst = "selected_columns_dienst.csv"
+    new_csv_path_dienst = os.path.join(current_dir, new_csv_file_dienst)
+    df_from_csv_dienst.to_csv(new_csv_path_dienst, index=False)
+
+    file = df_from_csv_prm
+    new_csv_file_prm = "selected_columns_prm.csv"
+    new_csv_path_prm = os.path.join(current_dir, new_csv_file_prm)
+    df_from_csv_prm.to_csv(new_csv_path_prm, index=False)
+
+except FileNotFoundError:
+    print(f"CSV file not found: {file}")
+
+except Exception as e:
+    print(f"An error occurred while processing the CSV file: {str(e)}")
