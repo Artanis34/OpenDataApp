@@ -147,7 +147,6 @@ function filterMarker(feature, layer) {
   for (var key in filters) {
     var filter = filters[key] || '';
     var actual = feature.properties[key] || '';
-    console.log(key + ":" + filter + "="+ actual)
     if (filter != '' && actual.toString().toLowerCase() != filter.toString().toLowerCase()) {
       return false;
     }
@@ -178,5 +177,8 @@ function reloadMap() {
   loadMarkers();
   
 }
+
 document.getElementById('service').onchange = reloadMap;
 document.getElementById('status').onchange = reloadMap;
+
+
