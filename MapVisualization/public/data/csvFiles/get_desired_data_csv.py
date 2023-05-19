@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import numpy as np
 
 # Get the current directory (where the Python file is located)
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -36,8 +37,9 @@ try:
     # Merge the two DataFrames based on SLOID, including null values
     merged_df = pd.merge(df_from_csv_dienst, df_from_csv_prm, left_on='SLOID', right_on='SLOID', how='left')
 
-    # Replace NaN values with a valid value (e.g., 0)
-    merged_df = merged_df.fillna(9)
+    # Replace NaN values with null and set status to 9 for null SLOID
+    merged_df.loc[merged_df['SLOID'].isnull(), 'status'] = 9
+    merged_df = merged_df.fillna(np.nan)
 
     # Create a new CSV file with the selected columns
     file = df_from_csv_dienst
