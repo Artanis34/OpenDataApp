@@ -10,7 +10,7 @@ csv_path_prm = os.path.join(current_dir, "prm_platforms.csv")
 
 # Set the columns to select from the CSV file
 selected_columns_dienst = ['SLOID', 'BEZEICHNUNG_OFFIZIELL', 'KANTONSKUERZEL', 'E_WGS84', 'N_WGS84']
-selected_columns_prm = ['SLOID', 'STATUS']
+selected_columns_prm = ['DS_SLOID', 'STATUS']
 
 # Rename for the columns
 new_column_names_dienst = {
@@ -20,7 +20,8 @@ new_column_names_dienst = {
     'N_WGS84': 'Latitude'
 }
 new_column_names_prm = {
-    'STATUS': 'status'
+    'STATUS': 'status',
+    'DS_SLOID': 'SLOID'
 }
 
 try:
@@ -32,16 +33,18 @@ try:
     df_from_csv_dienst.rename(columns=new_column_names_dienst, inplace=True)
     df_from_csv_prm.rename(columns=new_column_names_prm, inplace=True)
 
+    # Merge the two DataFrames based on SLOID, including null values
+    merged_df = pd.merge(df_from_csv_dienst, df_from_csv_prm, left_on='SLOID', right_on='SLOID', how='left')
+
+    # Replace NaN values with a valid value (e.g., 0)
+    merged_df = merged_df.fillna(0)
+
     # Create a new CSV file with the selected columns
     file = df_from_csv_dienst
-    new_csv_file_dienst = "selected_columns_dienst.csv"
-    new_csv_path_dienst = os.path.join(current_dir, new_csv_file_dienst)
-    df_from_csv_dienst.to_csv(new_csv_path_dienst, index=False)
+    new_csv_file_merged = "merged_selected_columns.csv"
+    new_csv_path_merged = os.path.join(current_dir, new_csv_file_merged)
+    merged_df.to_csv(new_csv_path_merged, index=False)
 
-    file = df_from_csv_prm
-    new_csv_file_prm = "selected_columns_prm.csv"
-    new_csv_path_prm = os.path.join(current_dir, new_csv_file_prm)
-    df_from_csv_prm.to_csv(new_csv_path_prm, index=False)
 
 except FileNotFoundError:
     print(f"CSV file not found: {file}")

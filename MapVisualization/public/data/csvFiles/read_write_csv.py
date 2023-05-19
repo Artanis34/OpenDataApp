@@ -7,22 +7,14 @@ import math
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Get the csv_file path (in the same directory as the Python file)
-csv_path1 = os.path.join(current_dir, "selected_columns_dienst.csv")
-csv_path2 = os.path.join(current_dir, "selected_columns_prm.csv")
+csv_path = os.path.join(current_dir, "merged_selected_columns.csv")
 
 # Read the CSV file
-df_from_csv1 = pd.read_csv(csv_path1, sep=',', low_memory=False)
-df_from_csv2 = pd.read_csv(csv_path2, sep=',', low_memory=False)
-
-# Merge the two DataFrames based on SLOID, including null values
-merged_df = pd.merge(df_from_csv1, df_from_csv2, left_on='SLOID', right_on='SLOID', how='left')
-
-# Replace NaN values with a valid value (e.g., 0)
-merged_df = merged_df.fillna(0)
+df_from_csv = pd.read_csv(csv_path, sep=',', low_memory=False)
 
 # Create a list of GeoJSON features
 features = []
-for index, row in merged_df.iterrows():
+for index, row in df_from_csv.iterrows():
     # Check if the coordinates are valid numbers
     if math.isnan(row['Longitude']) or math.isnan(row['Latitude']):
         continue
