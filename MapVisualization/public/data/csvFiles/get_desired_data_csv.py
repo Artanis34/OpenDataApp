@@ -14,16 +14,16 @@ selected_columns_prm = ['DS_SLOID', 'STATUS']
 
 # Rename for the columns
 new_column_names_dienst = {
-    'BEZEICHNUNG_OFFIZIELL': 'name',
-    'ORTSCHAFTSNAME': 'ortschaft',
-    'KANTONSNAME': 'kanton',
+    'BEZEICHNUNG_OFFIZIELL': 'Name',
+    'ORTSCHAFTSNAME': 'Ortschaft',
+    'KANTONSNAME': 'Kanton',
     'E_WGS84': 'Longitude',
     'N_WGS84': 'Latitude',
-    'NUMMER': 'dienststellen-ID',
-    'GO_ABKUERZUNG_DE' : 'service'
+    'NUMMER': 'Dienststellen-ID',
+    'GO_ABKUERZUNG_DE' : 'Service'
 }
 new_column_names_prm = {
-    'STATUS': 'status',
+    'STATUS': 'Status',
     'DS_SLOID': 'SLOID'
 }
 
@@ -40,7 +40,7 @@ try:
     merged_df = pd.merge(df_from_csv_dienst, df_from_csv_prm, left_on='SLOID', right_on='SLOID', how='left')
 
     # Replace NaN values with null and set status to 9 for null SLOID
-    merged_df.loc[merged_df['status'].isnull(), 'status'] = 9
+    merged_df.loc[merged_df['Status'].isnull(), 'Status'] = 9
     merged_df = merged_df.fillna(99)
 
     # Create a new CSV file with the selected columns
