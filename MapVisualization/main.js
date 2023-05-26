@@ -15,7 +15,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
 let service = params.service; // "some_value"
 
-console.log(service);
+console.log('Get parameter service: ' + service);
 
 let mapOptions = {
     center: [46.7135, 7.9706],
@@ -44,12 +44,11 @@ var markers = L.DonutCluster(
     // The first parameter is the standard marker cluster's configuration.
     {
         chunkedLoading: true,
-        spiderfyOnMaxZoom: false,
+        spiderfyOnMaxZoom: true,
         showCoverageOnHover: false,
         zoomToBoundsOnClick: true,
         reremoveOutsideVisibleBoundsmoveOut: true,
-        //maxClusterRadius:
-        disableClusteringAtZoom: 15,
+        disableClusteringAtZoom: 20,
 
     },
     // The second parameter is the donut cluster's configuration.
@@ -74,6 +73,12 @@ var markers = L.DonutCluster(
     }
 );
 
+
+var DataCircleMarker = L.CircleMarker.extend({
+  options: {
+    data: ''
+  }
+})
 
 loadMarkers();
 function loadMarkers() {
@@ -106,14 +111,15 @@ function loadMarkers() {
           title: feature.properties.name
         });
 
-        pMarker = new L.CircleMarker(latlng, {
+        pMarker = new DataCircleMarker(latlng, {
           title: feature.properties.name,
           radius: 10,
           color: '#FFFFFF',
           weight: 2,
           fillOpacity: 0.5,
           status: feature.properties.status,
-          fillColor: colors.color[feature.properties.status]
+          fillColor: colors.color[feature.properties.status],
+          data: feature,
         });
         pMarker.bindPopup(label);
         markers.addLayer(pMarker);
@@ -129,7 +135,12 @@ function loadMarkers() {
     });
     markers.on('click', function(a) {
       console.log('Marker Clicked:' + a);
+      updateSelectionView(a)
     });
+
+    /*markers.on('clustermouseover', function(a) {
+      
+    })*/
 
     // Add the markercluster group to the map
     map.addLayer(markers);
@@ -185,3 +196,18 @@ document.getElementById('service').onchange = reloadMap;
 document.getElementById('status').onchange = reloadMap;
 
 
+function updateSelectionView(marker) {
+
+  if (marker == null) {
+    document.getElementById('selectionView').innerHTML = 'No Selection';
+    return;
+  }
+
+  console.log('selection now: ' + marker.sourceTarget.options.data);
+  console.log(marker.sourceTarget.options.data);
+  var selection = marker.sourceTarget.options.data;
+
+  if (selection != null) {
+    document.getElementById('selectionView').innerHTML = selection.properties.name + '<br>Status: ' + selection.properties.status;
+  }
+}
