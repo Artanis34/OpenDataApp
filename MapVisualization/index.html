@@ -21,28 +21,29 @@
 
       <div class="horizontal">
         <div class="left container">
-          left<br>
-          <div id="selectionView">No Point selected<br>
-          </div>
-        </div>
-        <div class="map">
-          <div id="mapid"></div>
-        </div>
-        <div class="right container">
           Service: 
-          <select name="service" id="service">
+          <select name="Service" id="Service">
             <option value="">All</option>
-            <option value="sbb">SBB</option>
-            <option value="aar">AAR</option>
+          </select><br>
+          Canton: 
+          <select name="Kanton" id="Kanton">
+            <option value="">All</option>
           </select><br>
           Status: 
-          <select name="status" id="status">
+          <select name="Status" id="Status">
             <option value="">All</option>
             <option value="1">Good</option>
             <option value="0">Bad</option>
             <option value="9">Unavailable</option>
           </select>
-          <svg class="chart" width="500" height="400"></svg> 
+          <svg class="chart" width="100" height="400"></svg> 
+        </div>
+        <div class="map">
+          <div id="mapid"></div>
+        </div>
+        <div class="right container">
+          <div id="selectionView">No Point selected<br>
+          </div>
         </div>
       </div>
     </div>
