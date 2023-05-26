@@ -21,7 +21,7 @@ service_list = []  # List to store unique service values
 
  # Iterate over every index
 for index, row in df_from_csv.iterrows():
-    if str(row['Longitude']).strip().isnumeric() and str(row['Latitude']).strip().isnumeric():
+    if row['Longitude'] != '' and row['Latitude'] != '':
         geometry = geojson.Point((row['Longitude'], row['Latitude']))
         properties = {
             'Name': row['Name'],
