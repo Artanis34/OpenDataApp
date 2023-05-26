@@ -16,8 +16,10 @@ features = []
 for index, row in df_from_csv.iterrows():
     geometry = geojson.Point((row['Longitude'], row['Latitude']))
     properties = {
+        'dienststellen-ID': row['dienststellen-ID'],
         'status': row['status'],
         'name': row['name'],
+        'kanton': row['kanton'],
         'service': row['service']
     }
     feature = geojson.Feature(geometry=geometry, properties=properties)
