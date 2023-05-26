@@ -23,7 +23,7 @@
 .map {
   padding: 10px 10px 10px 10px;
   align-items: center;
-  grid-column: 2 / span 8;
+  grid-column: 3 / span 7;
 }
 
 #mapid {
@@ -35,7 +35,7 @@
 }
 
 .left {
-  grid-column: 1 / span 1 ;
+  grid-column: 1 / span 2 ;
 }
 .right {
   grid-column: 10 / span 3;
