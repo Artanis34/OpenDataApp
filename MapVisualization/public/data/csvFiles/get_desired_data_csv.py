@@ -10,17 +10,18 @@ csv_path_dienst = os.path.join(current_dir, "dienststellen_actualdate.csv")
 csv_path_prm = os.path.join(current_dir, "prm_platforms.csv")
 
 # Set the columns to select from the CSV file
-selected_columns_dienst = ['SLOID', 'NUMMER', 'BEZEICHNUNG_OFFIZIELL', 'KANTONSKUERZEL', 'E_WGS84', 'N_WGS84', 'GO_ABKUERZUNG_DE']
+selected_columns_dienst = ['SLOID', 'NUMMER', 'BEZEICHNUNG_OFFIZIELL', 'ORTSCHAFTSNAME', 'KANTONSNAME', 'E_WGS84', 'N_WGS84', 'GO_ABKUERZUNG_DE']
 selected_columns_prm = ['DS_SLOID', 'STATUS']
 
 # Rename for the columns
 new_column_names_dienst = {
     'BEZEICHNUNG_OFFIZIELL': 'name',
-    'KANTONSKUERZEL': 'kanton',
+    'ORTSCHAFTSNAME': 'ortschaft',
+    'KANTONSNAME': 'kanton',
     'E_WGS84': 'Longitude',
     'N_WGS84': 'Latitude',
-    'GO_ABKUERZUNG_DE' : 'service',
-    'NUMMER': 'dienststellen-ID'
+    'NUMMER': 'dienststellen-ID',
+    'GO_ABKUERZUNG_DE' : 'service'
 }
 new_column_names_prm = {
     'STATUS': 'status',
