@@ -1,5 +1,6 @@
 import 'leaflet';
 import 'leaflet.markercluster';
+import 'leaflet.markercluster.placementstrategies';
 
 import '@kalisio/leaflet.donutcluster/src/Leaflet.DonutCluster.css'
 import '@kalisio/leaflet.donutcluster/src/Leaflet.DonutCluster.js'
@@ -25,6 +26,7 @@ const mapLightBackground = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/
 
 let map = new L.map('mapid', mapOptions);
 var mapLayer = new L.TileLayer(mapLightBackground, {
+  maxZoom: 18,
     attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>',
   });
 map.addLayer(mapLayer);
@@ -41,12 +43,17 @@ var showRailway = false;
 var markers = L.DonutCluster(
     // The first parameter is the standard marker cluster's configuration.
     {
+        spiderLegPolylineOptions: { weight: 0 },
+        helpingCircles: true,
+        clockHelpingCircleOptions:  { fillOpacity: 1, color: 'grey', weight: 0.3 },
+        elementsPlacementStrategy: 'one-circle',
+
         chunkedLoading: true,
         spiderfyOnMaxZoom: true,
         showCoverageOnHover: false,
         zoomToBoundsOnClick: true,
         reremoveOutsideVisibleBoundsmoveOut: true,
-        disableClusteringAtZoom: 20,
+        disableClusteringAtZoom: 19,
 
     },
     // The second parameter is the donut cluster's configuration.
@@ -129,6 +136,7 @@ function loadMarkers() {
 
     markers.on('clusterclick', function(a) {
       console.log('Cluster Clicked:' + a);
+      console.log(a);
     });
     markers.on('click', function(a) {
       console.log('Marker Clicked:' + a);
@@ -213,6 +221,8 @@ function fetchFilters() {
 document.getElementById('Service').onchange = reloadMap;
 document.getElementById('Status').onchange = reloadMap;
 document.getElementById('Kanton').onchange = reloadMap;
+document.getElementById('showOpenRailMap').onchange = reloadMap;
+
 
 
 function reloadMap() {
@@ -224,7 +234,7 @@ function reloadMap() {
   //console.log(filters);
   loadMarkers();
 
-  if (showRailway) {
+  if (document.getElementById('showOpenRailMap').checked) {
     map.addLayer(OpenRailwayMap);
   } else {
     map.removeLayer(OpenRailwayMap);
