@@ -44,8 +44,8 @@ feature_collection = geojson.FeatureCollection(features)
 
 # Create a dictionary for the additional lists
 additional_lists = {
-    'Kanton': kanton_list,
-    'Service': service_list
+    'Kanton': sorted(kanton_list),
+    'Service': sorted(service_list)
 }
 
 # Get the parent directory of the current directory
