@@ -12,10 +12,7 @@ import { drawChart } from './d3handler.js';
 const params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
 });
-// Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
-let service = params.service; // "some_value"
-
-console.log('Get parameter service: ' + service);
+// Get the value of "some_key" in eg "https://example.com/?some_key=some_value" //
 
 let mapOptions = {
     center: [46.7135, 7.9706],
@@ -34,9 +31,10 @@ map.addLayer(mapLayer);
 
 
 var OpenRailwayMap = L.tileLayer('https://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png', {
-	maxZoom: 19,
+	maxZoom: 18,
 	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Map style: &copy; <a href="https://www.OpenRailwayMap.org">OpenRailwayMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 });
+var showRailway = false;
 
 
 // Create the markercluster
@@ -54,7 +52,7 @@ var markers = L.DonutCluster(
     // The second parameter is the donut cluster's configuration.
     {
         // Mandotary, indicates the field to group items by in order to create donut' sections.
-        key: 'status',
+        key: 'Status',
         order: colors.color.values,
         // Mandotary, the arc color for each donut section.
         // If array of colors will loop over it to pick color of each section sequentially.
@@ -80,7 +78,6 @@ var DataCircleMarker = L.CircleMarker.extend({
   }
 })
 
-loadMarkers();
 function loadMarkers() {
 
   //var pUrl = "/data/example.geojson";
@@ -102,23 +99,23 @@ function loadMarkers() {
 
         //dataArray[feature.properties.status] += 1;
 
-        var label = '<h4>' + feature.properties.name + '<br>Status: ' + feature.properties.status + '</h4>';
-            label += feature.properties.address + '<br>';
-            label += latlng + '<br>';
+        var label = '<h4>' + feature.properties.Name + '<br>Status: ' + feature.properties.Status + '</h4>';
+            label += feature.properties.Service + '<br>';
+            label += latlng.lat + ', ' + latlng.lng + '<br>';
 
       
         var pMarker = new L.Marker(latlng, {
-          title: feature.properties.name
+          title: feature.properties.Name
         });
 
         pMarker = new DataCircleMarker(latlng, {
-          title: feature.properties.name,
+          title: feature.properties.Name,
           radius: 10,
           color: '#FFFFFF',
           weight: 2,
           fillOpacity: 0.5,
-          status: feature.properties.status,
-          fillColor: colors.color[feature.properties.status],
+          status: feature.properties.Status,
+          fillColor: colors.color[feature.properties.Status],
           data: feature,
         });
         pMarker.bindPopup(label);
@@ -135,7 +132,7 @@ function loadMarkers() {
     });
     markers.on('click', function(a) {
       console.log('Marker Clicked:' + a);
-      updateSelectionView(a)
+      updateSelectionView(a);
     });
 
     /*markers.on('clustermouseover', function(a) {
@@ -158,7 +155,7 @@ function filterMarker(feature, layer) {
   for (var key in filters) {
     var filter = filters[key] || '';
     var actual = feature.properties[key];
-    console.log(actual);
+    //console.log(actual);
     if (filter != '' && actual.toString().toLowerCase() != filter.toString().toLowerCase()) {
       
       return false;
@@ -175,25 +172,67 @@ function filterMarker(feature, layer) {
 
 function updateFilter() {
   filters = {
-    service: document.getElementById('service').value,
-    status: document.getElementById('status').value,
+    Service: document.getElementById('Service').value,
+    Kanton: document.getElementById('Kanton').value,
+    Status: document.getElementById('Status').value,
   };
 
   //console.log("filter:" + filter['services']);
 }
+
+function updateSpecificFilter(filter, value) {
+  document.getElementById(filter).value = value.toString();
+}
+
+// fetch get parameterss
+function fetchGetFilters() {
+  if (params.Service != null && params.Service != '') {
+    updateSpecificFilter('Service', params.Service);
+  }
+}
+var fUrl = './data/kantonAndService.json'
+fetchFilters();
+function fetchFilters() {
+  $.getJSON(fUrl, function(data) {
+
+    for (var filter in data) {
+      var select = document.getElementById(filter);
+      for(var key in data[filter]) {
+        var opt = document.createElement('option');
+        opt.value = data[filter][key];
+        opt.innerHTML = data[filter][key];
+        select.appendChild(opt);
+      }
+    }
+
+    fetchGetFilters();
+    reloadMap();
+  });
+}
+//add onchange eventlistener to filters
+document.getElementById('Service').onchange = reloadMap;
+document.getElementById('Status').onchange = reloadMap;
+document.getElementById('Kanton').onchange = reloadMap;
+
 
 function reloadMap() {
 
   map.removeLayer(markers)
   markers.clearLayers()
   updateFilter();
+  updateSelectionView(null);
   //console.log(filters);
   loadMarkers();
+
+  if (showRailway) {
+    map.addLayer(OpenRailwayMap);
+  } else {
+    map.removeLayer(OpenRailwayMap);
+  }
   
 }
 
-document.getElementById('service').onchange = reloadMap;
-document.getElementById('status').onchange = reloadMap;
+
 
 
 function updateSelectionView(marker) {
@@ -208,6 +247,16 @@ function updateSelectionView(marker) {
   var selection = marker.sourceTarget.options.data;
 
   if (selection != null) {
-    document.getElementById('selectionView').innerHTML = selection.properties.name + '<br>Status: ' + selection.properties.status;
+    var outputString = "";
+    for (var key in selection.properties) {
+      outputString += key + ": ";
+      if (selection.properties[key] == 99) {
+        outputString += 'NaN';
+      } else {
+        outputString += selection.properties[key];
+      }
+      outputString += "<br>";
+    }
+    document.getElementById('selectionView').innerHTML = outputString;
   }
 }
