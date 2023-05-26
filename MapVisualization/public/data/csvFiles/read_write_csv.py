@@ -1,7 +1,6 @@
 import os
 import pandas as pd
 import geojson
-import math
 
 # Get the current directory (where the Python file is located)
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -18,7 +17,8 @@ for index, row in df_from_csv.iterrows():
     geometry = geojson.Point((row['Longitude'], row['Latitude']))
     properties = {
         'status': row['status'],
-        'name': row['name']
+        'name': row['name'],
+        'service': row['service']
     }
     feature = geojson.Feature(geometry=geometry, properties=properties)
     features.append(feature)
