@@ -130,8 +130,8 @@ try:
     #columns_to_check = merged_df.columns.drop(columns_to_drop)
     #merged_df.loc[merged_df[columns_to_check].isnull().any(axis=1), 'Status'] = 0
 
-    merged_df.loc[(merged_df['VEHICLE_ACCESS'].isnull() | merged_df['VEHICLE_ACCESS'].eq('')) & (merged_df['Rollstuhl'].isnull() | merged_df['Rollstuhl'].eq('')), 'Status'] = 0
-    merged_df.loc[~((merged_df['VEHICLE_ACCESS'].isnull() | merged_df['VEHICLE_ACCESS'].eq('')) & (merged_df['Rollstuhl'].isnull() | merged_df['Rollstuhl'].eq(''))), 'Status'] = 2
+    #merged_df.loc[(merged_df['VEHICLE_ACCESS'].isnull() | merged_df['VEHICLE_ACCESS'].eq('')) & (merged_df['Rollstuhl'].isnull() | merged_df['Rollstuhl'].eq('')), 'Status'] = 0
+    #merged_df.loc[~((merged_df['VEHICLE_ACCESS'].isnull() | merged_df['VEHICLE_ACCESS'].eq('')) & (merged_df['Rollstuhl'].isnull() | merged_df['Rollstuhl'].eq(''))), 'Status'] = 2
     
     #count_status_zero = (merged_df['Status'] == 0).sum()
     #print("Count of rows with Status 0:", count_status_zero)
