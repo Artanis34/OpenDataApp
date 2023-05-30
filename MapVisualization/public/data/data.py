@@ -32,6 +32,8 @@ def data():
         # Run get_data.py script
         file_path = os.path.join(directory_path, 'get_data.py')
         subprocess.run(['python', file_path], check=True)
+        # Print if code ran successfull
+        print("get_data successfull")
     except Exception as e:
         print(f"An error occurred: {e}")
 
@@ -39,6 +41,8 @@ def data():
         # Run select_desired_data_csv.py script
         file_path = os.path.join(directory_path, 'select_desired_data_csv.py')
         subprocess.run(['python', file_path], check=True)
+        # Print a success message if the code runs successfully
+        print("select_desired_data_csv successful")
     except Exception as e:
         print(f"An error occurred: {e}")
 
@@ -46,6 +50,8 @@ def data():
         # Run geoData.py script
         file_path = os.path.join(directory_path, 'geoData.py')
         subprocess.run(['python', file_path], check=True)
+        # Print a success message if the code runs successfully
+        print("geoData successful")
     except Exception as e:
         print(f"An error occurred: {e}")
 

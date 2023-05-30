@@ -144,9 +144,6 @@ try:
     except Exception as e:
         raise Exception("Error occurred while creating the new CSV file:", str(e))
 
-    # Print a success message if the code runs successfully
-    print("select_desired_data_csv successful")
-
 except FileNotFoundError as e:
     print("Error occurred: File not found -", str(e))
 except pd.errors.EmptyDataError as e:

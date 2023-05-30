@@ -92,7 +92,5 @@ try:
         # Handle the case when the request was not successful
         print('Error downloading prm_platforms file from the permalink.')
 
-    # Print if code ran successfull
-    print("get_data successfull")
 except Exception as e:
     print("Error occurred:", str(e))
