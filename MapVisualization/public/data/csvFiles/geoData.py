@@ -89,8 +89,51 @@ try:
 
         # Iterate over every index
         for index, row in df_from_csv.iterrows():
-            if row['Longitude'] != '' and row['Latitude'] != '':
-                geometry = geojson.Point((row['Longitude'], row['Latitude']))
+            if row['Longitude_dienst'] != '' and row['Latitude_dienst'] != '':
+                geometry = geojson.Point((row['Longitude_dienst'], row['Latitude_dienst']))
+                properties = {
+                    'Name': row['Name'],
+                    'Ortschaft': row['Ortschaft'],
+                    'Gemeinde': row['Gemeinde'],
+                    'Kanton': row['Kanton'],
+                    'Verkehrsmittel': row['Verkehrsmittel'],
+                    'Rollstuhl': row['Rollstuhl'],
+                    'Zugang zum Perron/Einstieg ins Fahrzeug': row['VEHICLE_ACCESS'],
+                    'Status': row['Status'],
+                    'Service': row['Service'],
+                    'SLOID': row['SLOID_prm'],
+                    'Bezeichnung': row['Bezeichung']
+                }
+                feature = geojson.Feature(geometry=geometry, properties=properties)
+                features.append(feature)
+            else:
+                # Add properties to the separate JSON file for entries with missing longitude and/or latitude
+                properties = {
+                    'Name': row['Name'],
+                    'Ortschaft': row['Ortschaft'],
+                    'Gemeinde': row['Gemeinde'],
+                    'Kanton': row['Kanton'],
+                    'Verkehrsmittel': row['Verkehrsmittel'],
+                    'Rollstuhl': row['Rollstuhl'],
+                    'Zugang zum Perron/Einstieg ins Fahrzeug': row['VEHICLE_ACCESS'],
+                    'Status': row['Status'],
+                    'Service': row['Service'],
+                    'SLOID': row['SLOID_prm'],
+                    'Bezeichnung': row['Bezeichung']
+                }
+                notFeatures.append(properties)
+
+            # Add service value to the list if it doesn't already exist
+            if row['Service'] != '' and row['Service'] not in service_list:
+                service_list.append(row['Service'])
+
+            # Add service value to the list if it doesn't already exist
+            if row['Kanton'] != '' and row['Kanton'] not in kanton_list:
+                kanton_list.append(row['Kanton'])
+            
+        for index, row in df_from_csv.iterrows():
+            if row['Longitude_vk'] != '' and row['Latitude_vk'] != '':
+                geometry = geojson.Point((row['Longitude_vk'], row['Latitude_vk']))
                 properties = {
                     'Name': row['Name'],
                     'Ortschaft': row['Ortschaft'],
@@ -141,9 +184,6 @@ try:
         print("Error occurred while creating the GeoJSON feature collection:", str(e))
 
     # Try to create a dictionary for the additional lists
-    
-    
-
     try:
         gemeinde_list = sorted(gemeinde_list, key=lambda x: x['Kanton'])
         additional_lists = {
@@ -195,7 +235,5 @@ try:
     except Exception as e:
         print("Error occurred while writing the notFeatures JSON file:", str(e))
 
-    # Print if code ran successfull
-    print("geoData successfull")
 except Exception as e:
     print("Error occurred:", str(e))
