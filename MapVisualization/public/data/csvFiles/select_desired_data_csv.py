@@ -124,6 +124,9 @@ try:
 
     # Update status to 0 for empty rows
     #merged_df.loc[merged_df.isnull().any(axis=1), 'Status'] = 0
+    # Update status to 0 for rows with empty or null values in any column, except 'Bezeichnung'
+    columns_to_check = merged_df.columns.drop('Bezeichung')
+    merged_df.loc[merged_df[columns_to_check].isnull().any(axis=1), 'Status'] = 0
 
     # Create a new CSV file with the selected columns (with error handling)
     try:
