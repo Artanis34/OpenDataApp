@@ -18,7 +18,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 let mapOptions = {
     center: [46.7135, 7.9706],
     zoom: 9,
-    className: 'map-tiles'
+    className: 'map-tiles',
 }
 
 const mapLightBackground = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
@@ -38,6 +38,20 @@ var OpenRailwayMap = L.tileLayer('https://{s}.tiles.openrailwaymap.org/standard/
 });
 var showRailway = false;
 
+/*Legend specific*/
+var legend = L.control({ position: "bottomleft" });
+
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "legend");
+  div.innerHTML += "<h4>Legende</h4>";
+  div.innerHTML += '<i style="background: red"></i><span>Unvollständig</span><br>';
+  div.innerHTML += '<i style="background: green"></i><span>Erfasst</span><br>';
+  div.innerHTML += 'Data Timestamp: <b id="timestamp">Unknown</b>';
+  return div;
+};
+
+legend.addTo(map);
+
 
 // Create the markercluster
 var markers = L.DonutCluster(
@@ -47,13 +61,14 @@ var markers = L.DonutCluster(
         helpingCircles: true,
         clockHelpingCircleOptions:  { fillOpacity: 1, color: 'grey', weight: 0.3 },
         elementsPlacementStrategy: 'one-circle',
+        spiderfyDistanceMultiplier: 1.8,
 
         chunkedLoading: true,
         spiderfyOnMaxZoom: true,
         showCoverageOnHover: false,
         zoomToBoundsOnClick: true,
         reremoveOutsideVisibleBoundsmoveOut: true,
-        disableClusteringAtZoom: 19,
+        disableClusteringAtZoom: 18,
 
     },
     // The second parameter is the donut cluster's configuration.
@@ -71,10 +86,10 @@ var markers = L.DonutCluster(
             size: 60,
             fill: 'white',
             opacity: 1,
-            weight: 2 
+            weight: 3 
         },
         // Function used to customize legend output
-        getLegend: (title, color, percentage, value) => `<spans style='color:black;'>${title}:&nbsp;${parseInt(percentage)}%</span>`
+        //getLegend: (title, color, percentage, value) => `<spans style='color:black;'>${title}:&nbsp;${parseInt(percentage)}%</span>`
     }
 );
 
@@ -99,14 +114,13 @@ function loadMarkers() {
 
     var geoJsonLayer = L.geoJson(data, {
       filter: function(feature, layer) {
-        if (feature.geometry.coordinates[0] == 99) {return false;}
         return filterMarker(feature, layer);
       },
       pointToLayer: function(feature, latlng) {
 
         //dataArray[feature.properties.status] += 1;
 
-        var label = '<h4>' + feature.properties.Name + '<br>Status: ' + feature.properties.Status + '</h4>';
+        var label = '<h4>' + feature.properties.Name + '<br>' + feature.properties.Verkehrsmittel +' (' + feature.properties.Bezeichnung + ')</h4>';
             label += feature.properties.Service + '<br>';
             label += latlng.lat + ', ' + latlng.lng + '<br>';
 
@@ -117,10 +131,11 @@ function loadMarkers() {
 
         pMarker = new DataCircleMarker(latlng, {
           title: feature.properties.Name,
-          radius: 10,
+          radius: 11,
           color: '#FFFFFF',
           weight: 2,
           fillOpacity: 0.5,
+          //riseOnHover: true,
           status: feature.properties.Status,
           fillColor: colors.color[feature.properties.Status],
           data: feature,
@@ -137,6 +152,10 @@ function loadMarkers() {
     markers.on('clusterclick', function(a) {
       console.log('Cluster Clicked:' + a);
       console.log(a);
+      a.layer.getAllChildMarkers().forEach(element => {
+        //console.log(element);
+        //element.setZIndexOffset(1000);
+      });
     });
     markers.on('click', function(a) {
       console.log('Marker Clicked:' + a);
@@ -149,7 +168,7 @@ function loadMarkers() {
 
     // Add the markercluster group to the map
     map.addLayer(markers);
-    //drawChart(dataArray);
+    drawChart(data);
   });
   
 }
@@ -182,6 +201,7 @@ function updateFilter() {
   filters = {
     Service: document.getElementById('Service').value,
     Kanton: document.getElementById('Kanton').value,
+    Gemeinde: document.getElementById('Gemeinde').value,
     Status: document.getElementById('Status').value,
   };
 
@@ -200,10 +220,16 @@ function fetchGetFilters() {
 }
 var fUrl = './data/kantonAndService.json'
 fetchFilters();
+//reloadMap();//fetch filters instead!!!
 function fetchFilters() {
   $.getJSON(fUrl, function(data) {
 
     for (var filter in data) {
+      if (filter == "Last_modified") {
+        document.getElementById('timestamp').innerHTML = data.Last_modified;
+        continue;
+      }
+      if (filter == "Gemeinde") { continue;}
       var select = document.getElementById(filter);
       for(var key in data[filter]) {
         var opt = document.createElement('option');
@@ -217,13 +243,48 @@ function fetchFilters() {
     reloadMap();
   });
 }
+
+function bs() {
+  updateGemeinde();reloadMap();
+}
 //add onchange eventlistener to filters
 document.getElementById('Service').onchange = reloadMap;
 document.getElementById('Status').onchange = reloadMap;
-document.getElementById('Kanton').onchange = reloadMap;
+document.getElementById('Gemeinde').onchange = reloadMap;
+document.getElementById('Kanton').onchange = bs;
 document.getElementById('showOpenRailMap').onchange = reloadMap;
 
 
+
+function updateGemeinde() {
+  $.getJSON(fUrl, function(data) {
+
+    var selectCanton = document.getElementById('Kanton');
+    var selectGemeinde = document.getElementById('Gemeinde');
+    //selectGemeinde.value = "";
+    selectGemeinde.innerHTML = '<option value="">All</option>';
+
+
+    for (var Canton in data.Gemeinde) {
+
+      if (selectCanton.value != "" && selectCanton.value != null) {
+        if (selectCanton.value != data.Gemeinde[Canton].Kanton) {
+          continue;
+        }
+      }
+      for (var gemeinde in data.Gemeinde[Canton].Gemeinden) {
+        
+        var opt = document.createElement('option');
+        opt.value = data.Gemeinde[Canton].Gemeinden[gemeinde];
+        opt.innerHTML = data.Gemeinde[Canton].Gemeinden[gemeinde];
+        selectGemeinde.appendChild(opt);
+        
+      }
+    }
+    updateFilter();
+
+  });
+}
 
 function reloadMap() {
 
