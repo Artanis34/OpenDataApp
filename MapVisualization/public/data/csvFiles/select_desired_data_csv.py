@@ -109,9 +109,9 @@ try:
     df_from_csv_dienst['Verkehrsmittel'] = df_from_csv_dienst['Verkehrsmittel'].str.replace('~', '')
     # Handle LEVEL_ACCESS_WHEELCHAIR entries, [0 & '' -> Zu vervollständigen, 1 -> Ja, 2 -> Nein]
     replacement_mapping_Rollstuhl = {0: None, 1: 'Yes', 2: 'No'}
-    df_from_csv_prm['Rollstuhl'] = df_from_csv_prm['Rollstuhl'].replace(replacement_mapping_Rollstuhl)
+    df_from_csv_prm['Rollstuhl'] = df_from_csv_prm['Rollstuhl'].fillna(0).replace(replacement_mapping_Rollstuhl)
     # Handle VEHICLE_ACCESS entries
-    replacement_mapping_VEHICLE_ACCESS = {0: 'Zu vervollständigen', 
+    replacement_mapping_VEHICLE_ACCESS = {0: None, 
                                           11: 'Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.',
                                            12: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.',
                                              13: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.',
@@ -122,13 +122,14 @@ try:
     merged_df = pd.merge(df_from_csv_dienst, df_from_csv_vk, on='SLOID_dienst')
     merged_df = pd.merge(merged_df, df_from_csv_prm, on='SLOID_prm')
 
-    # Update status to 0 for empty rows
-    #merged_df.loc[merged_df.isnull().any(axis=1), 'Status'] = 0
     # Update status to 0 for rows with empty or null values in any column, except 
     # 'Bezeichung', 'VEHICLE_ACCESS', 'Rollstuhl'
-    columns_to_drop = ['Bezeichung'] 
-    columns_to_check = merged_df.columns.drop(columns_to_drop)
-    merged_df.loc[merged_df[columns_to_check].isnull().any(axis=1), 'Status'] = 0
+    ##columns_to_drop = ['Bezeichung'] 
+    #columns_to_check = merged_df.columns.drop(columns_to_drop)
+    #merged_df.loc[merged_df[columns_to_check].isnull().any(axis=1), 'Status'] = 0
+
+    merged_df.loc[(merged_df['VEHICLE_ACCESS'].isnull() | merged_df['VEHICLE_ACCESS'].eq('')) & (merged_df['Rollstuhl'].isnull() | merged_df['Rollstuhl'].eq('')), 'Status'] = 0
+    merged_df.loc[~((merged_df['VEHICLE_ACCESS'].isnull() | merged_df['VEHICLE_ACCESS'].eq('')) & (merged_df['Rollstuhl'].isnull() | merged_df['Rollstuhl'].eq(''))), 'Status'] = 2
 
     # Create a new CSV file with the selected columns (with error handling)
     try:
