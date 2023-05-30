@@ -52,9 +52,39 @@ try:
         # Create lists
         features = [] # List to store GeoJSON features
         notFeatures = [] # List to store entries without longitude and/or latitude
-        kanton_list = []  # List to store unique kanton values
         service_list = []  # List to store unique service values
-        gemeinde_list = []  # List to store unique gemeinde values
+
+        # Create a dictionary to map Gemeinde to Kanton
+        gemeinde_to_kanton = {}
+
+        # Iterate over every index
+        for index, row in df_from_csv.iterrows():
+            if row['Kanton'] != '' and row['Gemeinde'] != '':
+                # Add Gemeinde to Kanton mapping to the dictionary
+                gemeinde_to_kanton[row['Gemeinde']] = row['Kanton']
+
+        # Create a new dictionary to store Gemeinde under the same Kanton
+        kanton_gemeinde_dict = {}
+
+        # Iterate over every Gemeinde and Kanton in the gemeinde_to_kanton dictionary
+        for gemeinde, kanton in gemeinde_to_kanton.items():
+            if kanton not in kanton_gemeinde_dict:
+                # Create a new list for the Gemeinden under the Kanton if it doesn't exist
+                kanton_gemeinde_dict[kanton] = [gemeinde]
+            else:
+                # Append the Gemeinde to the list under the respective Kanton
+                kanton_gemeinde_dict[kanton].append(gemeinde)
+        # Sort the Gemeinden within each Kanton in alphabetical order
+        for kanton, gemeinden in kanton_gemeinde_dict.items():
+            kanton_gemeinde_dict[kanton] = sorted(gemeinden)
+
+        # Update the gemeinde_list with the modified structure
+        gemeinde_list = []
+        for kanton, gemeinden in kanton_gemeinde_dict.items():
+            gemeinde_list.append({
+                'Kanton': kanton,
+                'Gemeinden': gemeinden
+            })
 
         # Iterate over every index
         for index, row in df_from_csv.iterrows():
@@ -92,17 +122,10 @@ try:
                 }
                 notFeatures.append(properties)
 
-            # Add kanton value to the list if it doesn't already exist
-            if row['Kanton'] != '' and row['Kanton'] not in kanton_list:
-                kanton_list.append(row['Kanton'])
-
             # Add service value to the list if it doesn't already exist
             if row['Service'] != '' and row['Service'] not in service_list:
                 service_list.append(row['Service'])
 
-            # Add gemeinde value to the list if it doesn't already exist
-            if row['Gemeinde'] != '' and row['Gemeinde'] not in gemeinde_list:
-                gemeinde_list.append(row['Gemeinde'])
     except Exception as e:
         print("Error occurred while processing the data:", str(e))
 
@@ -114,11 +137,13 @@ try:
 
     # Try to create a dictionary for the additional lists
     
+    
+
     try:
+        gemeinde_list = sorted(gemeinde_list, key=lambda x: x['Kanton'])
         additional_lists = {
-            'Kanton': sorted(kanton_list),
+            'Kanton': gemeinde_list,
             'Service': sorted(service_list),
-            'Gemeinde': sorted(gemeinde_list),
             'Last_modified': current_time
         }
     except Exception as e:

@@ -124,18 +124,8 @@ try:
     merged_df = pd.merge(df_from_csv_dienst, df_from_csv_vk, on='SLOID_dienst', how= 'outer')
     merged_df = pd.merge(merged_df, df_from_csv_prm, on='SLOID_prm', how= 'outer')
 
-    # Update status to 0 for rows with empty or null values in any column, except 
+    # Update status to 0 if Status is nan
     merged_df['Status'] = merged_df['Status'].fillna(0)
-    # 'Bezeichung', 'VEHICLE_ACCESS', 'Rollstuhl'
-    ##columns_to_drop = ['Bezeichung'] 
-    #columns_to_check = merged_df.columns.drop(columns_to_drop)
-    #merged_df.loc[merged_df[columns_to_check].isnull().any(axis=1), 'Status'] = 0
-
-    #merged_df.loc[(merged_df['VEHICLE_ACCESS'].isnull() | merged_df['VEHICLE_ACCESS'].eq('')) & (merged_df['Rollstuhl'].isnull() | merged_df['Rollstuhl'].eq('')), 'Status'] = 0
-    #merged_df.loc[~((merged_df['VEHICLE_ACCESS'].isnull() | merged_df['VEHICLE_ACCESS'].eq('')) & (merged_df['Rollstuhl'].isnull() | merged_df['Rollstuhl'].eq(''))), 'Status'] = 2
-    
-    #count_status_zero = (merged_df['Status'] == 0).sum()
-    #print("Count of rows with Status 0:", count_status_zero)
 
     # Create a new CSV file with the selected columns
     try:
