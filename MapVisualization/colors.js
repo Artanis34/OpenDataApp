@@ -1,6 +1,5 @@
 export const color = {
-  9:'lightgray',
-  1:'lightgreen',
+  2:'orange',
+  1:'green',
   0:'red',
-  99:'purple'
 }
