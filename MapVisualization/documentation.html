@@ -1,88 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-pzjw8FS+g7X8krrF5aK9+B9cFq8t5qcNr3ftjq9jBbK/P4DI9wF40i5p8BBt9tbj"
+        crossorigin="anonymous">
     <title>Visualisierung Barrierefreies Reisen Dok</title>
-    <style>
-        /* Add your CSS styles here */
-    </style>
 </head>
+
 <body>
-    <h1>Visualisierung Barrierefreies Reisen Dok</h1>
-    <h2>Beschreibung</h2>
-    <p>Visualisierung der Daten aller Haltestellen und Haltekanten der Schweizer Transportunternehmen, die vom BAV aufgefordert sind, die Zugänglichkeit zu erfassen.</p>
+    <div class="container">
+        <h1 class="mt-4">Visualisierung Barrierefreies Reisen Dok</h1>
 
-    <table>
-        <caption>Daten der Punkte</caption>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Ortschaft*</th>
-                <th>Gemeinde*</th>
-                <th>Kanton*</th>
-                <th>Verkehrsmittel</th>
-                <th>Rollstuhl*</th>
-                <th>Status</th>
-                <th>Service</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Name 1</td>
-                <td>Ortschaft 1</td>
-                <td>Gemeinde 1</td>
-                <td>Kanton 1</td>
-                <td>Verkehrsmittel 1</td>
-                <td>Rollstuhl 1</td>
-                <td>Status 1</td>
-                <td>Service 1</td>
-            </tr>
-            <!-- Add more rows as needed -->
-        </tbody>
-    </table>
+        <h2 class="mt-4">Beschreibung</h2>
+        <p>Visualisierung der Daten aller Haltestellen und Haltekanten der Schweizer Transportunternehmen, die vom BAV
+            aufgefordert sind, die Zugänglichkeit zu erfassen.</p>
 
-    <h2>Nutzen</h2>
-    <p>Diese Website soll hauptsächlich dem BAV dienen, um den Transportunternehmen konkrete Direktionen zu geben, welche Stellen und Kanten noch erfasst oder vervollständigt werden müssen.</p>
-    <p>Schlussendlich kann die Seite verwendet werden, um die Stellen und Kanten der Schweiz (und näherer Umgebung) auf einen Blick zu haben.</p>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Daten der Punkte</th>
+                        <th>Beschreibung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>Offizielle Bezeichnung einer Dienststelle, welche von sämtlichen Abnehmern übernommen
+                            werden muss.</td>
+                    </tr>
+                    <tr>
+                        <td>Ortschaft*</td>
+                        <td>Ortschaft, in welcher die Dienststelle liegt.</td>
+                    </tr>
+                    <tr>
+                        <td>Gemeinde*</td>
+                        <td>Name der Gemeinde, in welcher die Dienststelle liegt.</td>
+                    </tr>
+                    <tr>
+                        <td>Kanton*</td>
+                        <td>Name des Kantons, in welchem die Dienststelle liegt.</td>
+                    </tr>
+                    <tr>
+                        <td>Verkehrsmittel</td>
+                        <td>Art der Verkehrsmittel an der Dienststelle.</td>
+                    </tr>
+                    <tr>
+                        <td>Rollstuhl*</td>
+                        <td>Status, ob die Dienststelle rollstuhlgerecht ist.</td>
+                    </tr>
+                    <tr>
+                        <td>VEHICLE_ACCESS*</td>
+                        <td>Weitere Informationen zur Zugänglichkeit der Dienststelle.</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>Status über den Erfassungsstand der Dienststelle.</td>
+                    </tr>
+                    <tr>
+                        <td>Service</td>
+                        <td>Abkürzung der verantwortlichen Geschäftsorganisation.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <h2>Anwendung</h2>
-    <p>Die Seite funktioniert mit einfachem Zoomen des Nutzers. Die Punkte werden zu Beginn geladen und positioniert und werden je nach Zoom-Level geclustert angezeigt. Zoomt man zu seinem gewünschten Punkt nahe genug, sind die Informationen der einzelnen Punkte einfach ablesbar, wenn man mit der Maus darauf klickt.</p>
+        <h2 class="mt-4">Nutzen</h2>
+        <p>Diese Website soll hauptsächlich dem BAV dienen, um den Transportunternehmen konkrete Direktionen zu geben,
+            welche Stellen und Kanten noch erfasst oder vervollständigt werden müssen.</p>
+        <p>Schlussendlich kann die Seite verwendet werden, um die der Stellen und Kanten der Schweiz (und näherer Umgebung)
+            auf einen Blick zu haben.</p>
 
-    <ul>
-        <li>Filter:</li>
+        <h2 class="mt-4">Anwendung</h2>
+        <p>Die Seite funktioniert mit einfachem Zoomen des Nutzers. Die Punkte werden zu Beginn geladen und positioniert
+            und werden je nach Zoom-Level geclustert angezeigt. Zoomt man zu seinem gewünschten Punkt nahe genug, sind
+            die Informationen der einzelnen Punkte einfach ablesbar, wenn man mit der Maus darauf klickt.</p>
+
         <ul>
-            <li>Service (Transportunternehmen)</li>
-            <li>Status (Erfassungsstand)
+            <li>Filter:
                 <ul>
-                    <li>0: Daten nicht vollständig</li>
-                    <li>1: Daten vollständig</li>
+                    <li>Service (Transportunternehmen)</li>
+                    <li>Status (Erfassungsstand)
+                        <ul>
+                            <li>0: Daten nicht vollständig</li>
+                            <li>1: Daten vollständig</li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
+            <li>Wenn mehrere Punkte an derselben Stelle sind, kann man mit einem Mausklick das Cluster aufspalten und
+                dort die einzelnen Punkte anklicken.</li>
+            <li>Wenn für einen Punkt keine GeoDaten hinterlegt sind, werden diese stattdessen auf der rechten Seite unter
+                den Filtern angezeigt.</li>
         </ul>
-        <li>Wenn mehrere Punkte auf demselben Ort sind, kann man mit einem Mausklick das Cluster aufspalten und dort die einzelnen Punkte anklicken.</li>
-        <li>Wenn für einen Punkt keine Geodaten hinterlegt sind, werden diese stattdessen auf der rechten Seite unter den Filtern angezeigt.</li>
-    </ul>
 
-    <h2>Daten</h2>
-    <p>Die Daten sind OpenData <a href="https://opentransportdata.swiss/en/dataset/didok">DiDok</a> und werden automatisch (momentan per Permalink) um Mitternacht aktualisiert.</p>
+        <h2 class="mt-4">Daten</h2>
+        <p>Die Daten sind OpenData <a href="https://opentransportdata.swiss/en/dataset/didok">DiDok</a> und werden
+            automatisch (momentan per Permalink) um Mitternacht aktualisiert.</p>
 
-    <h2>Über diese App</h2>
-    <p>Diese App wurde im Rahmen der Bachelorvorlesung "Durchführung eines Open Data Projekts" der Forschungsstelle Digitale Nachhaltigkeit an der Universität Bern programmiert.</p>
-    <p>Für die Programmierung der App wurde die folgenden Bibliotheken verwendet:</p>
-    <ul>
-        <li><a href="https://pandas.pydata.org">pandas</a></li>
-        <li><a href="https://docs.python.org/3/library/os.html">os</a></li>
-        <li><a href="https://docs.python.org/3/library/json.html">JSON</a></li>
-        <li><a href="https://python-geojson.readthedocs.io/en/latest/">GeoJSON</a></li>
-    </ul>
-    <p>Der Source-Code ist auf <a href="https://github.com/Artanis34/OpenDataApp">Github</a> frei zugänglich.</p>
+        <h2 class="mt-4">Über diese App</h2>
+        <p>Diese App wurde im Rahmen der Bachelorvorlesung Durchführung eines Open Data Projekts der Forschungsstelle
+            Digitale Nachhaltigkeit an der Universität Bern programmiert.</p>
+        <p>Für die Programmierung der App wurde für</p>
+        <ul>
+            <li><a href="https://pandas.pydata.org">pandas</a></li>
+            <li><a href="https://docs.python.org/3/library/os.html">os</a></li>
+            <li><a href="https://docs.python.org/3/library/json.html">JSON</a></li>
+            <li><a href="https://python-geojson.readthedocs.io/en/latest/">GeoJSON</a></li>
+        </ul>
+        <p>verwendet.</p>
+        <p>Der Source-Code ist auf <a href="https://github.com/Artanis34/OpenDataApp">Github</a> frei zugänglich.</p>
 
-    <p><strong>Christian Gafner</strong><br>
-    Student BSc Computer Science, Universität Bern<br>
-    <a href="mailto:christian.gafner@students.unibe.ch">christian.gafner@students.unibe.ch</a></p>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p><strong>Christian Gafner</strong><br>Student BSc Computer Science, Universität Bern<br><a
+                        href="mailto:christian.gafner@students.unibe.ch">christian.gafner@students.unibe.ch</a></p>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Julien Chopin</strong><br>Student BSc Computer Science, Universität Bern<br><a
+                        href="mailto:julien.chopin@students.unibe.ch">julien.chopin@students.unibe.ch</a></p>
+            </div>
+        </div>
+    </div>
 
-    <p><strong>Julien Chopin</strong><br>
-    Student BSc Computer Science, Universität Bern<br>
-    <a href="mailto:julien.chopin@students.unibe.ch">julien.chopin@students.unibe.ch</a></p>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-BhWidW1HNXzIjjH+X6DhsCl/gIAwoJwq+6pB24gPq60+0FrhIyzmZixO2pQXcaIr"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
