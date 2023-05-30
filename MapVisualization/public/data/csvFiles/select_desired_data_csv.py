@@ -39,9 +39,9 @@ try:
     csv_path_vk = os.path.join(current_dir, "verkehrspunktelemente_actualdate.csv")
 
     # Set the columns to select from the CSV file
-    selected_columns_dienst = ['SLOID', 'GEMEINDENAME', 'LAENDERCODE', 'IS_HALTESTELLE', 'BEZEICHNUNG_OFFIZIELL', 'ORTSCHAFTSNAME', 'KANTONSNAME', 'E_WGS84', 'N_WGS84', 'GO_ABKUERZUNG_DE', 'BPVH_VERKEHRSMITTEL_TEXT_DE']
+    selected_columns_dienst = ['SLOID', 'GEMEINDENAME', 'LAENDERCODE', 'IS_HALTESTELLE', 'BEZEICHNUNG_OFFIZIELL', 'ORTSCHAFTSNAME', 'KANTONSNAME', 'GO_ABKUERZUNG_DE', 'BPVH_VERKEHRSMITTEL_TEXT_DE']
     selected_columns_prm = ['SLOID', 'STATUS', 'LEVEL_ACCESS_WHEELCHAIR', 'VALID_TO', 'VEHICLE_ACCESS']
-    selected_columns_vk = ['BEZEICHNUNG', 'DS_SLOID', 'SLOID']
+    selected_columns_vk = ['BEZEICHNUNG', 'DS_SLOID', 'SLOID', 'N_WGS84', 'E_WGS84']
 
     # Read the CSV file and select the specified columns
     try:
@@ -77,8 +77,7 @@ try:
         'ORTSCHAFTSNAME': 'Ortschaft',
         'GEMEINDENAME': 'Gemeinde',
         'KANTONSNAME': 'Kanton',
-        'E_WGS84': 'Longitude',
-        'N_WGS84': 'Latitude',
+        
         'GO_ABKUERZUNG_DE' : 'Service',
         'BPVH_VERKEHRSMITTEL_TEXT_DE': 'Verkehrsmittel',
         'SLOID': 'SLOID_dienst'
@@ -91,6 +90,8 @@ try:
     new_column_names_vk = {
         'SLOID': 'SLOID_prm',
         'DS_SLOID': 'SLOID_dienst',
+        'E_WGS84': 'Longitude',
+        'N_WGS84': 'Latitude',
         'BEZEICHNUNG': 'Bezeichung'
     }
 
