@@ -24,6 +24,7 @@ Usage:
 
 """
 
+from datetime import datetime
 import json
 import os
 import pandas as pd
@@ -31,6 +32,7 @@ import geojson
 
 # Try geoData.py
 try:
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     # Try reading CVS file
     try:
         # Get the current directory (where the Python file is located)
@@ -93,11 +95,11 @@ try:
                 kanton_list.append(row['Kanton'])
 
             # Add service value to the list if it doesn't already exist
-            if row['Service'] not in service_list:
+            if row['Service'] != '' and row['Service'] not in service_list:
                 service_list.append(row['Service'])
 
             # Add gemeinde value to the list if it doesn't already exist
-            if row['Gemeinde'] not in gemeinde_list:
+            if row['Gemeinde'] != '' and row['Gemeinde'] not in gemeinde_list:
                 gemeinde_list.append(row['Gemeinde'])
     except Exception as e:
         print("Error occurred while processing the data:", str(e))
@@ -109,11 +111,13 @@ try:
         print("Error occurred while creating the GeoJSON feature collection:", str(e))
 
     # Try to create a dictionary for the additional lists
+    
     try:
         additional_lists = {
             'Kanton': sorted(kanton_list),
             'Service': sorted(service_list),
-            'Gemeinde': sorted(gemeinde_list)
+            'Gemeinde': sorted(gemeinde_list),
+            'Last_modified': current_time
         }
     except Exception as e:
         print("Error occurred while creating the additional lists:", str(e))

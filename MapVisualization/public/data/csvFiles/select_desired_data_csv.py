@@ -118,8 +118,8 @@ try:
     df_from_csv_prm['VEHICLE_ACCESS'] = df_from_csv_prm['VEHICLE_ACCESS'].replace(replacement_mapping_VEHICLE_ACCESS)
 
     # Merge the DataFrames based on SLOIDs
-    merged_df = pd.merge(df_from_csv_dienst, df_from_csv_vk, on='SLOID_dienst', how='left')
-    merged_df = pd.merge(merged_df, df_from_csv_prm, on='SLOID_prm', how='right')
+    merged_df = pd.merge(df_from_csv_dienst, df_from_csv_vk, on='SLOID_dienst')
+    merged_df = pd.merge(merged_df, df_from_csv_prm, on='SLOID_prm')
 
     # Update status to 0 for empty rows
     #merged_df.loc[merged_df.isnull().any(axis=1), 'Status'] = 0
