@@ -64,7 +64,7 @@ try:
                     'Gemeinde': row['Gemeinde'],
                     'Kanton': row['Kanton'],
                     'Verkehrsmittel': row['Verkehrsmittel'],
-                    'Rollstuhl': row['Rollstuhl'],
+                    'Zugang zum Perron/Einstieg ins Fahrzeug': row['VEHICLE_ACCESS'],
                     'Status': row['Status'],
                     'Service': row['Service'],
                     'SLOID': row['SLOID_prm'],
@@ -80,10 +80,11 @@ try:
                     'Gemeinde': row['Gemeinde'],
                     'Kanton': row['Kanton'],
                     'Verkehrsmittel': row['Verkehrsmittel'],
-                    'Rollstuhl': row['Rollstuhl'],
+                    'Zugang zum Perron/Einstieg ins Fahrzeug': row['VEHICLE_ACCESS'],
                     'Status': row['Status'],
                     'Service': row['Service'],
-                    'SLOID': row['SLOID_prm']
+                    'SLOID': row['SLOID_prm'],
+                    'Bezeichnung': row['Bezeichnung'] + ' (' + row['Bezeichnung_Betrieblich'] + ')'
                 }
                 notFeatures.append(properties)
 
