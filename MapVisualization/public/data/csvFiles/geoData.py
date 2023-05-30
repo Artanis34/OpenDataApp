@@ -1,4 +1,7 @@
 """
+Script: geoData.py
+
+Description:
 This script reads a CSV file, processes the data, and creates a GeoJSON file and additional JSON files.
 
 Dependencies:
@@ -22,6 +25,8 @@ Usage:
 - Ensure that the 'merged_selected_columns.csv' file is in the same directory as this script.
 - Run the script to generate the GeoJSON and JSON files.
 
+Author: Julien Chopin
+Date: 31.05.2023
 """
 
 from datetime import datetime
@@ -89,8 +94,8 @@ try:
 
         # Iterate over every index
         for index, row in df_from_csv.iterrows():
-            if row['Longitude_dienst'] != '' and row['Latitude_dienst'] != '':
-                geometry = geojson.Point((row['Longitude_dienst'], row['Latitude_dienst']))
+            if row['Longitude'] != '' and row['Latitude'] != '':
+                geometry = geojson.Point((row['Longitude'], row['Latitude']))
                 properties = {
                     'Name': row['Name'],
                     'Ortschaft': row['Ortschaft'],

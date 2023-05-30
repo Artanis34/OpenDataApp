@@ -1,13 +1,15 @@
 """
-This script reads data from CSV files, performs data transformations, merges the data, and creates a new (merged_selected_columns.csv) file
-in the same directory as itself.
+Script: select_desired_data_csv.py
+
+Description:
+This script reads data from CSV files, performs data transformations, merges the data, and creates a new CSV file (merged_selected_columns.csv) in the same directory as itself.
 
 Dependencies:
 - os
 - pandas
 
 The script performs the following steps:
-1. Reads ['dienststellen_actualdate', 'prm_platforms', 'verkehrspunktelemente_actualdate']CSV files.
+1. Reads ['dienststellen_actualdate', 'prm_platforms', 'verkehrspunktelemente_actualdate'] CSV files.
 2. Selects specific columns from each CSV file.
 3. Renames columns for better readability.
 4. Filters rows based on specific conditions.
@@ -24,6 +26,8 @@ Usage:
 - Ensure that the required CSV files are present in the same directory as the script.
 - Run the script to perform the data processing steps and create a new CSV file.
 
+Author: Julien Chopin
+Date: 31.05.2023
 """
 
 import os
@@ -41,7 +45,7 @@ try:
     # Set the columns to select from the CSV file
     selected_columns_dienst = ['SLOID', 'GEMEINDENAME', 'LAENDERCODE', 'IS_HALTESTELLE', 'BEZEICHNUNG_OFFIZIELL', 'ORTSCHAFTSNAME', 'KANTONSNAME', 'GO_ABKUERZUNG_DE','N_WGS84', 'E_WGS84', 'BPVH_VERKEHRSMITTEL_TEXT_DE']
     selected_columns_prm = ['SLOID', 'STATUS', 'LEVEL_ACCESS_WHEELCHAIR', 'VALID_TO', 'VEHICLE_ACCESS']
-    selected_columns_vk = ['BEZEICHNUNG', 'DS_SLOID', 'SLOID', 'N_WGS84', 'E_WGS84']
+    selected_columns_vk = ['BEZEICHNUNG', 'DS_SLOID', 'SLOID']
 
     # Read the CSV file and select the specified columns
     try:
@@ -77,8 +81,8 @@ try:
         'ORTSCHAFTSNAME': 'Ortschaft',
         'GEMEINDENAME': 'Gemeinde',
         'KANTONSNAME': 'Kanton',
-        'E_WGS84': 'Longitude_dienst',
-        'N_WGS84': 'Latitude_dienst',
+        'E_WGS84': 'Longitude',
+        'N_WGS84': 'Latitude',
         'GO_ABKUERZUNG_DE' : 'Service',
         'BPVH_VERKEHRSMITTEL_TEXT_DE': 'Verkehrsmittel',
         'SLOID': 'SLOID_dienst'
@@ -91,8 +95,6 @@ try:
     new_column_names_vk = {
         'SLOID': 'SLOID_prm',
         'DS_SLOID': 'SLOID_dienst',
-        'E_WGS84': 'Longitude_vk',
-        'N_WGS84': 'Latitude_vk',
         'BEZEICHNUNG': 'Bezeichung'
     }
 

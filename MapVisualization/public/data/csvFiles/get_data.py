@@ -1,4 +1,7 @@
 """
+Script: get_data.py
+
+Description:
 This script downloads CSV files from the provided URLs using the requests library.
 
 Dependencies:
@@ -17,6 +20,8 @@ If any errors occur during the execution, appropriate error messages are printed
 Usage:
 - Run the script to download the required CSV files.
 
+Author: Julien Chopin
+Date: 31.05.2023
 """
 
 import requests

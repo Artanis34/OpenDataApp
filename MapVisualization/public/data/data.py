@@ -1,4 +1,7 @@
 """
+Script: data.py
+
+Description:
 Executes multiple Python scripts to perform data processing tasks.
 
 This function runs three Python scripts in separate processes to perform data processing tasks:
@@ -10,6 +13,9 @@ Each script is executed using `subprocess.run()` to run it in a separate process
 
 Raises:
     Exception: If an error occurs while executing any of the Python scripts.
+
+Author: Julien Chopin
+Date: 31.05.2023
 """
 
 import subprocess
