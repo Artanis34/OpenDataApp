@@ -15,8 +15,20 @@ Raises:
 import subprocess
 import os
 import schedule
+from datetime import datetime
 
 def data():
+    # Last modified:
+    # Get the current time
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Last modified: {current_time}")
+
+    # Write the start time to a text file
+    file_path = os.path.join(os.path.dirname(__file__), "execution_time.txt")
+    with open(file_path, "w") as file:
+        file.write(f"Last modified: {current_time}")
+
+    # Run pyhton files:
     # Get the current directory (where the Python file is located)
     directory_path = os.path.join(os.path.dirname(__file__), 'csvFiles')
 
@@ -40,6 +52,7 @@ def data():
         subprocess.run(['python', file_path], check=True)
     except Exception as e:
         print(f"An error occurred: {e}")
+
 
 data()
 # Update data everyday at midnight

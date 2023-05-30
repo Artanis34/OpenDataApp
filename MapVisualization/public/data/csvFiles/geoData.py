@@ -124,12 +124,12 @@ try:
         geojson_path = os.path.join(output_dir, geojson_file)
 
         # Set the output path for the kantonAndService.json file
-        json_file = "kantonAndService.json"
-        json_path_kAS = os.path.join(output_dir, json_file)
+        json_file_kAS = "kantonAndService.json"
+        json_path_kAS = os.path.join(output_dir, json_file_kAS)
 
         # Set the output path for the notFeatures.json file
-        json_file = "notFeatures.json"
-        json_path_nF = os.path.join(output_dir, json_file)
+        json_file_nF = "notFeatures.json"
+        json_path_nF = os.path.join(output_dir, json_file_nF)
     except Exception as e:
         print("Error occurred while setting the output paths:", str(e))
 

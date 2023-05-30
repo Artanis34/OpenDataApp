@@ -6,9 +6,11 @@ Visualisierung der Daten aller Haltestellen und Haltekanten der Schweizer Transp
 | - |- |
 | Name | Offizielle Bezeichnung einer Dienststelle welche von sämtlichen Abnehmern übernommen werden muss. |
 | Ortschaft* | Ortschaft in welcher die Dienststelle liegt. |
-| Status | Status über den Erfassungsstand der Dienststelle |
+| Gemeinde* | Name der Gemeinde in welcher die Dienststelle liegt. |
 | Kanton* | Name des Kantons in welcher die Dienststelle liegt. |
-| Dienststellen-ID | Nummer einer Dienststelle (Haltestelle) welche für die Schweiz von DiDok vergeben wird. Sie ist Teil des eineindeutigen Schlüssels für Dienststellen. |
+| Verkehrsmittel | Art der Verkehrsmittel an der Dienststelle. |
+| Rollstuhl* | Status ob Dienststelle Rollstuhl zugänglich ist. |
+| Status | Status über den Erfassungsstand der Dienststelle |
 | Service | Abkürzung der verantwortlichen Geschäftsorganisation. |
 
 *leer , falls keine Daten vorhanden.
@@ -24,7 +26,7 @@ Schlussendlich kann die Seite verwendet werden um die der Stellen und Kanten der
 
 ## Anwendung
 Die Seite funktioniert mit einfachen zoomen des Nutzers. Die Punkte werden zu Beginn geladen und positioniert und werden je nach Zoom-Level geclustert angezeigt. Zoomt man zu seinem gewünschten Punkt nahe genug, sind die Informationen der einzelnen Punkte 
-einfach ablesbar, wenn man mit der Maus drauf klickt.
+einfach ablesbar, wenn man mit der Maus darauf klickt.
 
 ---
 * Filter:
@@ -38,14 +40,22 @@ einfach ablesbar, wenn man mit der Maus drauf klickt.
 ---
 
 ## Daten
-Die Daten sind OpenData und werden per API wöchentlich aktualisiert... **TO DO**
+Die Daten sind OpenData [DiDok](https://opentransportdata.swiss/en/dataset/didok) und werden automatisch (momentan per Permalink) um Mitternacht aktualisiert. 
 
 ---
 
 ## Über diese App
 Diese App wurde im Rahmen der Bachelorvorlesung Durchführung eines Open Data Projekts der Forschungsstelle Digitale Nachhaltigkeit an der Universität Bern programmiert.
 
-Für die Programmierung der App wurde [Pandas](https://pandas.pydata.org),.... **TO DO**
+Für die Programmierung der App wurde für
+| Data | Website |
+| - |- |
+| [pandas](https://pandas.pydata.org) | Website |
+| [os](https://docs.python.org/3/library/os.html) | Website |
+| [JSON](https://docs.python.org/3/library/json.html) | Website |
+| [GeoJSON](https://python-geojson.readthedocs.io/en/latest/) | Website |
+
+verwendet.
 
 Der Source-Code ist auf [Github](https://github.com/Artanis34/OpenDataApp) frei zugänglich.
 
