@@ -130,49 +130,6 @@ try:
             # Add service value to the list if it doesn't already exist
             if row['Kanton'] != '' and row['Kanton'] not in kanton_list:
                 kanton_list.append(row['Kanton'])
-            
-        for index, row in df_from_csv.iterrows():
-            if row['Longitude_vk'] != '' and row['Latitude_vk'] != '':
-                geometry = geojson.Point((row['Longitude_vk'], row['Latitude_vk']))
-                properties = {
-                    'Name': row['Name'],
-                    'Ortschaft': row['Ortschaft'],
-                    'Gemeinde': row['Gemeinde'],
-                    'Kanton': row['Kanton'],
-                    'Verkehrsmittel': row['Verkehrsmittel'],
-                    'Rollstuhl': row['Rollstuhl'],
-                    'Zugang zum Perron/Einstieg ins Fahrzeug': row['VEHICLE_ACCESS'],
-                    'Status': row['Status'],
-                    'Service': row['Service'],
-                    'SLOID': row['SLOID_prm'],
-                    'Bezeichnung': row['Bezeichung']
-                }
-                feature = geojson.Feature(geometry=geometry, properties=properties)
-                features.append(feature)
-            else:
-                # Add properties to the separate JSON file for entries with missing longitude and/or latitude
-                properties = {
-                    'Name': row['Name'],
-                    'Ortschaft': row['Ortschaft'],
-                    'Gemeinde': row['Gemeinde'],
-                    'Kanton': row['Kanton'],
-                    'Verkehrsmittel': row['Verkehrsmittel'],
-                    'Rollstuhl': row['Rollstuhl'],
-                    'Zugang zum Perron/Einstieg ins Fahrzeug': row['VEHICLE_ACCESS'],
-                    'Status': row['Status'],
-                    'Service': row['Service'],
-                    'SLOID': row['SLOID_prm'],
-                    'Bezeichnung': row['Bezeichung']
-                }
-                notFeatures.append(properties)
-
-            # Add service value to the list if it doesn't already exist
-            if row['Service'] != '' and row['Service'] not in service_list:
-                service_list.append(row['Service'])
-
-            # Add service value to the list if it doesn't already exist
-            if row['Kanton'] != '' and row['Kanton'] not in kanton_list:
-                kanton_list.append(row['Kanton'])
 
     except Exception as e:
         print("Error occurred while processing the data:", str(e))
