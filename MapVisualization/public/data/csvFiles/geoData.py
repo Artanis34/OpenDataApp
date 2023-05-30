@@ -66,7 +66,8 @@ try:
                     'Verkehrsmittel': row['Verkehrsmittel'],
                     'Rollstuhl': row['Rollstuhl'],
                     'Status': row['Status'],
-                    'Service': row['Service']
+                    'Service': row['Service'],
+                    'SLOID': row['SLOID_dienst']
                 }
                 feature = geojson.Feature(geometry=geometry, properties=properties)
                 features.append(feature)
@@ -80,7 +81,8 @@ try:
                     'Verkehrsmittel': row['Verkehrsmittel'],
                     'Rollstuhl': row['Rollstuhl'],
                     'Status': row['Status'],
-                    'Service': row['Service']
+                    'Service': row['Service'],
+                    'SLOID': row['SLOID_dienst']
                 }
                 notFeatures.append(properties)
 
@@ -93,7 +95,7 @@ try:
                 service_list.append(row['Service'])
 
             # Add gemeinde value to the list if it doesn't already exist
-            if row['Gemeinde'] not in service_list:
+            if row['Gemeinde'] not in gemeinde_list:
                 gemeinde_list.append(row['Gemeinde'])
     except Exception as e:
         print("Error occurred while processing the data:", str(e))

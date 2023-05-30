@@ -40,7 +40,7 @@ try:
 
     # Set the columns to select from the CSV file
     selected_columns_dienst = ['SLOID', 'GEMEINDENAME', 'LAENDERCODE', 'IS_HALTESTELLE', 'BEZEICHNUNG_OFFIZIELL', 'ORTSCHAFTSNAME', 'KANTONSNAME', 'E_WGS84', 'N_WGS84', 'GO_ABKUERZUNG_DE', 'BPVH_VERKEHRSMITTEL_TEXT_DE']
-    selected_columns_prm = ['SLOID', 'STATUS', 'LEVEL_ACCESS_WHEELCHAIR', 'VALID_TO']
+    selected_columns_prm = ['SLOID', 'STATUS', 'LEVEL_ACCESS_WHEELCHAIR', 'VALID_TO', 'VEHICLE_ACCESS']
     selected_columns_vk = ['BEZEICHNUNG', 'BEZEICHNUNG_BETRIEBLICH', 'DS_SLOID', 'SLOID']
 
     # Read the CSV file and select the specified columns
@@ -80,11 +80,13 @@ try:
         'E_WGS84': 'Longitude',
         'N_WGS84': 'Latitude',
         'GO_ABKUERZUNG_DE' : 'Service',
-        'BPVH_VERKEHRSMITTEL_TEXT_DE': 'Verkehrsmittel'
+        'BPVH_VERKEHRSMITTEL_TEXT_DE': 'Verkehrsmittel',
+        'SLOID': 'SLOID_dienst'
     }
     new_column_names_prm = {
         'STATUS': 'Status',
-        'LEVEL_ACCESS_WHEELCHAIR': 'Rollstuhl'
+        'LEVEL_ACCESS_WHEELCHAIR': 'Rollstuhl',
+        'SLOID': 'SLOID_prm'
     }
     new_column_names_vk = {
         'SLOID': 'SLOID_prm',
@@ -107,12 +109,18 @@ try:
     # Remove the tilde (~) characters from 'BPVH_VERKEHRSMITTEL_TEXT_DE' column
     df_from_csv_dienst['Verkehrsmittel'] = df_from_csv_dienst['Verkehrsmittel'].str.replace('~', '')
     # Handle LEVEL_ACCESS_WHEELCHAIR entries, [0 & '' -> Zu vervollständigen, 1 -> Ja, 2 -> Nein]
-    replacement_mapping = {0: '', 1: 'Yes', 2: 'No'}
-    df_from_csv_prm['Rollstuhl'] = df_from_csv_prm['Rollstuhl'].fillna(0).replace(replacement_mapping)
+    replacement_mapping_Rollstuhl = {0: '', 1: 'Yes', 2: 'No'}
+    df_from_csv_prm['Rollstuhl'] = df_from_csv_prm['Rollstuhl'].fillna(0).replace(replacement_mapping_Rollstuhl)
+    # Handle VEHICLE_ACCESS entries, [0 & '' -> Zu vervollständigen, 1 -> Ja, 2 -> Nein]
+    replacement_mapping_VEHICLE_ACCESS = {0: '', 11: 'Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.',
+                                           12: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.',
+                                             13: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.',
+                                               14: 'Für Rollstühle nicht benutzbar.'}
+    df_from_csv_prm['VEHICLE_ACCESS'] = df_from_csv_prm['VEHICLE_ACCESS'].fillna(0).replace(replacement_mapping_VEHICLE_ACCESS)
 
     # Merge the DataFrames based on SLOIDs
-    merged_df = pd.merge(df_from_csv_dienst, df_from_csv_vk, left_on='SLOID', right_on='SLOID_dienst', how='left')
-    merged_df = pd.merge(merged_df, df_from_csv_prm, left_on='SLOID_prm', right_on='SLOID', how='right')
+    merged_df = pd.merge(df_from_csv_dienst, df_from_csv_vk, on='SLOID_dienst', how='left')
+    merged_df = pd.merge(merged_df, df_from_csv_prm, on='SLOID_prm', how='right')
 
     # Update status to 0 for empty rows
     merged_df.loc[merged_df.isnull().any(axis=1), 'Status'] = 0
