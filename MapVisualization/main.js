@@ -46,7 +46,7 @@ legend.onAdd = function(map) {
   div.innerHTML += "<h4>Legende</h4>";
   div.innerHTML += '<i style="background: red"></i><span>Unvollständig</span><br>';
   div.innerHTML += '<i style="background: green"></i><span>Erfasst</span><br>';
-  div.innerHTML += 'Data Timestamp: <b id="timestamp">Unknown</b>';
+  div.innerHTML += 'Datenstand: <b id="timestamp">Unknown</b>';
   return div;
 };
 
@@ -68,7 +68,7 @@ var markers = L.DonutCluster(
         showCoverageOnHover: false,
         zoomToBoundsOnClick: true,
         reremoveOutsideVisibleBoundsmoveOut: true,
-        disableClusteringAtZoom: 18,
+        disableClusteringAtZoom: 19,
 
     },
     // The second parameter is the donut cluster's configuration.
@@ -79,13 +79,13 @@ var markers = L.DonutCluster(
         // Mandotary, the arc color for each donut section.
         // If array of colors will loop over it to pick color of each section sequentially.
         arcColorDict: colors.color,
-        hideLegend: false,
+        hideLegend: true,
         textClassName: 'donut-text',
         // Optional, the style of the donut
         style: {
             size: 60,
             fill: 'white',
-            opacity: 1,
+            opacity: .8,
             weight: 3 
         },
         // Function used to customize legend output
@@ -120,7 +120,7 @@ function loadMarkers() {
 
         //dataArray[feature.properties.status] += 1;
 
-        var label = '<h4>' + feature.properties.Name + '<br>' + feature.properties.Verkehrsmittel +' (' + feature.properties.Bezeichnung + ')</h4>';
+        var label = '<h4>' + feature.properties.Name + '<br>' + feature.properties.Verkehrsmittel +' ' + feature.properties.Bezeichnung + '</h4>';
             label += feature.properties.Service + '<br>';
             label += latlng.lat + ', ' + latlng.lng + '<br>';
 
@@ -131,11 +131,10 @@ function loadMarkers() {
 
         pMarker = new DataCircleMarker(latlng, {
           title: feature.properties.Name,
-          radius: 11,
+          radius: 12,
           color: '#FFFFFF',
           weight: 2,
           fillOpacity: 0.5,
-          //riseOnHover: true,
           status: feature.properties.Status,
           fillColor: colors.color[feature.properties.Status],
           data: feature,
@@ -152,15 +151,21 @@ function loadMarkers() {
     markers.on('clusterclick', function(a) {
       console.log('Cluster Clicked:' + a);
       console.log(a);
-      a.layer.getAllChildMarkers().forEach(element => {
+      /* a.layer.getAllChildMarkers().forEach(element => {
         //console.log(element);
-        //element.setZIndexOffset(1000);
-      });
+      }); */
     });
     markers.on('click', function(a) {
       console.log('Marker Clicked:' + a);
       updateSelectionView(a);
     });
+
+    /* markers.on('spiderfied', function (e) {
+      console.log(e);
+      e.markers.forEach(function (marker) {
+        marker.setZIndexOffset(1000)
+      });
+    }); */
 
     /*markers.on('clustermouseover', function(a) {
       
@@ -309,7 +314,7 @@ function reloadMap() {
 function updateSelectionView(marker) {
 
   if (marker == null) {
-    document.getElementById('selectionView').innerHTML = 'No Selection';
+    document.getElementById('selectionView').innerHTML = '<i>Select a marker to show Info</i>';
     return;
   }
 
@@ -320,13 +325,7 @@ function updateSelectionView(marker) {
   if (selection != null) {
     var outputString = "";
     for (var key in selection.properties) {
-      outputString += key + ": ";
-      if (selection.properties[key] == 99) {
-        outputString += 'NaN';
-      } else {
-        outputString += selection.properties[key];
-      }
-      outputString += "<br>";
+      outputString += key + ": " + selection.properties[key] + "<br>";
     }
     document.getElementById('selectionView').innerHTML = outputString;
   }

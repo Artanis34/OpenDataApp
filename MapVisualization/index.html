@@ -16,21 +16,21 @@
     <title>MapVisualization App</title>
   </head>
   <body">
-    <div id="app">
+    <div id="app" class="container-fluid px-3">
       <div class="toggles">
         <div class="container-fluid fixed-top bg-secondary check-contrast">
             <div class="row">
                 <div class="col-xl-9 col-lg-11 container-alt mx-auto">
-                    <nav class="navbar navbar-expand-xl toggles-ignore px-0 py-1 text-dark navbar-light" id="topnav">
-                        <a class="navbar-brand me-2 mb-1" href="./" title="Map"><span><b>Visialization</b></span>.app</a>
+                    <nav class="navbar navbar-expand-xl toggles-ignore px-3 py-1 text-dark navbar-light" id="topnav">
+                        <a class="navbar-brand me-2 mb-1" href="./" title="Map"><span><b>Barrierefreies Reisen</b></span>.app</a>
                         <div class="navbar-nav d-none d-xl-block">
                             <a class="nav-link pl-0 me-1" href="#" target="ext" rel="nofollow">
-                                for Pipapo
+                                Erfassung der Barrierefreiheit im Öffentlichen Verkehr
                             </a>
                         </div>
                         <div class="collapse navbar-collapse navbar-dual">
                             <div class="navbar-nav small text-uppercase ms-auto">
-                                <a class="nav-link font-weight-bold" href="#modalAbout" data-bs-toggle="modal">
+                                <a class="nav-link font-weight-bold" target="_blank" href="./documentation.html" data-bs-toggle="modal">
                                 About
                                 </a>
                             </div>
@@ -44,11 +44,13 @@
 
       <div class="conatiner horizontal mt-lg-5 p-1">
         <div class="left p-2">
+          <h4>Filter</h4>
+
           Service: 
           <select name="Service" id="Service">
             <option value="">All</option>
           </select><br>
-          Canton: 
+          Kanton: 
           <select name="Kanton" id="Kanton">
             <option value="">All</option>
           </select><br>
@@ -65,13 +67,14 @@
           OpenRailMap
           <input type="checkbox" id="showOpenRailMap" name="showOpenRailMap"><br>
           <div class="container">
-            <svg class="chart" width="100%" height="100%"></svg> 
+            <!-- <svg class="chart" width="100%" height="100%"></svg>  -->
           </div>
         </div>
         <div class="map">
           <div id="mapid"></div>
         </div>
         <div class="right p-2">
+          <h4>Inspector</h4>
           <div id="selectionView">No Point selected<br>
           </div>
         </div>

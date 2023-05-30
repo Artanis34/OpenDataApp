@@ -2,8 +2,8 @@ export function drawChart(status) {
 
     // Step 3
     var svg = d3.select(".chart"),
-    width = svg.width,
-    height = svg.height,
+    width = svg.attr("width"),
+    height = svg.attr("height"),
     radius = 100;
     
     svg.append('asd');
