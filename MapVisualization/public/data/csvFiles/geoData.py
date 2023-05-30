@@ -68,7 +68,7 @@ try:
                     'Status': row['Status'],
                     'Service': row['Service'],
                     'SLOID': row['SLOID_prm'],
-                    'Bezeichnung': row['Bezeichnung'] + ' (' + row['Bezeichnung_Betrieblich'] + ')'
+                    'Bezeichnung': row['Bezeichung'] + ' (' + row['Bezeichnung_Betrieblich'] + ')'
                 }
                 feature = geojson.Feature(geometry=geometry, properties=properties)
                 features.append(feature)
@@ -84,7 +84,7 @@ try:
                     'Status': row['Status'],
                     'Service': row['Service'],
                     'SLOID': row['SLOID_prm'],
-                    'Bezeichnung': row['Bezeichnung'] + ' (' + row['Bezeichnung_Betrieblich'] + ')'
+                    'Bezeichnung': row['Bezeichung'] + ' (' + row['Bezeichnung_Betrieblich'] + ')'
                 }
                 notFeatures.append(properties)
 
