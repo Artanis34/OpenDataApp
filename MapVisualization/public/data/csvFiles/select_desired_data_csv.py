@@ -108,19 +108,21 @@ try:
     # Remove the tilde (~) characters from 'BPVH_VERKEHRSMITTEL_TEXT_DE' column
     df_from_csv_dienst['Verkehrsmittel'] = df_from_csv_dienst['Verkehrsmittel'].str.replace('~', '')
     # Handle LEVEL_ACCESS_WHEELCHAIR entries, [0 & '' -> Zu vervollständigen, 1 -> Ja, 2 -> Nein]
-    replacement_mapping_Rollstuhl = {0: None, 1: 'Ja', 2: 'Nein', 3: 'Nich anwendbar', 4: 'Teilweise'}
+    replacement_mapping_Rollstuhl = {0: None, 
+                                     1: 'Ja', 
+                                     2: 'Nein'}
     df_from_csv_prm['Rollstuhl'] = df_from_csv_prm['Rollstuhl'].fillna(0).replace(replacement_mapping_Rollstuhl)
     # Handle VEHICLE_ACCESS entries
     replacement_mapping_VEHICLE_ACCESS = {0: None, 
-                                          11: 'Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.',
-                                           12: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.',
-                                             13: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.',
-                                               14: 'Für Rollstühle nicht benutzbar.'}
+                                          11: 'Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.', 
+                                          12: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.', 
+                                          13: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.', 
+                                          14: 'Für Rollstühle nicht benutzbar.'}
     df_from_csv_prm['VEHICLE_ACCESS'] = df_from_csv_prm['VEHICLE_ACCESS'].fillna(0).replace(replacement_mapping_VEHICLE_ACCESS)
 
     # Merge the DataFrames based on SLOIDs
-    merged_df = pd.merge(df_from_csv_dienst, df_from_csv_vk, on='SLOID_dienst')
-    merged_df = pd.merge(merged_df, df_from_csv_prm, on='SLOID_prm')
+    merged_df = pd.merge(df_from_csv_dienst, df_from_csv_vk, on='SLOID_dienst', how= 'outer')
+    merged_df = pd.merge(merged_df, df_from_csv_prm, on='SLOID_prm', how= 'outer')
 
     # Update status to 0 for rows with empty or null values in any column, except 
     # 'Bezeichung', 'VEHICLE_ACCESS', 'Rollstuhl'
@@ -130,8 +132,11 @@ try:
 
     merged_df.loc[(merged_df['VEHICLE_ACCESS'].isnull() | merged_df['VEHICLE_ACCESS'].eq('')) & (merged_df['Rollstuhl'].isnull() | merged_df['Rollstuhl'].eq('')), 'Status'] = 0
     merged_df.loc[~((merged_df['VEHICLE_ACCESS'].isnull() | merged_df['VEHICLE_ACCESS'].eq('')) & (merged_df['Rollstuhl'].isnull() | merged_df['Rollstuhl'].eq(''))), 'Status'] = 1
+    
+    #count_status_zero = (merged_df['Status'] == 0).sum()
+    #print("Count of rows with Status 0:", count_status_zero)
 
-    # Create a new CSV file with the selected columns (with error handling)
+    # Create a new CSV file with the selected columns
     try:
         new_csv_file_merged = "merged_selected_columns.csv"
         new_csv_path_merged = os.path.join(current_dir, new_csv_file_merged)
