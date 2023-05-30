@@ -109,14 +109,14 @@ try:
     # Remove the tilde (~) characters from 'BPVH_VERKEHRSMITTEL_TEXT_DE' column
     df_from_csv_dienst['Verkehrsmittel'] = df_from_csv_dienst['Verkehrsmittel'].str.replace('~', '')
     # Handle LEVEL_ACCESS_WHEELCHAIR entries, [0 & '' -> Zu vervollständigen, 1 -> Ja, 2 -> Nein]
-    replacement_mapping_Rollstuhl = {0: '', 1: 'Yes', 2: 'No'}
-    df_from_csv_prm['Rollstuhl'] = df_from_csv_prm['Rollstuhl'].fillna(0).replace(replacement_mapping_Rollstuhl)
-    # Handle VEHICLE_ACCESS entries, [0 & '' -> Zu vervollständigen, 1 -> Ja, 2 -> Nein]
-    replacement_mapping_VEHICLE_ACCESS = {0: '', 11: 'Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.',
+    replacement_mapping_Rollstuhl = {0: None, 1: 'Yes', 2: 'No'}
+    df_from_csv_prm['Rollstuhl'] = df_from_csv_prm['Rollstuhl'].replace(replacement_mapping_Rollstuhl)
+    # Handle VEHICLE_ACCESS entries
+    replacement_mapping_VEHICLE_ACCESS = {0: None, 11: 'Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.',
                                            12: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.',
                                              13: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.',
                                                14: 'Für Rollstühle nicht benutzbar.'}
-    df_from_csv_prm['VEHICLE_ACCESS'] = df_from_csv_prm['VEHICLE_ACCESS'].fillna(0).replace(replacement_mapping_VEHICLE_ACCESS)
+    df_from_csv_prm['VEHICLE_ACCESS'] = df_from_csv_prm['VEHICLE_ACCESS'].replace(replacement_mapping_VEHICLE_ACCESS)
 
     # Merge the DataFrames based on SLOIDs
     merged_df = pd.merge(df_from_csv_dienst, df_from_csv_vk, on='SLOID_dienst', how='left')
