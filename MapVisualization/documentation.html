@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Visualisierung Barrierefreies Reisen Dok</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <h1>Visualisierung Barrierefreies Reisen Dok</h1>
+    <h2>Beschreibung</h2>
+    <p>Visualisierung der Daten aller Haltestellen und Haltekanten der Schweizer Transportunternehmen, die vom BAV aufgefordert sind, die Zugänglichkeit zu erfassen.</p>
+
+    <table>
+        <caption>Daten der Punkte</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Ortschaft*</th>
+                <th>Gemeinde*</th>
+                <th>Kanton*</th>
+                <th>Verkehrsmittel</th>
+                <th>Rollstuhl*</th>
+                <th>Status</th>
+                <th>Service</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name 1</td>
+                <td>Ortschaft 1</td>
+                <td>Gemeinde 1</td>
+                <td>Kanton 1</td>
+                <td>Verkehrsmittel 1</td>
+                <td>Rollstuhl 1</td>
+                <td>Status 1</td>
+                <td>Service 1</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+    <h2>Nutzen</h2>
+    <p>Diese Website soll hauptsächlich dem BAV dienen, um den Transportunternehmen konkrete Direktionen zu geben, welche Stellen und Kanten noch erfasst oder vervollständigt werden müssen.</p>
+    <p>Schlussendlich kann die Seite verwendet werden, um die Stellen und Kanten der Schweiz (und näherer Umgebung) auf einen Blick zu haben.</p>
+
+    <h2>Anwendung</h2>
+    <p>Die Seite funktioniert mit einfachem Zoomen des Nutzers. Die Punkte werden zu Beginn geladen und positioniert und werden je nach Zoom-Level geclustert angezeigt. Zoomt man zu seinem gewünschten Punkt nahe genug, sind die Informationen der einzelnen Punkte einfach ablesbar, wenn man mit der Maus darauf klickt.</p>
+
+    <ul>
+        <li>Filter:</li>
+        <ul>
+            <li>Service (Transportunternehmen)</li>
+            <li>Status (Erfassungsstand)
+                <ul>
+                    <li>0: Daten nicht vollständig</li>
+                    <li>1: Daten vollständig</li>
+                </ul>
+            </li>
+        </ul>
+        <li>Wenn mehrere Punkte auf demselben Ort sind, kann man mit einem Mausklick das Cluster aufspalten und dort die einzelnen Punkte anklicken.</li>
+        <li>Wenn für einen Punkt keine Geodaten hinterlegt sind, werden diese stattdessen auf der rechten Seite unter den Filtern angezeigt.</li>
+    </ul>
+
+    <h2>Daten</h2>
+    <p>Die Daten sind OpenData <a href="https://opentransportdata.swiss/en/dataset/didok">DiDok</a> und werden automatisch (momentan per Permalink) um Mitternacht aktualisiert.</p>
+
+    <h2>Über diese App</h2>
+    <p>Diese App wurde im Rahmen der Bachelorvorlesung "Durchführung eines Open Data Projekts" der Forschungsstelle Digitale Nachhaltigkeit an der Universität Bern programmiert.</p>
+    <p>Für die Programmierung der App wurde die folgenden Bibliotheken verwendet:</p>
+    <ul>
+        <li><a href="https://pandas.pydata.org">pandas</a></li>
+        <li><a href="https://docs.python.org/3/library/os.html">os</a></li>
+        <li><a href="https://docs.python.org/3/library/json.html">JSON</a></li>
+        <li><a href="https://python-geojson.readthedocs.io/en/latest/">GeoJSON</a></li>
+    </ul>
+    <p>Der Source-Code ist auf <a href="https://github.com/Artanis34/OpenDataApp">Github</a> frei zugänglich.</p>
+
+    <p><strong>Christian Gafner</strong><br>
+    Student BSc Computer Science, Universität Bern<br>
+    <a href="mailto:christian.gafner@students.unibe.ch">christian.gafner@students.unibe.ch</a></p>
+
+    <p><strong>Julien Chopin</strong><br>
+    Student BSc Computer Science, Universität Bern<br>
+    <a href="mailto:julien.chopin@students.unibe.ch">julien.chopin@students.unibe.ch</a></p>
+</body>
+</html>

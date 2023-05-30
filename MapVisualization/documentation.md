@@ -10,6 +10,7 @@ Visualisierung der Daten aller Haltestellen und Haltekanten der Schweizer Transp
 | Kanton* | Name des Kantons in welcher die Dienststelle liegt. |
 | Verkehrsmittel | Art der Verkehrsmittel an der Dienststelle. |
 | Rollstuhl* | Status ob Dienststelle Rollstuhl zugänglich ist. |
+| VEHICLE_ACCESS* | Mehr Informationen wie die Dienststelle zugänglich ist. |
 | Status | Status über den Erfassungsstand der Dienststelle |
 | Service | Abkürzung der verantwortlichen Geschäftsorganisation. |
 
@@ -34,7 +35,6 @@ einfach ablesbar, wenn man mit der Maus darauf klickt.
     - Status (Erfassungsstand)
         - 0 : Daten nicht vollständig
         - 1 : Daten vollständig
-        - ***9 : keine Daten/SLOID
 * Wenn mehrer Punkte auf demselben Ort sind kann man mit einem Mausklick das Cluster aufspalten und dort die einzelnen Punkte, dann anklicken.
 * Wenn für ein Punkt keine GeoDaten hinterlegt sind, werden diese statdessen auf der rechten Seite unter den Filtern angezeigt.
 ---
