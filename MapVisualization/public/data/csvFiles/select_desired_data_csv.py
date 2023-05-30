@@ -108,7 +108,7 @@ try:
     # Remove the tilde (~) characters from 'BPVH_VERKEHRSMITTEL_TEXT_DE' column
     df_from_csv_dienst['Verkehrsmittel'] = df_from_csv_dienst['Verkehrsmittel'].str.replace('~', '')
     # Handle LEVEL_ACCESS_WHEELCHAIR entries, [0 & '' -> Zu vervollständigen, 1 -> Ja, 2 -> Nein]
-    replacement_mapping_Rollstuhl = {0: None, 1: 'Yes', 2: 'No'}
+    replacement_mapping_Rollstuhl = {0: None, 1: 'Ja', 2: 'Nein', 3: 'Nich anwendbar', 4: 'Teilweise'}
     df_from_csv_prm['Rollstuhl'] = df_from_csv_prm['Rollstuhl'].fillna(0).replace(replacement_mapping_Rollstuhl)
     # Handle VEHICLE_ACCESS entries
     replacement_mapping_VEHICLE_ACCESS = {0: None, 
