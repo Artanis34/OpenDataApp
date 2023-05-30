@@ -68,7 +68,7 @@ try:
                     'Status': row['Status'],
                     'Service': row['Service'],
                     'SLOID': row['SLOID_prm'],
-                    'Bezeichung': row['Bezeichung'] + row['Bezeichnung_Betrieblich']
+                    'Bezeichung': row['Bezeichung'] + ' (' + row['Bezeichnung_Betrieblich'] + ')'
                 }
                 feature = geojson.Feature(geometry=geometry, properties=properties)
                 features.append(feature)
