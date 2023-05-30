@@ -1,15 +1,15 @@
 LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude,Latitude,Verkehrsmittel,Service,SLOID_prm,Bezeichung,Status,Rollstuhl,VEHICLE_ACCESS,VALID_TO
 85.0,ch:1:sloid:90101,"Wabern, Morillon",1.0,Wabern,Köniz,Bern,7.44349124339,46.92989904126,Bus,SVB Auto,ch:1:sloid:90101:0:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:90088,"Ostermundigen, Milchstrasse",1.0,Ostermundigen,Ostermundigen,Bern,7.48285625399,46.96057349322,Bus,SVB Auto,ch:1:sloid:90088:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:76646:0:17,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:76646:0:17,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76646,"Bern, Bahnhof",1.0,Bern,Bern,Bern,7.44020872063,46.94810537156,BusTram,SVB Auto,ch:1:sloid:76646:0:28,G,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89267,"Köniz, Stapfen Friedhof",1.0,Köniz,Köniz,Bern,7.41933379852,46.92065923441,Bus,SVB Auto,ch:1:sloid:89267:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90129,"Bern Wankdorf, Bahnhof",1.0,Bern,Bern,Bern,7.46438638449,46.96659673983,BusTram,SVB Auto,ch:1:sloid:90129:0:2,C,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89514,"Münsingen, Friedhof",1.0,Münsingen,Münsingen,Bern,7.55869907373,46.88114582926,Bus,SVB/kmb,ch:1:sloid:89514:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:88703,"Belp, Bützacker",1.0,Belp,Belp,Bern,7.51859432986,46.89018484313,Bus,SVB/kmb,ch:1:sloid:88703:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:90116,"Belp, Greulebach",1.0,Belp,Belp,Bern,7.50554165802,46.88190847102,Bus,SVB/kmb,ch:1:sloid:90116:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:79021:0:2,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:78929:0:2,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:79021:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:78929:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78954,"Münsingen, PZM",1.0,Münsingen,Münsingen,Bern,7.55397322248,46.8797383948,Bus,SVB Auto,ch:1:sloid:78954:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:71629,"Mühledorf BE, Rüsch",1.0,Mühledorf BE,Kirchdorf (BE),Bern,7.53655900599,46.83294286962,Bus,SVB Auto,ch:1:sloid:71629:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:88904,"Belp, Aemmenmatt",1.0,Belp,Belp,Bern,7.50480413157,46.90118574407,Bus,SVB/kmb,ch:1:sloid:88904:0:3,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -24,9 +24,9 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:87877,"Thun, Schorenstrasse",1.0,Gwatt (Thun),Thun,Bern,7.62042602403,46.7334864804,Bus,STI,ch:1:sloid:87877:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:88805,"Samedan, Sper l'En",1.0,Samedan,Samedan,Graubünden,9.8701942685,46.5311883351,Bus,BuS/eb,ch:1:sloid:88805::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:6899,"Winterthur, Hauptbahnhof",1.0,Winterthur,Winterthur,Zürich,8.72370375026,47.49973060637,Bus,SBW,ch:1:sloid:6899::22,E,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:3167::50,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:76024::50,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:3898::51,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:3167::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:76024::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:3898::51,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:76230,"Wiesendangen, Dorf",1.0,Wiesendangen,Wiesendangen,Zürich,8.79029881021,47.52116514176,Bus,SBW,ch:1:sloid:76230::51,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91123,"Zürich, ETH/Universitätsspital",1.0,Zürich,Zürich,Zürich,8.54823672079,47.37728902588,BusTram,VBZ,ch:1:sloid:91123::0,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91135,"Zürich, Förrlibuckstrasse",1.0,Zürich,Zürich,Zürich,8.51715520854,47.3922108759,BusTram,VBZ,ch:1:sloid:91135::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -70,8 +70,8 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:76393,"Biel/Bienne, Altstadt/V. Ville",1.0,Biel/Bienne,Biel/Bienne,Bern,7.24459436927,47.14031616645,Bus,VB,ch:1:sloid:76393:0:01,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:8366,Trübsee,1.0,Engelberg,Wolfenschiessen,Nidwalden,8.39902730727,46.79389737483,Kabinenbahn,BET,ch:1:sloid:8366:0:436341,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:8366,Trübsee,1.0,Engelberg,Wolfenschiessen,Nidwalden,8.39902730727,46.79389737483,Kabinenbahn,BET,ch:1:sloid:8366:0:617767,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:88165:1:5,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:88165:1:7,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:88165:1:5,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:88165:1:7,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91482,"Balerna, Rimessa AMSA",1.0,Balerna,Balerna,Ticino,9.0187477034,45.84015025639,Bus,AMSA,ch:1:sloid:91482::8591482,,0,,,2099-12-31
 85.0,ch:1:sloid:692,"Dornach, Bahnhof",1.0,Arlesheim,Arlesheim,Basel-Landschaft,7.61086919162,47.48912183481,BusTram,BLT-blt,ch:1:sloid:692:1:9,,0,,,2099-12-31
 85.0,ch:1:sloid:93380,"Biel/Bienne, Tschärisplatz/Cha",1.0,Biel/Bienne,Biel/Bienne,Bern,7.23987313846,47.14081176934,Bus,VB,ch:1:sloid:93380:0:01,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -100,7 +100,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:7473,Hohtenn,1.0,Hohtenn,Steg-Hohtenn,Valais,7.76408688742,46.32245880494,Zug,BLS-bls,ch:1:sloid:7473:0:381114,2,1,No,,2099-12-31
 85.0,ch:1:sloid:7478,Frutigen,1.0,Frutigen,Frutigen,Bern,7.65141831454,46.58890754282,Zug,BLS-bls,ch:1:sloid:7478:0:259646,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:3083,"Zürich, Römerhof",1.0,Zürich,Zürich,Zürich,8.56028057273,47.36808906154,BusZahnradbahnTram,VBZ,ch:1:sloid:3083::2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:8084:0:711957,,0,No,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:8084:0:711957,,1,No,,2099-12-31
 85.0,ch:1:sloid:8085,Aefligen,1.0,Aefligen,Aefligen,Bern,7.55925321768,47.09559351074,Zug,BLS-ebt,ch:1:sloid:8085:0:785138,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:174,Le Noirmont,1.0,Le Noirmont,Le Noirmont,Jura,6.95647271185,47.22325859471,Zug,CJ,ch:1:sloid:174:0:2,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:174,Le Noirmont,1.0,Le Noirmont,Le Noirmont,Jura,6.95647271185,47.22325859471,Zug,CJ,ch:1:sloid:174:0:3,3,1,Yes,,2099-12-31
@@ -289,7 +289,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:3097,Langnau-Gattikon,1.0,Langnau am Albis,Langnau am Albis,Zürich,8.54383396105,47.28730650812,Zug,SZU,ch:1:sloid:3097:0:905644,3,1,Yes,,2099-12-31
 85.0,ch:1:sloid:8005,Burgdorf,1.0,Burgdorf,Burgdorf,Bern,7.62169447355,47.0607007264,Zug,SBB,ch:1:sloid:8005:3:4,4,1,Yes,,2099-12-31
 85.0,ch:1:sloid:1036,St-Prex,1.0,St-Prex,Saint-Prex,Vaud,6.4559060173,46.48231690632,Zug,SBB,ch:1:sloid:1036:2:2,2,1,No,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:4071:0:783307,,0,No,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:4071:0:783307,,1,No,,2099-12-31
 85.0,ch:1:sloid:4062,Châtel-St-Denis,1.0,Châtel-St-Denis,Châtel-Saint-Denis,Fribourg,6.89579575561,46.52780591642,Zug,TPF,ch:1:sloid:4062:0:333887,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:8489,Kehrsiten-Bürgenstock,1.0,Kehrsiten,Stansstad,Nidwalden,8.38242246125,47.00298920244,StandseilbahnSchiff,SGV,ch:1:sloid:8489:0:101450,Standseilbahn,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 ,,,,,,,,,,,ch:1:sloid:4077:0:778569,,0,Yes,,2099-12-31
@@ -956,7 +956,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:82225,"Bümpliz, Schloss",1.0,Bern,Bern,Bern,7.39119135212,46.94375946883,Bus,SVB Auto,ch:1:sloid:82225:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91756,"Bern, Riedbachstrasse",1.0,Bern,Bern,Bern,7.38380629187,46.94719226863,Bus,SVB Auto,ch:1:sloid:91756:0:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90082,"Niederwangen, Guetmatt",1.0,Niederwangen b. Bern,Köniz,Bern,7.38122611919,46.92824710237,Bus,SVB Auto,ch:1:sloid:90082:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:87482:0:1,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:87482:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90026,"Bern, Sustenweg",1.0,Bern,Bern,Bern,7.44679184293,46.96516897015,Bus,SVB Auto,ch:1:sloid:90026:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:6398,Neukirch-Egnach,1.0,Neukirch (Egnach),Egnach,Thurgau,9.37585331411,47.5387980998,Zug,SOB-bt,ch:1:sloid:6398:2:2,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:2909,"Trimstein, Eichi",1.0,Trimstein,Münsingen,Bern,7.57465271003,46.89715768125,Bus,SVB/kmb,ch:1:sloid:2909:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -1059,7 +1059,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:7089,Schwarzenburg,1.0,Schwarzenburg,Schwarzenburg,Bern,7.34256155547,46.81910977833,Zug,BLS-gbs,ch:1:sloid:7089:0:709898,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:7293,Oberwil im Simmental,1.0,Oberwil im Simmental,Oberwil im Simmental,Bern,7.43548334739,46.65613562852,Zug,BLS-sez,ch:1:sloid:7293:0:708621,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:7295,Därstetten,1.0,Därstetten,Därstetten,Bern,7.4956915095,46.6587187562,Zug,BLS-sez,ch:1:sloid:7295:0:926852,2,1,No,,2099-12-31
-,,,,,,,,,,,55:1:sloid:1177:1:0,,0,Yes,,2099-12-31
+,,,,,,,,,,,55:1:sloid:1177:1:0,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:88565,"Heimberg, Garage",1.0,Heimberg,Heimberg,Bern,7.60758286179,46.78949375489,Bus,STI,ch:1:sloid:88565:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:8087,Wiler,1.0,Wiler b. Utzenstorf,Wiler bei Utzenstorf,Bern,7.5559333442,47.15229701952,Zug,BLS-ebt,ch:1:sloid:8087:0:629842,3,1,Yes,,2099-12-31
 85.0,ch:1:sloid:8088,Gerlafingen,1.0,Gerlafingen,Gerlafingen,Solothurn,7.56528939033,47.17056294685,Zug,BLS-ebt,ch:1:sloid:8088:0:498295,1,1,No,,2099-12-31
@@ -1256,7 +1256,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:4184,Courtepin,1.0,Courtepin,Courtepin,Fribourg,7.12270999353,46.86711999651,Zug,TPF,ch:1:sloid:4184:0:556428,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:5226,Grindelwald Terminal,1.0,Grindelwald,Grindelwald,Bern,8.01710555135,46.62550800406,KabinenbahnZug,BOB,ch:1:sloid:5226:0:594027,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:7382,Burglauenen,1.0,Burglauenen,Grindelwald,Bern,7.97533000304,46.63590999917,Zug,BOB,ch:1:sloid:7382:0:300658,2,1,No,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:10470:0:667360,,0,Yes,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10470:0:667360,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:9365,Miralago,1.0,Miralago,Poschiavo,Graubünden,10.09954999349,46.27311999362,Zug,RhB,ch:1:sloid:9365:0:518869,1,1,No,,2099-12-31
 ,,,,,,,,,,,ch:1:sloid:82483:1:4,,0,,,2099-12-31
 85.0,ch:1:sloid:5226,Grindelwald Terminal,1.0,Grindelwald,Grindelwald,Bern,8.01710555135,46.62550800406,KabinenbahnZug,BOB,ch:1:sloid:5226:0:642315,1,1,Yes,,2099-12-31
@@ -1888,7 +1888,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:94415,"Chur, Fontanaplatz",1.0,Chur,Chur,Graubünden,9.5308060801,46.84984237253,Bus,BuS/cb,ch:1:sloid:94415::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:82061,"Seedorf UR, Grund",1.0,Seedorf UR,Seedorf (UR),Uri,8.61014386333,46.88247586026,Bus,AAGU,ch:1:sloid:82061::2,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:73092,"Seedorf UR, Schloss A Pro",1.0,Seedorf UR,Seedorf (UR),Uri,8.6055100318,46.88600475967,Bus,AAGU,ch:1:sloid:73092::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10912:0:138533,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10912:0:138533,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:79655,"Bevaix, Centre",1.0,Bevaix,La Grande Béroche,Neuchâtel,6.81516915466,46.92990488506,Bus,PAG,ch:1:sloid:79655:0:433971,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78313,"Pratteln, Saline",1.0,Pratteln,Pratteln,Basel-Landschaft,7.67703198482,47.53132126475,Bus,AAGL,ch:1:sloid:78313:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78324,"Bubendorf, Steingasse",1.0,Bubendorf,Bubendorf,Basel-Landschaft,7.73475828725,47.44519687888,Bus,AAGL,ch:1:sloid:78324:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -1899,7 +1899,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:87102,"Othmarsingen, Rössli",1.0,Othmarsingen,Othmarsingen,Aargau,8.21448241888,47.4009581875,Bus,RBL,ch:1:sloid:87102:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5880,"Urnerboden, Klus",1.0,Urnerboden,Spiringen,Uri,8.87518837635,46.86859610392,Bus,AAGU,ch:1:sloid:5880::2,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:87075,"Lancy-Bachet, gare",1.0,Grand-Lancy,Lancy,Genève,6.12960679591,46.17372517372,BusTram,TPG,ch:1:sloid:87075:0:423883,C,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10907:0:95339,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10907:0:95339,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:73111,"Göschenen, Abzw. Voralp",1.0,Göschenen,Göschenen,Uri,8.53157553995,46.66151286387,Bus,AAGU,ch:1:sloid:73111::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:87739,"Ibach, Oberschönenbuch",1.0,Ibach,Schwyz,Schwyz,8.6462200923,46.99676711676,Bus,AAGS,ch:1:sloid:87739:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:80563,"Lupsingen, Pfarrhaus",1.0,Lupsingen,Lupsingen,Basel-Landschaft,7.69604102152,47.44727697571,Bus,AAGL,ch:1:sloid:80563:1:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -1979,7 +1979,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:76580,"Steffisburg, Platz",1.0,Steffisburg,Steffisburg,Bern,7.63493947175,46.77798104675,Bus,STI,ch:1:sloid:76580:1:3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:8266,Lützelflüh-Goldbach,1.0,Lützelflüh-Goldbach,Lützelflüh,Bern,7.68227424956,47.00502149057,Zug,BLS-ebt,ch:1:sloid:8266:0:387486,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:76582,"Steffisburg, Ziegelei",1.0,Steffisburg,Steffisburg,Bern,7.63114489205,46.77136683977,Bus,STI,ch:1:sloid:76582:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:76410:0:03,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:76410:0:03,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:93348,"Biel/Bienne, Längfeld/Long-Chp",1.0,Biel/Bienne,Biel/Bienne,Bern,7.28116973371,47.15138208661,Bus,VB,ch:1:sloid:93348:0:01,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:8080,Oberburg,1.0,Oberburg,Burgdorf,Bern,7.6293428672,47.03960954325,Zug,BLS-ebt,ch:1:sloid:8080:0:930505,3,1,Yes,,2099-12-31
 85.0,ch:1:sloid:93358,"Biel/Bienne, Mühlestr./Moulin",1.0,Biel/Bienne,Biel/Bienne,Bern,7.27217709878,47.14303113155,Bus,VB,ch:1:sloid:93358:0:02,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -2013,11 +2013,11 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:7284,Enge im Simmental,1.0,Oberwil im Simmental,Oberwil im Simmental,Bern,7.41762444441,46.64753323789,Zug,BLS-sez,ch:1:sloid:7284:0:492985,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:63,"Oberwil BL, Zentrum",1.0,Oberwil BL,Oberwil (BL),Basel-Landschaft,7.55931000157,47.51475999381,BusTram,BLT-blt,ch:1:sloid:63:1:8,,0,,,2099-12-31
 85.0,ch:1:sloid:159,Grenchen Nord,1.0,Grenchen,Grenchen,Solothurn,7.38961866289,47.19169820511,Zug,BLS-mlb,ch:1:sloid:159:0:469914,1,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:8089:0:604456,,0,No,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:8089:0:604456,,1,No,,2099-12-31
 85.0,ch:1:sloid:4490,Zihlbrücke,1.0,Gampelen,Gampelen,Bern,7.03057315632,47.00927707759,Zug,BLS-bn,ch:1:sloid:4490:0:742462,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:7083,Köniz,1.0,Köniz,Köniz,Bern,7.4149120576,46.92460655559,Zug,BLS-gbs,ch:1:sloid:7083:0:291332,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:72,"Oberwil BL, Hüslimatt",1.0,Oberwil BL,Oberwil (BL),Basel-Landschaft,7.55526964045,47.50654006056,BusTram,BLT-blt,ch:1:sloid:72:1:3,,0,,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:7291:0:100957,,0,No,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:7291:0:100957,,1,No,,2099-12-31
 85.0,ch:1:sloid:172,La Chaux-des-Breuleux,1.0,La Chaux-des-Breuleux,Les Breuleux,Jura,7.0254184099,47.2204948381,Zug,CJ,ch:1:sloid:172:0:1,1,1,No,,2099-12-31
 85.0,ch:1:sloid:88764,"Arlesheim, Im Lee",1.0,Arlesheim,Arlesheim,Basel-Landschaft,7.61932334383,47.49747337153,BusTram,BLT-blt,ch:1:sloid:88764:1:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:175,Le Creux-des-Biches,1.0,Le Noirmont,Le Noirmont,Jura,6.94066200359,47.20346400034,Zug,CJ,ch:1:sloid:175:0:1,1,1,Yes,,2099-12-31
@@ -2222,7 +2222,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:9250,Bever,1.0,Bever,Bever,Graubünden,9.88847,46.54990999756,Zug,RhB,ch:1:sloid:9250:0:49678,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:9259,S-chanf,1.0,S-chanf,S-chanf,Graubünden,9.98181999664,46.61193999883,Zug,RhB,ch:1:sloid:9259:0:623628,1,1,No,,2099-12-31
 85.0,ch:1:sloid:9357,Alp Grüm,1.0,Alp Grüm,Poschiavo,Graubünden,10.03114000202,46.37474999359,Zug,RhB,ch:1:sloid:9357:0:155812,1,1,No,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:9188:0:259602,,0,Yes,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:9188:0:259602,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:7560,Winteregg,1.0,Mürren,Lauterbrunnen,Bern,7.89604778029,46.58180491091,Zug,BLM,ch:1:sloid:7560:0:27833,1,1,Yes,,2099-12-31
 ,,,,,,,,,,,ch:1:sloid:94325:1:1,,0,,,2099-12-31
 85.0,ch:1:sloid:9251,Samedan,1.0,Samedan,Samedan,Graubünden,9.87363000426,46.53376000145,Zug,RhB,ch:1:sloid:9251:0:713783,5,1,Yes,,2099-12-31
@@ -2501,7 +2501,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:90833,"Unterengstringen, Langacher",1.0,Unterengstringen,Unterengstringen,Zürich,8.45316031623,47.41223748081,Bus,VBZ,ch:1:sloid:90833::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:73684,"Buch am Irchel, Oberbuch",1.0,Buch am Irchel,Buch am Irchel,Zürich,8.62217053445,47.54777691282,Bus,PAG,ch:1:sloid:73684::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:3152,"Uster, Brandschenke",1.0,Uster,Uster,Zürich,8.71073858283,47.36114145949,Bus,VZO,ch:1:sloid:3152::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:5324::50,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:5324::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:73685,"Buch am Irchel, Unterbuch",1.0,Buch am Irchel,Buch am Irchel,Zürich,8.61875381074,47.55006044575,Bus,PAG,ch:1:sloid:73685::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:5363,"Dietlikon, Mäenriet",1.0,Dietlikon,Dietlikon,Zürich,8.61848694227,47.41243126737,Bus,VBG,ch:1:sloid:5363::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:91103,"Zürich, Buhnstrasse",1.0,Zürich,Zürich,Zürich,8.5389431073,47.42225580746,Bus,VBZ,ch:1:sloid:91103::22,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -2668,7 +2668,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:76260,"Buchs-Dällikon, Bahnhof",1.0,Buchs ZH,Buchs (ZH),Zürich,8.43732725596,47.4533372708,Bus,VBG,ch:1:sloid:76260::71,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91563,"Muralto, Via Sociale",1.0,Muralto,Muralto,Ticino,8.80848684528,46.17471683638,Bus,FART Auto,ch:1:sloid:91563::301901,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91573,"Bissone, Arco di Campione",1.0,Bissone,Bissone,Ticino,8.96856696875,45.96176617375,Bus,SNL Auto,ch:1:sloid:91573::440402,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
-85.0,ch:1:sloid:79032,"Campione, Casino",1.0,,Campione d'Italia,,8.97054947776,45.97047450032,Bus,SNL Auto,ch:1:sloid:79032::440701,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
+85.0,ch:1:sloid:79032,"Campione, Casino",1.0,,Campione d'Italia,,8.97054947776,45.97047450032,Bus,SNL Auto,ch:1:sloid:79032::440701,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:80982,"Gordola, Gnesa",1.0,Gordola,Gordola,Ticino,8.8639315992,46.18072442064,Bus,FART Auto,ch:1:sloid:80982:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:80980,"Riazzino, Bivio Stradonino",1.0,Gordola,Locarno,Ticino,8.881205373,46.17662732398,Bus,FART Auto,ch:1:sloid:80980::311401,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78951,"Riazzino, Stazione",1.0,Riazzino,Locarno,Ticino,8.88670412799,46.1759271427,Bus,FART Auto,ch:1:sloid:78951::311501,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -2802,7 +2802,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:10448,Rapperswil SG Hochschule (See),1.0,Rapperswil SG,Rapperswil-Jona,St. Gallen,8.81636422013,47.22232517454,Schiff,ZSG,ch:1:sloid:10448:0:569137,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89555,"St. Gallen, Bachstrasse",1.0,St. Gallen,St. Gallen,St. Gallen,9.39281650048,47.43561448158,Bus,VBSG,ch:1:sloid:89555:0:327172,A,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:16764,Riehen,1.0,Riehen,Riehen,Basel-Stadt,7.65220870177,47.58350627672,Zug,DICH,ch:1:sloid:16764:0:1,1,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:3663:0:547001,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:3663:0:547001,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89632,"St. Gallen, Stocken",1.0,St. Gallen,St. Gallen,St. Gallen,9.3252574156,47.40716467129,Bus,VBSG,ch:1:sloid:89632:0:142165,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89633,"St. Gallen, Storchenstrasse",1.0,St. Gallen,St. Gallen,St. Gallen,9.3914191561,47.43981263502,Bus,VBSG,ch:1:sloid:89633:0:646336,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89635,"St. Gallen, Tigerberg",1.0,St. Gallen,St. Gallen,St. Gallen,9.37231047794,47.42814110357,Bus,VBSG,ch:1:sloid:89635:0:59686,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -2849,7 +2849,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:78248,"Bretzwil, Eichhöhe",1.0,Bretzwil,Bretzwil,Basel-Landschaft,7.66296141114,47.39698732281,Bus,AAGL,ch:1:sloid:78248:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78305,"Birsfelden, Sternenfeld",1.0,Birsfelden,Birsfelden,Basel-Landschaft,7.63365790756,47.55242059912,Bus,AAGL,ch:1:sloid:78305:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78305,"Birsfelden, Sternenfeld",1.0,Birsfelden,Birsfelden,Basel-Landschaft,7.63365790756,47.55242059912,Bus,AAGL,ch:1:sloid:78305:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:10910:0:13008,,0,,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10910:0:13008,,1,,,2099-12-31
 85.0,ch:1:sloid:78318,"Liestal, Kantonsspital",1.0,Liestal,Liestal,Basel-Landschaft,7.73051983284,47.48716491659,Bus,AAGL,ch:1:sloid:78318:1:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:89872,"Goldau, Buosingen Camping",1.0,Goldau,Arth,Schwyz,8.56111533756,47.03889476226,Bus,AAGS,ch:1:sloid:89872:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:71633,"Chur, Erlöserkirche",1.0,Chur,Chur,Graubünden,9.52221453048,46.85457052596,Bus,BuS/cb,ch:1:sloid:71633::3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -2862,7 +2862,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:5890,"Bürglen UR, Dorf",1.0,Bürglen UR,Bürglen (UR),Uri,8.66346401021,46.87542218888,Bus,AAGU,ch:1:sloid:5890::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:87574,"Mägenwil, Dorf",1.0,Mägenwil,Mägenwil,Aargau,8.23055327931,47.41168286786,Bus,RBL,ch:1:sloid:87574:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78755,"Ammerswil AG, Rebrain",1.0,Ammerswil AG,Ammerswil,Aargau,8.20273550347,47.36893862235,Bus,RBL,ch:1:sloid:78755:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:78349:1:1,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:78349:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78351,"Pratteln, Bahnhof Süd",1.0,Pratteln,Pratteln,Basel-Landschaft,7.69191490124,47.52217000712,Bus,AAGL,ch:1:sloid:78351:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:73110,Wiggen b. Göschenen,1.0,Göschenen,Göschenen,Uri,8.53409263608,46.65998629967,Bus,AAGU,ch:1:sloid:73110::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78118,"Etziken, Industrie",1.0,Etziken,Etziken,Solothurn,7.63755278768,47.18972852441,Bus,BSU,ch:1:sloid:78118:0:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -2906,7 +2906,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:88904,"Belp, Aemmenmatt",1.0,Belp,Belp,Bern,7.50480413157,46.90118574407,Bus,SVB/kmb,ch:1:sloid:88904:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:76609,"Oberdiessbach, Bahnhof",1.0,Oberdiessbach,Oberdiessbach,Bern,7.61817332215,46.8393840617,Bus,STI,ch:1:sloid:76609:1:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:76610,"Oberdiessbach, Kastanienpark",1.0,Oberdiessbach,Oberdiessbach,Bern,7.62111706834,46.83767930018,Bus,STI,ch:1:sloid:76610:1:3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:3681:0:990878,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:3681:0:990878,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:96083,"Schwanden i. E., Niederbach",1.0,Schwanden im Emmental,Rüderswil,Bern,7.70525028021,46.98428166763,Bus,RSZ,ch:1:sloid:96083:0:987770,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:87874,"Thun, KKThun",1.0,Thun,Thun,Bern,7.62935480435,46.74264735135,Bus,STI,ch:1:sloid:87874:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91929,"Thun, Zentrum Oberland",1.0,Thun,Thun,Bern,7.61424599126,46.74411976078,Bus,STI,ch:1:sloid:91929:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -2959,7 +2959,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:92479,"Brügg BE, Brüggmoos",1.0,Brügg BE,Brügg,Bern,7.26550474125,47.11922080255,Bus,VB,ch:1:sloid:92479:0:01,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:4486,Gümmenen,1.0,Gümmenen,Ferenbalm,Bern,7.23440939756,46.9421821973,Zug,BLS-bn,ch:1:sloid:4486:0:656017,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:7075,Toffen,1.0,Toffen,Toffen,Bern,7.49603327961,46.85847127982,Zug,BLS-gbs,ch:1:sloid:7075:0:12060,2,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:87841:0:03,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:87841:0:03,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:76391,"Biel/Bienne, Bahnhof/Gare",1.0,Biel/Bienne,Biel/Bienne,Bern,7.24331441119,47.133468899,Bus,VB,ch:1:sloid:76391:0:02,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:7092,Belp Steinbach,1.0,Belp,Belp,Bern,7.49309180319,46.89516463408,Zug,BLS-gbs,ch:1:sloid:7092:0:574688,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:63,"Oberwil BL, Zentrum",1.0,Oberwil BL,Oberwil (BL),Basel-Landschaft,7.55931000157,47.51475999381,BusTram,BLT-blt,ch:1:sloid:63:1:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -2973,7 +2973,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:3083,"Zürich, Römerhof",1.0,Zürich,Zürich,Zürich,8.56028057273,47.36808906154,BusZahnradbahnTram,VBZ,ch:1:sloid:3083::3,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:178,La Ferrière,1.0,La Ferrière,La Ferrière,Bern,6.89405776591,47.14269676821,Zug,CJ,ch:1:sloid:178:0:1,1,1,No,,2099-12-31
 85.0,ch:1:sloid:192,Le Bémont JU,1.0,Le Bémont JU,Le Bémont (JU),Jura,7.01408167102,47.26322848007,Zug,CJ,ch:1:sloid:192:0:1,1,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:8251:0:137371,,0,No,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:8251:0:137371,,1,No,,2099-12-31
 85.0,ch:1:sloid:92492,"Vauffelin, Route de Plagne",1.0,Vauffelin,Sauge,Bern,7.30023096157,47.18863615447,Bus,VB,ch:1:sloid:92492:0:02,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:218,Olten,1.0,Olten,Olten,Solothurn,7.90769964791,47.35193475928,Zug,SBB,ch:1:sloid:218:1:1,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:1688,Täsch,1.0,Täsch,Täsch,Valais,7.77450721429,46.06745579471,Zug,MGB-bvz,ch:1:sloid:1688:0:495783,2,1,Yes,,2099-12-31
@@ -2986,7 +2986,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:88010,"Herrliberg, Vogtei",1.0,Herrliberg,Herrliberg,Zürich,8.60971818106,47.28965338649,Bus,VZO,ch:1:sloid:88010::51,,1,,,2099-12-31
 85.0,ch:1:sloid:3198,"Esslingen, Bahnhof",1.0,Esslingen,Egg,Zürich,8.71008836763,47.28780775293,Bus,VZO,ch:1:sloid:3198::52,,1,,,2099-12-31
 85.0,ch:1:sloid:76129,"Volketswil, Wallberg",1.0,Volketswil,Volketswil,Zürich,8.68706874816,47.38946542032,Bus,VBG,ch:1:sloid:76129::51,,1,,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:76257::52,,0,,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:76257::52,,1,,,2099-12-31
 85.0,ch:1:sloid:3074,Neue Forch,1.0,Forch,Küsnacht (ZH),Zürich,8.6378399935,47.32581000031,Zug,FB,ch:1:sloid:3074::51,,1,,,2099-12-31
 85.0,ch:1:sloid:90785,"Scheuren, Station",1.0,Forch,Maur,Zürich,8.65912488681,47.32271962021,Bus,VBZ,ch:1:sloid:90785::51,,1,,,2099-12-31
 85.0,ch:1:sloid:305,Frick,1.0,Frick,Frick,Aargau,8.01309246283,47.50734852395,Zug,SBB,ch:1:sloid:305:1:1,1,1,Yes,,2099-12-31
@@ -3139,7 +3139,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:77291,"Ruswil, Schlatt",1.0,Ruswil,Ruswil,Luzern,8.15644001552,47.07114971436,Bus,ARAG,ch:1:sloid:77291::2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:77481,"Steinen, Rigiblick",1.0,Sattel,Sattel,Schwyz,8.62343146882,47.06583715124,Bus,AAGS,ch:1:sloid:77481:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:4186,Münchenwiler-Courgevaux,1.0,Münchenwiler,Münchenwiler,Bern,7.1162299945,46.91089999963,Zug,TPF,ch:1:sloid:4186:0:901942,2,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:95876::50,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:95876::50,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:30011,Les Coeudres-Est,1.0,La Sagne NE,La Sagne,Neuchâtel,6.78953104382,47.02879662065,Zug,TRN-cmn,ch:1:sloid:30011::1,1,1,No,,2099-12-31
 85.0,ch:1:sloid:77477,"Schwyz, Hirschen",1.0,Seewen SZ,Schwyz,Schwyz,8.62962086113,47.04682220756,Bus,AAGS,ch:1:sloid:77477:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:1042,Etoy,1.0,Etoy,Etoy,Vaud,6.42713535556,46.47517274139,Zug,SBB,ch:1:sloid:1042:2:2,2,1,Yes,,2099-12-31
@@ -3152,7 +3152,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:8075,"Bern, Breitenrain",1.0,Bern,Bern,Bern,7.45491029769,46.95887156337,BusTram,SVB Auto,ch:1:sloid:8075:0:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:8005,Burgdorf,1.0,Burgdorf,Burgdorf,Bern,7.62169447355,47.0607007264,Zug,SBB,ch:1:sloid:8005:2:2,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:1007,Vernier,1.0,Vernier,Vernier,Genève,6.09389170749,46.22071869752,Zug,SBB,ch:1:sloid:1007:2:2,2,1,No,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:95876::51,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:95876::51,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:9175,Tavanasa-Breil/Brigels,1.0,Tavanasa,Breil/Brigels,Graubünden,9.0624299982,46.75475999718,Zug,RhB,ch:1:sloid:9175:0:519285,1,1,No,,2099-12-31
 85.0,ch:1:sloid:9178,Sumvitg-Cumpadials,1.0,Sumvitg,Sumvitg,Graubünden,8.9310272261,46.72406116572,Zug,RhB,ch:1:sloid:9178:0:962751,2,1,No,,2099-12-31
 85.0,ch:1:sloid:9179,Disentis/Mustér,1.0,Disentis/Mustér,Disentis/Mustér,Graubünden,8.85519153356,46.70507945465,Zug,RhB,ch:1:sloid:9179:0:269990,2,1,Yes,,2099-12-31
@@ -3162,7 +3162,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:9356,Ospizio Bernina,1.0,Ospizio Bernina,Poschiavo,Graubünden,10.01969999506,46.40875999954,Zug,RhB,ch:1:sloid:9356:0:315982,1,1,No,,2099-12-31
 85.0,ch:1:sloid:87540,"Grindelwald, Terminal",1.0,Grindelwald,Grindelwald,Bern,8.02013826478,46.62448865152,Bus,STI,ch:1:sloid:87540:1:3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 ,,,,,,,,,,,ch:1:sloid:85287:1:1,,0,,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:10470:0:18393,,0,Yes,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10470:0:18393,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:9260,Cinuos-chel-Brail,1.0,Cinuos-chel,S-chanf,Graubünden,10.02192000241,46.63852999799,Zug,RhB,ch:1:sloid:9260:0:326198,1,1,No,,2099-12-31
 85.0,ch:1:sloid:9265,Guarda,1.0,Guarda,Scuol,Graubünden,10.15053000079,46.77152000112,Zug,RhB,ch:1:sloid:9265:0:580277,2,1,No,,2099-12-31
 85.0,ch:1:sloid:9266,Ardez,1.0,Ardez,Scuol,Graubünden,10.20105000202,46.77354000087,Zug,RhB,ch:1:sloid:9266:0:807807,2,1,No,,2099-12-31
@@ -3644,7 +3644,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:6899,"Winterthur, Hauptbahnhof",1.0,Winterthur,Winterthur,Zürich,8.72370375026,47.49973060637,Bus,SBW,ch:1:sloid:6899::68,J,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:75173,"Riazzino, Scuole",1.0,Riazzino,Locarno,Ticino,8.89690117112,46.17463528048,Bus,FART Auto,ch:1:sloid:75173::310501,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91512,"Ascona, Baraggie",1.0,Ascona,Ascona,Ticino,8.77221159521,46.15883971395,Bus,FART Auto,ch:1:sloid:91512::346502,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-85.0,ch:1:sloid:79031,"Campione, via Totone (I)",1.0,,Campione d'Italia,,8.97259763661,45.97151092016,Bus,SNL Auto,ch:1:sloid:79031::440601,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+85.0,ch:1:sloid:79031,"Campione, via Totone (I)",1.0,,Campione d'Italia,,8.97259763661,45.97151092016,Bus,SNL Auto,ch:1:sloid:79031::440601,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:90847,"Urdorf, Sonne",1.0,Urdorf,Urdorf,Zürich,8.42253492082,47.38126289469,Bus,VBZ,ch:1:sloid:90847::51,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:3860,"Riedt b. Neerach, Riedacher",1.0,Neerach,Neerach,Zürich,8.47403408273,47.5010290082,Bus,PAG,ch:1:sloid:3860::51,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90647,"Herrliberg-Feldmeilen,Bhf West",1.0,Meilen,Meilen,Zürich,8.61178247862,47.28251697017,Bus,VZO,ch:1:sloid:90647::52,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -4102,7 +4102,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 ,,,,,,,,,,,ch:1:sloid:1609:5:12,,0,,,2099-12-31
 85.0,ch:1:sloid:6359,St. Gallen Schülerhaus,1.0,St. Gallen,St. Gallen,St. Gallen,9.38742086388,47.42500738909,Zug,AB-ab,ch:1:sloid:6359:0:1,1,1,No,,2099-12-31
 85.0,ch:1:sloid:79900,"Bümpliz, Post",1.0,Bern,Bern,Bern,7.39295330476,46.94151140349,BusTram,SVB Auto,ch:1:sloid:79900:0:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:8100:3:5,,0,Yes,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:8100:3:5,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:1015,Tannay,1.0,Tannay,Tannay,Vaud,6.18112036456,46.3076451449,Zug,SBB,ch:1:sloid:1015:1:1,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:4061,Remaufens,1.0,Remaufens,Remaufens,Fribourg,6.87651365613,46.52373911816,Zug,TPF,ch:1:sloid:4061:0:153195,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:4063,Semsales,1.0,Semsales,Semsales,Fribourg,6.92692999639,46.57334999365,Zug,TPF,ch:1:sloid:4063:0:689038,2,1,No,,2099-12-31
@@ -4637,7 +4637,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:3798,"Wädenswil, Bahnhof",1.0,Wädenswil,Wädenswil,Zürich,8.67495604018,47.22936709497,Bus,SZU Auto,ch:1:sloid:3798::54,E,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76106,"Richterswil, Bahnhof",1.0,Richterswil,Richterswil,Zürich,8.70768678429,47.20791590567,Bus,SZU Auto,ch:1:sloid:76106::54,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:83206,"Islisberg, Räbacher",1.0,Islisberg,Islisberg,Aargau,8.43532532234,47.32163305795,Bus,PAG,ch:1:sloid:83206::51,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:73167::54,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:73167::54,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90489,"Au ZH, Alte Landstrasse",1.0,Au ZH,Wädenswil,Zürich,8.63504835566,47.24712315425,Bus,SZU Auto,ch:1:sloid:90489::51,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:90544,"Dietlikon, Hörnligraben",1.0,Wallisellen,Wallisellen,Zürich,8.61454479397,47.41213861881,Bus,VBZ,ch:1:sloid:90544::51,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:90710,"Lindau, Nürensdorferstrasse",1.0,Lindau,Lindau,Zürich,8.67086419211,47.44080436733,Bus,VBG,ch:1:sloid:90710::51,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -4738,7 +4738,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:3672,Horgen (See),1.0,Horgen,Horgen,Zürich,8.59752405603,47.2618872886,Schiff,ZSG,ch:1:sloid:3672:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:3668,Insel Ufenau,1.0,Pfäffikon SZ,Freienbach,Schwyz,8.77663854942,47.21803833467,Schiff,ZSG,ch:1:sloid:3668:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:3669,Richterswil (See),1.0,Richterswil,Richterswil,Zürich,8.70729241923,47.20909870804,Schiff,ZSG,ch:1:sloid:3669:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:3663:0:876177,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:3663:0:876177,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89561,"St. Gallen, Blumenwies",1.0,St. Gallen,St. Gallen,St. Gallen,9.40843466999,47.4366359423,Bus,VBSG,ch:1:sloid:89561:0:832957,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:3099,Sihlau,1.0,Adliswil,Adliswil,Zürich,8.52516835662,47.30328855501,Zug,SZU,ch:1:sloid:3099:0:907251,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:89634,"St. Gallen, Talstrasse",1.0,St. Gallen,St. Gallen,St. Gallen,9.39786071494,47.43576301289,Bus,VBSG,ch:1:sloid:89634:0:737728,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -4788,7 +4788,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:78354,"Pratteln, Gehrenacker",1.0,Pratteln,Pratteln,Basel-Landschaft,7.70416320905,47.52081156198,Bus,AAGL,ch:1:sloid:78354:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:80563,"Lupsingen, Pfarrhaus",1.0,Lupsingen,Lupsingen,Basel-Landschaft,7.69604102152,47.44727697571,Bus,AAGL,ch:1:sloid:80563:1:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:78851,"Ghirone, Aquilesco",1.0,Ghirone,Blenio,Ticino,8.94367051316,46.55972606751,Bus,ABl,ch:1:sloid:78851::114902,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10914:0:550578,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10914:0:550578,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:80103,"Grono, Bivio Calanca",1.0,Grono,Grono,Graubünden,9.14162626167,46.24610631452,Bus,PAG,ch:1:sloid:80103:0:845013,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90253,"Othmarsingen, Bahnhofstrasse",1.0,Othmarsingen,Othmarsingen,Aargau,8.21701566798,47.40499539828,Bus,RBL,ch:1:sloid:90253:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:859,"Liestal, Stadion",1.0,Liestal,Liestal,Basel-Landschaft,7.74351268928,47.47837133356,Bus,AAGL,ch:1:sloid:859:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -4886,7 +4886,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:88764,"Arlesheim, Im Lee",1.0,Arlesheim,Arlesheim,Basel-Landschaft,7.61932334383,47.49747337153,BusTram,BLT-blt,ch:1:sloid:88764:1:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:7472,Ausserberg,1.0,Ausserberg,Ausserberg,Valais,7.8441670281,46.31234824496,Zug,BLS-bls,ch:1:sloid:7472:0:767269,2,1,No,,2099-12-31
 85.0,ch:1:sloid:91489,"Chiasso, Via Guisan",1.0,Chiasso,Chiasso,Ticino,9.02169603365,45.83303697936,Bus,AMSA,ch:1:sloid:91489::506703,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:8088:0:978634,,0,No,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:8088:0:978634,,1,No,,2099-12-31
 85.0,ch:1:sloid:8261,Biglen,1.0,Biglen,Biglen,Bern,7.62670288412,46.92461739245,Zug,BLS-ebt,ch:1:sloid:8261:0:743999,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:8263,Bigenthal,1.0,Bigenthal,Walkringen,Bern,7.62337471465,46.965398135,Zug,BLS-ebt,ch:1:sloid:8263:0:491396,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:76817,"Thun, Guisanplatz",1.0,Thun,Thun,Bern,7.62510786655,46.75953881268,Bus,STI,ch:1:sloid:76817:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -4955,7 +4955,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:3425,Feuerthalen,1.0,Feuerthalen,Feuerthalen,Zürich,8.64596842886,47.69216947828,Zug,SBB,ch:1:sloid:3425:0:2,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:4103,Flamatt,1.0,Flamatt,Wünnewil-Flamatt,Fribourg,7.31957081153,46.8884913573,Zug,SBB,ch:1:sloid:4103:3:3,3,1,Yes,,2099-12-31
 85.0,ch:1:sloid:6313,Rheineck,1.0,Rheineck,Rheineck,St. Gallen,9.59091263503,47.46688593391,Zug,SBB,ch:1:sloid:6313:2:2,2,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:4100:2:621,,0,Yes,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:4100:2:621,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:3401,Glattfelden,1.0,Glattfelden,Bülach,Zürich,8.52405519018,47.54855798113,Zug,SBB,ch:1:sloid:3401:1:1,1,1,No,,2099-12-31
 85.0,ch:1:sloid:4028,Rosé,1.0,Avry-sur-Matran,Avry,Fribourg,7.06196862435,46.78263344945,Zug,SBB,ch:1:sloid:4028:1:4,4,1,No,,2099-12-31
 85.0,ch:1:sloid:4024,Villaz-St-Pierre,1.0,Villaz-St-Pierre,Villaz,Fribourg,6.96064288147,46.72058040506,Zug,SBB,ch:1:sloid:4024:2:2,2,1,Yes,,2099-12-31
@@ -5030,7 +5030,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:7173,"Hilterfingen, Post",1.0,Hilterfingen,Hilterfingen,Bern,7.65806132106,46.73550753364,Bus,STI,ch:1:sloid:7173:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5093,"Muotathal, Post",1.0,Muotathal,Muotathal,Schwyz,8.75753197444,46.97434176148,Bus,AAGS,ch:1:sloid:5093:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:6200,Wattwil,1.0,Wattwil,Wattwil,St. Gallen,9.08648237238,47.29947726415,Zug,SOB-bt,ch:1:sloid:6200:2:2,2,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:3681:0:,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:3681:0:,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:88308,"Richterswil, Schwyzerstrasse",1.0,Richterswil,Richterswil,Zürich,8.70984260001,47.202637029,Bus,BWS,ch:1:sloid:88308:1:50,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:77511,"Wollerau, Hermannsweid",1.0,Richterswil,Richterswil,Zürich,8.70793555935,47.20115727342,Bus,BWS,ch:1:sloid:77511:1:51,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:77445,"Gersau, Kindli-Strandbad",1.0,Gersau,Gersau,Schwyz,8.54795501865,46.98913617546,Bus,AAGS,ch:1:sloid:77445:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -5140,7 +5140,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:4530,"Villarbeney, village",1.0,Villarbeney,Botterens,Fribourg,7.10870686364,46.62886412281,Bus,TPF Auto,ch:1:sloid:4530:0:16095,,1,,,2099-12-31
 85.0,ch:1:sloid:4612,"Schwarzsee, Kaspera",1.0,Schwarzsee,Plaffeien,Fribourg,7.29286568945,46.67529868696,Bus,TPF Auto,ch:1:sloid:4612:0:15290,,1,,,2099-12-31
 85.0,ch:1:sloid:4595,"Niedermuhren, Dorf",1.0,Heitenried,Tafers,Fribourg,7.27632906577,46.84089124114,Bus,TPF Auto,ch:1:sloid:4595:0:15321,,1,,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:77737:0:15968,,0,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:77737:0:15968,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:4541,"Gruyères, ville",1.0,Gruyères,Gruyères,Fribourg,7.0802501586,46.58229732275,Bus,TPF Auto,ch:1:sloid:4541:0:15973,,1,,,2099-12-31
 85.0,ch:1:sloid:4861,"Jaunpass, Restaurant",1.0,Boltigen,Boltigen,Bern,7.3375503244,46.59144605811,Bus,TPF Auto,ch:1:sloid:4861:0:15985,,1,,,2099-12-31
 85.0,ch:1:sloid:4861,"Jaunpass, Restaurant",1.0,Boltigen,Boltigen,Bern,7.3375503244,46.59144605811,Bus,TPF Auto,ch:1:sloid:4861:0:15986,,1,,,2099-12-31
@@ -5316,7 +5316,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:4357,Ligerz Festi,1.0,Ligerz,Ligerz,Bern,7.13203945097,47.08715128307,Standseilbahn,ASM-ltb,ch:1:sloid:4357::43571,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:76558,"Thun, Marktgasse",1.0,Thun,Thun,Bern,7.62761092114,46.76038928234,Bus,STI,ch:1:sloid:76558:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76860,"Thun, Pfaffenbühl",1.0,Thun,Thun,Bern,7.6272781418,46.7362550089,Bus,STI,ch:1:sloid:76860:1:3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:79564:0:327302,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:79564:0:327302,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:88171,"Thun, Burgerallee",1.0,Thun,Thun,Bern,7.61156378213,46.74833371168,Bus,STI,ch:1:sloid:88171:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:88173,"Allmendingen b.Thun,Wendeplatz",1.0,Thun,Thun,Bern,7.5930788831,46.74147856215,Bus,STI,ch:1:sloid:88173:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90044,"Bern, Bümpliz",1.0,Bern,Bern,Bern,7.38084826373,46.93757493374,BusTram,SVB Auto,ch:1:sloid:90044:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -5337,8 +5337,8 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:82477,"Grindelwald, Kreuzweg",1.0,Grindelwald,Grindelwald,Bern,8.03737157752,46.62918739695,Bus,STI,ch:1:sloid:82477:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89725,"Kriens, Zentrum Pilatus",1.0,Kriens,Kriens,Luzern,8.27947271856,47.03384735631,Bus,VBL,ch:1:sloid:89725::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89757,"Littau, Blattenmoos",1.0,Luzern,Luzern,Luzern,8.26755422031,47.05015295183,Bus,VBL,ch:1:sloid:89757::2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-85.0,ch:1:sloid:30696,Mönchaltorf (See),1.0,Mönchaltorf,,Zürich,8.70014759409,47.32597041669,Schiff,SGG,ch:1:sloid:30696:0:521103,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-85.0,ch:1:sloid:30648,Greifensee (See),1.0,Greifensee,,,8.67476120416,47.36432339191,Schiff,SGG,ch:1:sloid:30648:0:363611,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+85.0,ch:1:sloid:30696,Mönchaltorf (See),1.0,Mönchaltorf,,Zürich,8.70014759409,47.32597041669,Schiff,SGG,ch:1:sloid:30696:0:521103,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+85.0,ch:1:sloid:30648,Greifensee (See),1.0,Greifensee,,,8.67476120416,47.36432339191,Schiff,SGG,ch:1:sloid:30648:0:363611,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76122,"Samstagern, Zopfschmitten",1.0,Samstagern,Richterswil,Zürich,8.6755769789,47.19228879847,Bus,SZU Auto,ch:1:sloid:76122::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:90784,"Rüschlikon, Weidstrasse",1.0,Rüschlikon,Rüschlikon,Zürich,8.55293900347,47.30570601512,Bus,VBZ,ch:1:sloid:90784::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:73528,"Pfäffikon ZH, Sulzberg",1.0,Pfäffikon ZH,Pfäffikon,Zürich,8.78213780963,47.37956530628,Bus,PAG,ch:1:sloid:73528::50,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -5725,7 +5725,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:94408,"Chur, Bondastrasse",1.0,Chur,Chur,Graubünden,9.54320909992,46.85776739404,Bus,BuS/cb,ch:1:sloid:94408::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:72658,"Chur, Daleustrasse",1.0,Chur,Chur,Graubünden,9.52822360614,46.85483159129,Bus,BuS/cb,ch:1:sloid:72658::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78336,"Titterten, March",1.0,Titterten,Titterten,Basel-Landschaft,7.70967474917,47.3984075318,Bus,AAGL,ch:1:sloid:78336:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:10912:0:618663,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10912:0:618663,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:95153,"Pratteln, Zentrum Grüssen",1.0,Pratteln,Pratteln,Basel-Landschaft,7.68985694,47.52781362831,Bus,AAGL,ch:1:sloid:95153:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:5772,"Spiringen, Post",1.0,Spiringen,Spiringen,Uri,8.72874195102,46.87252759111,Bus,AAGU,ch:1:sloid:5772::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78330,"Reigoldswil, Linde",1.0,Reigoldswil,Reigoldswil,Basel-Landschaft,7.68998491976,47.40288606605,Bus,AAGL,ch:1:sloid:78330:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -5773,7 +5773,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:95136,"Bern, Wankdorfbrücke",1.0,Bern,Bern,Bern,7.46898508426,46.96610091846,Bus,SVB Auto,ch:1:sloid:95136:0:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:95931,"Bern Weissenbühl, Bahnhof",1.0,Bern,Bern,Bern,7.43016229874,46.93583555217,Bus,SVB Auto,ch:1:sloid:95931:0:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76646,"Bern, Bahnhof",1.0,Bern,Bern,Bern,7.44020872063,46.94810537156,BusTram,SVB Auto,ch:1:sloid:76646:0:5,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:87482:0:2,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:87482:0:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90024,"Bern, Jaunweg",1.0,Bern,Bern,Bern,7.4482639284,46.96797535388,Bus,SVB Auto,ch:1:sloid:90024:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:6398,Neukirch-Egnach,1.0,Neukirch (Egnach),Egnach,Thurgau,9.37585331411,47.5387980998,Zug,SOB-bt,ch:1:sloid:6398:1:1,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:81745,"Wichtrach, Bernstrasse",1.0,Wichtrach,Wichtrach,Bern,7.57651439192,46.84495572748,Bus,SVB Auto,ch:1:sloid:81745:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -5787,7 +5787,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:71708,"Thun, Berntor",1.0,Thun,Thun,Bern,7.62956599614,46.76172636515,Bus,STI,ch:1:sloid:71708:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:31273,La Siala,1.0,Laax GR 2,Laax,Graubünden,9.20430507966,46.88081421304,Kabinenbahn,BFL,ch:1:sloid:31273:0:475349,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76863,"Thun, Hohmad",1.0,Thun,Thun,Bern,7.62564931786,46.74955297691,Bus,STI,ch:1:sloid:76863:1:4,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:90876::51,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:90876::51,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:6899,"Winterthur, Hauptbahnhof",1.0,Winterthur,Winterthur,Zürich,8.72370375026,47.49973060637,Bus,SBW,ch:1:sloid:6899::59,J,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:80265,"Winterthur, Hegifeld",1.0,Winterthur,Winterthur,Zürich,8.76052445817,47.50663988031,Bus,SBW,ch:1:sloid:80265::53,E,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91366,"Zürich, Sihlcity Nord",1.0,Zürich,Zürich,Zürich,8.52303131238,47.36006132801,BusTram,VBZ,ch:1:sloid:91366::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -5822,7 +5822,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:8366,Trübsee,1.0,Engelberg,Wolfenschiessen,Nidwalden,8.39902730727,46.79389737483,Kabinenbahn,BET,ch:1:sloid:8366:0:823092,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:8494,Stand,1.0,Engelberg,Wolfenschiessen,Nidwalden,8.41701658284,46.7825091274,Kabinenbahn,BET,ch:1:sloid:8494:0:367330,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:88172,"Thun, Hauptkaserne",1.0,Thun,Thun,Bern,7.62016146512,46.75996053998,Bus,STI,ch:1:sloid:88172:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:88165:1:6,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:88165:1:6,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76815,"Thun, Waldeck",1.0,Thun,Thun,Bern,7.59791621874,46.76234139206,Bus,STI,ch:1:sloid:76815:1:4,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76815,"Thun, Waldeck",1.0,Thun,Thun,Bern,7.59791621874,46.76234139206,Bus,STI,ch:1:sloid:76815:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:93320,"Biel/Bienne, Bloeschweg",1.0,Biel/Bienne,Biel/Bienne,Bern,7.26542280349,47.14034962433,Bus,VB,ch:1:sloid:93320:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -5876,7 +5876,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:88743,"Wallisellen, Frohheimstrasse",1.0,Wallisellen,Wallisellen,Zürich,8.58875748872,47.41949522306,Bus,VBG,ch:1:sloid:88743::50,,1,,,2099-12-31
 85.0,ch:1:sloid:75920,"Effretikon, Müselacher",1.0,Effretikon,Illnau-Effretikon,Zürich,8.69659997379,47.42904935128,Bus,VBG,ch:1:sloid:75920::52,,1,,,2099-12-31
 85.0,ch:1:sloid:75920,"Effretikon, Müselacher",1.0,Effretikon,Illnau-Effretikon,Zürich,8.69659997379,47.42904935128,Bus,VBG,ch:1:sloid:75920::53,,1,,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:87799::52,,0,,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:87799::52,,1,,,2099-12-31
 85.0,ch:1:sloid:87975,"Erlenbach ZH, Pflugstein",1.0,Erlenbach ZH,Erlenbach (ZH),Zürich,8.60867381728,47.2968963445,Bus,VZO,ch:1:sloid:87975::50,,1,,,2099-12-31
 85.0,ch:1:sloid:3160,"Männedorf, Allenberg",1.0,Männedorf,Männedorf,Zürich,8.70833330983,47.25403923737,Bus,VZO,ch:1:sloid:3160::51,,1,,,2099-12-31
 85.0,ch:1:sloid:91160,"Zürich, Glaubtenstrasse",1.0,Zürich,Zürich,Zürich,8.5189373229,47.41416779634,Bus,VBZ,ch:1:sloid:91160::23,,1,,,2099-12-31
@@ -6074,7 +6074,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:76513,"Grindelwald, Lauberhorn",1.0,Grindelwald,Grindelwald,Bern,8.04955305043,46.62902380476,Bus,STI,ch:1:sloid:76513:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:9366,Brusio,1.0,Brusio,Brusio,Graubünden,10.12525999439,46.2593099969,Zug,RhB,ch:1:sloid:9366:0:638112,2,1,No,,2099-12-31
 85.0,ch:1:sloid:9182,Domat/Ems Werk,1.0,Domat/Ems,Domat/Ems,Graubünden,9.43038999637,46.82863999431,Zug,RhB,ch:1:sloid:9182:0:498584,1,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:9188:0:951606,,0,Yes,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:9188:0:951606,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:9195,Filisur,1.0,Filisur,Bergün Filisur,Graubünden,9.68228999603,46.67532999685,Zug,RhB,ch:1:sloid:9195:0:493945,3,1,Yes,,2099-12-31
 85.0,ch:1:sloid:9157,Arosa,1.0,Arosa,Arosa,Graubünden,9.67932999786,46.78328999668,Zug,RhB,ch:1:sloid:9157:0:205192,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:7560,Winteregg,1.0,Mürren,Lauterbrunnen,Bern,7.89604778029,46.58180491091,Zug,BLM,ch:1:sloid:7560:0:438157,2,1,Yes,,2099-12-31
@@ -6108,7 +6108,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:4631,"Marly, Les Rittes",1.0,Marly,Marly,Fribourg,7.14899432617,46.78588321516,Bus,TPF Auto,ch:1:sloid:4631:0:15138,,1,,,2099-12-31
 85.0,ch:1:sloid:89134,"Villars-sur-Glâne, Rochettes",1.0,Villars-sur-Glâne,Villars-sur-Glâne,Fribourg,7.11722217862,46.7948743302,Bus,TPF Auto,ch:1:sloid:89134:0:15140,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89270,"Fribourg, Kessler",1.0,Fribourg,Fribourg,Fribourg,7.17324924476,46.81210110131,Bus,TPF Auto,ch:1:sloid:89270:0:15149,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:77727:0:15878,,0,,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:77727:0:15878,,1,,,2099-12-31
 85.0,ch:1:sloid:4945,"Alterswil FR, Beniwil",1.0,Alterswil FR,Tafers,Fribourg,7.24743594724,46.79693985248,Bus,TPF Auto,ch:1:sloid:4945:0:15217,,1,,,2099-12-31
 85.0,ch:1:sloid:8330,"Bulle, Champ-Francey",1.0,Bulle,Bulle,Fribourg,7.05965218038,46.62832411933,Bus,TPF Auto,ch:1:sloid:8330:0:19417,,1,,,2099-12-31
 85.0,ch:1:sloid:92366,"Fribourg, Torry",1.0,Fribourg,Fribourg,Fribourg,7.14452379825,46.81305597324,Bus,TPF Auto,ch:1:sloid:92366:0:15160,,1,,,2099-12-31
@@ -6174,7 +6174,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:77003,"Ostermundigen, Bahnhof",1.0,Ostermundigen,Ostermundigen,Bern,7.48201166103,46.9558513494,Bus,SVB Auto,ch:1:sloid:77003:0:2,A,1,,,2099-12-31
 85.0,ch:1:sloid:90072,"Ostermundigen, Tiefenmösli",1.0,Ostermundigen,Ostermundigen,Bern,7.48396246854,46.94780892628,Bus,SVB Auto,ch:1:sloid:90072:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:90072,"Ostermundigen, Tiefenmösli",1.0,Ostermundigen,Ostermundigen,Bern,7.48396246854,46.94780892628,Bus,SVB Auto,ch:1:sloid:90072:0:3,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:89992:0:4,,0,,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:89992:0:4,,1,,,2099-12-31
 85.0,ch:1:sloid:77004,"Ostermundigen, Zollgasse",1.0,Ostermundigen,Ostermundigen,Bern,7.48778081079,46.95794493964,Bus,SVB Auto,ch:1:sloid:77004:0:7,,1,,,2099-12-31
 85.0,ch:1:sloid:77005,"Ostermundigen, Wegmühlegässli",1.0,Ostermundigen,Ostermundigen,Bern,7.4936664349,46.95783436918,Bus,SVB Auto,ch:1:sloid:77005:0:2,,1,,,2099-12-31
 85.0,ch:1:sloid:90066,"Bern, Felsenaustrasse",1.0,Bern,Bern,Bern,7.44158885433,46.97267112874,Bus,SVB Auto,ch:1:sloid:90066:0:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -6249,7 +6249,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:89763,"Littau, Rönnimoosrain",1.0,Luzern,Luzern,Luzern,8.27726897226,47.05195348511,Bus,VBL,ch:1:sloid:89763::2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:8450,"Luzern, Bahnhof",1.0,Luzern,Luzern,Luzern,8.31024569371,47.05075440078,Bus,VBL,ch:1:sloid:8450::6,F,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89756,"Reussbühl, Staffeln Schulhaus",1.0,Luzern,Luzern,Luzern,8.28001562051,47.06343864573,Bus,VBL,ch:1:sloid:89756::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:89762::2,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:89762::2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89860,"Obernau, Hammerschmiede",1.0,Obernau,Kriens,Luzern,8.25949437755,47.03518834718,Bus,VBL,ch:1:sloid:89860::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89736,"Kriens, Schachenstrasse",1.0,Kriens,Kriens,Luzern,8.2868230879,47.03439598687,Bus,VBL,ch:1:sloid:89736::3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:88561,"Oppligen, Schütz",1.0,Oppligen,Oppligen,Bern,7.59095603064,46.81492899936,Bus,STI,ch:1:sloid:88561:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -6303,7 +6303,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:76536,"Grindelwald, Jägerstübli",1.0,Grindelwald,Grindelwald,Bern,8.00279828978,46.61963032201,Bus,STI,ch:1:sloid:76536:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:95561,"Heimberg, Lädeli",1.0,Heimberg,Heimberg,Bern,7.60797717309,46.78156821246,Bus,STI,ch:1:sloid:95561:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:30645,Maur (See),1.0,Maur,Maur,Zürich,8.67883955555,47.34020462459,Schiff,SGG,ch:1:sloid:30645:0:895408,1,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-85.0,ch:1:sloid:30646,Uster (See),1.0,Uster,,Zürich,8.6903918901,47.34329083499,Schiff,SGG,ch:1:sloid:30646:0:251056,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+85.0,ch:1:sloid:30646,Uster (See),1.0,Uster,,Zürich,8.6903918901,47.34329083499,Schiff,SGG,ch:1:sloid:30646:0:251056,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90604,"Fällanden, Bruggacher",1.0,Fällanden,Fällanden,Zürich,8.63263284069,47.3749633041,Bus,VBZ,ch:1:sloid:90604::50,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:73178,"Affoltern a.A., Bahnhof",1.0,Affoltern am Albis,Affoltern am Albis,Zürich,8.44660354394,47.27581251068,Bus,PAG,ch:1:sloid:73178::50,C,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:73507,"Fehraltorf, Bahnhof",1.0,Fehraltorf,Fehraltorf,Zürich,8.75029504072,47.38528361974,Bus,PAG,ch:1:sloid:73507::50,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -6372,7 +6372,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:3359,"Stäfa, Kehlhof",1.0,Stäfa,Stäfa,Zürich,8.73624441539,47.2341803884,Bus,VZO,ch:1:sloid:3359::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:3763,"Atzmännig, Schutt",1.0,Rüeterswil,Eschenbach (SG),St. Gallen,8.99602009427,47.28454280147,Bus,VZO,ch:1:sloid:3763::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:3988,"Freudwil, Im Dörfli",1.0,Freudwil,Uster,Zürich,8.7357592949,47.37524689509,Bus,PAG,ch:1:sloid:3988::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:10888::50,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10888::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:3576,"Rafz, Post",1.0,Rafz,Rafz,Zürich,8.53964104912,47.61113826602,Bus,PAG,ch:1:sloid:3576::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:73559,"Horgenberg, Vorderklausen",1.0,Horgenberg,Horgen,Zürich,8.5967442716,47.24070485277,Bus,SZU Auto,ch:1:sloid:73559::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:76023,"Grüningen, Heispel",1.0,Grüningen,Grüningen,Zürich,8.74895529671,47.27532730642,Bus,VZO,ch:1:sloid:76023::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -6639,7 +6639,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:5459,"Brione s. Minusio, B. Val Resa",1.0,Brione sopra Minusio,Brione sopra Minusio,Ticino,8.82243077585,46.18591898136,Bus,FART Auto,ch:1:sloid:5459::306401,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89555,"St. Gallen, Bachstrasse",1.0,St. Gallen,St. Gallen,St. Gallen,9.39281650048,47.43561448158,Bus,VBSG,ch:1:sloid:89555:0:460113,C,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89898,"St. Gallen, Bernhardswies",1.0,St. Gallen,St. Gallen,St. Gallen,9.34173219285,47.40907168898,Bus,VBSG,ch:1:sloid:89898:0:986307,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:3057:0:,,0,Yes,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:3057:0:,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:3053,Zürich Schweighof,1.0,Zürich,Zürich,Zürich,8.50353176389,47.36494152936,Zug,SZU,ch:1:sloid:3053:0:255834,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:77372,"Flüelen, Reider",1.0,Flüelen,Flüelen,Uri,8.62522338046,46.8981089881,Bus,AAGU,ch:1:sloid:77372::2,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5892,"Altdorf UR, Telldenkmal",1.0,Altdorf UR,Altdorf (UR),Uri,8.64400619391,46.88177333072,Bus,AAGU,ch:1:sloid:5892::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -6701,7 +6701,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:72239,"Arisdorf, Schulhaus",1.0,Arisdorf,Arisdorf,Basel-Landschaft,7.76550269968,47.50986237302,Bus,AAGL,ch:1:sloid:72239:1:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:94416,"Chur, Fontanaspital",1.0,Chur,Chur,Graubünden,9.54138841508,46.86119334528,Bus,BuS/cb,ch:1:sloid:94416::2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:79872,"Linthal, Bebie",1.0,Linthal,Glarus Süd,Glarus,8.99608435014,46.91925062188,Bus,AAGU,ch:1:sloid:79872::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10914:0:687271,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10914:0:687271,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78311,"Muttenz, Auhafen",1.0,Pratteln,Muttenz,Basel-Landschaft,7.66015099872,47.53711970132,Bus,AAGL,ch:1:sloid:78311:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78316,"Füllinsdorf, Kittler",1.0,Füllinsdorf,Füllinsdorf,Basel-Landschaft,7.72032876072,47.51214832581,Bus,AAGL,ch:1:sloid:78316:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:95444,"Füllinsdorf, Ebene",1.0,Füllinsdorf,Füllinsdorf,Basel-Landschaft,7.72118984813,47.5068038422,Bus,AAGL,ch:1:sloid:95444:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -6978,7 +6978,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:96087,"Zollbrück, Sekundarschulhaus",1.0,Zollbrück,Lauperswil,Bern,7.73862141805,46.97443064567,Bus,RSZ,ch:1:sloid:96087:0:25903,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
 ,,,,,,,,,,,ch:1:sloid:3661:0:,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 ,,,,,,,,,,,ch:1:sloid:3673:0:,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:77519:1:52,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:77519:1:52,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:77460,"Muotathal, Föllmisbrücke",1.0,Ried (Muotathal),Muotathal,Schwyz,8.73121133661,46.97895089947,Bus,AAGS,ch:1:sloid:77460:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:6292,Degersheim,1.0,Degersheim,Degersheim,St. Gallen,9.20011957075,47.37257810176,Zug,SOB-bt,ch:1:sloid:6292:1:3,3,1,Yes,,2099-12-31
 85.0,ch:1:sloid:77454,"Ried (Muotathal), Grünenwald",1.0,Ried (Muotathal),Muotathal,Schwyz,8.6798007529,46.99231637847,Bus,AAGS,ch:1:sloid:77454:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -7341,7 +7341,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:3561,"Rumlikon, Dorfstrasse",1.0,Rumlikon,Russikon,Zürich,8.76154103265,47.4093261999,Bus,PAG,ch:1:sloid:3561::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:3705,"Hettlingen, Dorf",1.0,Hettlingen,Hettlingen,Zürich,8.70956099279,47.54607782984,Bus,PAG,ch:1:sloid:3705::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:83692,"Steinmaur, Sünikon",1.0,Sünikon,Steinmaur,Zürich,8.43739294268,47.49075515991,Bus,PAG,ch:1:sloid:83692::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:85410::50,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:85410::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:75978,"Uster, Linde",1.0,Uster,Uster,Zürich,8.73345115976,47.3445620959,Bus,VZO,ch:1:sloid:75978::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:73583,"Wädenswil, Mugern",1.0,Wädenswil,Wädenswil,Zürich,8.63518096234,47.21765197571,Bus,SZU Auto,ch:1:sloid:73583::50,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:73639,"Turbenthal, Gosswil",1.0,Wila,Turbenthal,Zürich,8.87426548873,47.40967199084,Bus,PAG,ch:1:sloid:73639::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -7526,7 +7526,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:91522,"Ascona, Scuole",1.0,Ascona,Ascona,Ticino,8.77402504305,46.15431570861,Bus,FART Auto,ch:1:sloid:91522::308202,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:91521,"Ascona, Palestre",1.0,Ascona,Ascona,Ticino,8.77803766166,46.15759979152,Bus,FART Auto,ch:1:sloid:91521::308301,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:6899,"Winterthur, Hauptbahnhof",1.0,Winterthur,Winterthur,Zürich,8.72370375026,47.49973060637,Bus,SBW,ch:1:sloid:6899::73,D,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-85.0,ch:1:sloid:91574,"Campione, Corso Italia",1.0,,Campione d'Italia,,8.97218441158,45.96918831379,Bus,SNL Auto,ch:1:sloid:91574::441001,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
+85.0,ch:1:sloid:91574,"Campione, Corso Italia",1.0,,Campione d'Italia,,8.97218441158,45.96918831379,Bus,SNL Auto,ch:1:sloid:91574::441001,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5277,"Torre, Paese",1.0,Torre,Blenio,Ticino,8.9521587462,46.48687038201,Bus,ABl,ch:1:sloid:5277::111502,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90562,"Dübendorf, Glärnischstrasse",1.0,Dübendorf,Dübendorf,Zürich,8.62993184312,47.39623943854,Bus,VBG,ch:1:sloid:90562::51,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76178,"Winterthur, Töss",1.0,Winterthur,Winterthur,Zürich,8.70309127845,47.48917260684,Bus,SBW,ch:1:sloid:76178::53,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -7653,7 +7653,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:92531,"Schaffhausen, Ebnatring",1.0,Schaffhausen,Schaffhausen,Schaffhausen,8.65036707374,47.70989987135,Bus,VBSH,ch:1:sloid:92531:0:328203,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:92534,"Schaffhausen, Feuerwehrzentrum",1.0,Schaffhausen,Schaffhausen,Schaffhausen,8.63659126896,47.70121031116,Bus,VBSH,ch:1:sloid:92534:0:801157,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:3481,"Neuhausen, Kreuzstrasse",1.0,Neuhausen am Rheinfall,Neuhausen am Rheinfall,Schaffhausen,8.61255384712,47.68371892718,Bus,VBSH-rv,ch:1:sloid:3481:0:874772,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-85.0,ch:1:sloid:3682,Küsnacht ZH Heslibach,1.0,Küsnacht ZH,,Zürich,8.58439068657,47.30840067603,Schiff,ZSG,ch:1:sloid:3682:0:1,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+85.0,ch:1:sloid:3682,Küsnacht ZH Heslibach,1.0,Küsnacht ZH,,Zürich,8.58439068657,47.30840067603,Schiff,ZSG,ch:1:sloid:3682:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:74936,"Pontresina, Post",1.0,Pontresina,Pontresina,Graubünden,9.90664790273,46.4881210694,Bus,BuS/eb,ch:1:sloid:74936::1,A,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:92516,"Schaffhausen, Birkenstr.",1.0,Schaffhausen,Schaffhausen,Schaffhausen,8.65015587729,47.70416373327,Bus,VBSH,ch:1:sloid:92516:0:423138,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:79928,"Schaffhausen, Hohlenbaum",1.0,Schaffhausen,Schaffhausen,Schaffhausen,8.61890094154,47.70615824323,Bus,VBSH-rv,ch:1:sloid:79928:0:189731,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -7690,7 +7690,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:87574,"Mägenwil, Dorf",1.0,Mägenwil,Mägenwil,Aargau,8.23055327931,47.41168286786,Bus,RBL,ch:1:sloid:87574:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90224,"Dintikon, Ammerswilerstrasse",1.0,Dintikon,Dintikon,Aargau,8.22748996332,47.36598389831,Bus,RBL,ch:1:sloid:90224:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78972,"Mergoscia, Busada",1.0,Mergoscia,Mergoscia,Ticino,8.84336625463,46.20898090873,Bus,FART Auto,ch:1:sloid:78972::307101,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10909:0:813898,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10909:0:813898,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78351,"Pratteln, Bahnhof Süd",1.0,Pratteln,Pratteln,Basel-Landschaft,7.69191490124,47.52217000712,Bus,AAGL,ch:1:sloid:78351:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78352,"Pratteln, Schlossstrasse",1.0,Pratteln,Pratteln,Basel-Landschaft,7.69420656966,47.52105874153,BusTram,AAGL,ch:1:sloid:78352:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:90225,"Dintikon, Oberdorf",1.0,Dintikon,Dintikon,Aargau,8.22571512648,47.36144466484,Bus,RBL,ch:1:sloid:90225:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -7735,7 +7735,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:79011,"Münsingen, Sägematt",1.0,Münsingen,Münsingen,Bern,7.55149515197,46.87409180484,Bus,SVB Auto,ch:1:sloid:79011:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:76609,"Oberdiessbach, Bahnhof",1.0,Oberdiessbach,Oberdiessbach,Bern,7.61817332215,46.8393840617,Bus,STI,ch:1:sloid:76609:1:6,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:77515,"Wollerau, Dorfplatz",1.0,Wollerau,Wollerau,Schwyz,8.71949818437,47.19619840609,Bus,BWS,ch:1:sloid:77515:1:53,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:3657:0:200476,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:3657:0:200476,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:30407,Hoch-Ybrig Seebli (Kl.Sternen),1.0,Unteriberg,Oberiberg,Schwyz,8.78924653811,47.01104142328,Sesselbahn,BHY-ssks,ch:1:sloid:30407:0:285295,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:81071,"Kaufdorf, Bahnhof",1.0,Kaufdorf,Kaufdorf,Bern,7.50181713582,46.83773460798,Bus,SVB Auto,ch:1:sloid:81071:0:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:77515,"Wollerau, Dorfplatz",1.0,Wollerau,Wollerau,Schwyz,8.71949818437,47.19619840609,Bus,BWS,ch:1:sloid:77515:1:52,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -7752,7 +7752,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:87876,"Thun, Hännisweg",1.0,Gwatt (Thun),Thun,Bern,7.62190976475,46.73506732093,Bus,STI,ch:1:sloid:87876:1:4,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5056,"St. Moritz Bad, Signalbahn",1.0,St. Moritz,St. Moritz,Graubünden,9.83210742697,46.48352799462,Bus,BuS/eb,ch:1:sloid:5056::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:88426,"Steffisburg, Kirche",1.0,Steffisburg,Steffisburg,Bern,7.63454805173,46.78198468212,Bus,STI,ch:1:sloid:88426:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:73564::51,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:73564::51,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:6899,"Winterthur, Hauptbahnhof",1.0,Winterthur,Winterthur,Zürich,8.72370375026,47.49973060637,Bus,SBW,ch:1:sloid:6899::71,H,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91369,"Zürich, Sihlstrasse",1.0,Zürich,Zürich,Zürich,8.53457441071,47.37226672567,BusTram,VBZ,ch:1:sloid:91369::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:91374,"Zürich, Sportweg",1.0,Zürich,Zürich,Zürich,8.50585658821,47.39162186711,Tram,VBZ,ch:1:sloid:91374::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -7788,7 +7788,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:95966,"Port, Schulweg",1.0,Port,Port,Bern,7.25321206735,47.11490195271,Bus,VB,ch:1:sloid:95966:0:02,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:93374,"Biel/Bienne, Spitalzentrum/CHB",1.0,Biel/Bienne,Biel/Bienne,Bern,7.24450365889,47.14711611539,Bus,VB,ch:1:sloid:93374:0:01,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:89969,"Vauffelin, Champs-Verlets",1.0,Vauffelin,Sauge,Bern,7.31241857936,47.19036826981,Bus,VB,ch:1:sloid:89969:0:01,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:76410:0:04,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:76410:0:04,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:8266,Lützelflüh-Goldbach,1.0,Lützelflüh-Goldbach,Lützelflüh,Bern,7.68227424956,47.00502149057,Zug,BLS-ebt,ch:1:sloid:8266:0:391139,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:76582,"Steffisburg, Ziegelei",1.0,Steffisburg,Steffisburg,Bern,7.63114489205,46.77136683977,Bus,STI,ch:1:sloid:76582:1:5,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:93348,"Biel/Bienne, Längfeld/Long-Chp",1.0,Biel/Bienne,Biel/Bienne,Bern,7.28116973371,47.15138208661,Bus,VB,ch:1:sloid:93348:0:02,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -8003,7 +8003,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:9354,Bernina Suot,1.0,Pontresina,Pontresina,Graubünden,9.96938999623,46.44484999576,Zug,RhB,ch:1:sloid:9354:0:671343,2,1,No,,2099-12-31
 85.0,ch:1:sloid:85286,"Grindelwald, Kirchbühl",1.0,Grindelwald,Grindelwald,Bern,8.0458134153,46.62741554562,Bus,STI,ch:1:sloid:85286:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:9181,Domat/Ems,1.0,Domat/Ems,Domat/Ems,Graubünden,9.45316000305,46.83313999877,Zug,RhB,ch:1:sloid:9181:0:711298,2,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:9189:0:583007,,0,Yes,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:9189:0:583007,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:94494,"Schwendi BE,Grindelwaldstrasse",1.0,Grindelwald,Grindelwald,Bern,8.0035047498,46.63102446921,Bus,STI,ch:1:sloid:94494:1:3,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:9193,Surava,1.0,Surava,Albula/Alvra,Graubünden,9.62094000291,46.66685999939,Zug,RhB,ch:1:sloid:9193:0:412334,2,1,No,,2099-12-31
 85.0,ch:1:sloid:9253,St. Moritz,1.0,St. Moritz,St. Moritz,Graubünden,9.84639000322,46.49796999594,Zug,RhB,ch:1:sloid:9253:0:856436,6,1,Yes,,2099-12-31
@@ -8568,8 +8568,8 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:30717,Castagnola Heleneum (lago),1.0,Castagnola,Lugano,Ticino,8.98331265626,46.00059442016,Schiff,SNL,ch:1:sloid:30717:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:3260,Linthal Braunwaldbahn (Talst.),1.0,Linthal,Glarus Süd,Glarus,9.00231606485,46.928540556,Standseilbahn,BRSB,ch:1:sloid:3260:0:862838,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89630,"St. Gallen, Steingrüebli",1.0,St. Gallen,St. Gallen,St. Gallen,9.39323498876,47.41487856717,Bus,VBSG,ch:1:sloid:89630:0:110500,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:94346:0:56647,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:94346:0:3022,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:94346:0:56647,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:94346:0:3022,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89555,"St. Gallen, Bachstrasse",1.0,St. Gallen,St. Gallen,St. Gallen,9.39281650048,47.43561448158,Bus,VBSG,ch:1:sloid:89555:0:672052,B,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:77369,"Flüelen, Gruonbach",1.0,Flüelen,Flüelen,Uri,8.62497446488,46.91538440478,Bus,AAGU,ch:1:sloid:77369::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:77375,"Altdorf UR, Spital",1.0,Altdorf UR,Altdorf (UR),Uri,8.63726014343,46.88403929475,Bus,AAGU,ch:1:sloid:77375::2,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -8603,7 +8603,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:8492,Luzern Bahnhofquai,1.0,Luzern,Luzern,Luzern,8.31013503033,47.05119251145,Schiff,SGV,ch:1:sloid:8492:0:929446,Luzern 3,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:74976,"Samedan, Ariefa",1.0,Samedan,Samedan,Graubünden,9.86767000255,46.53060122751,Bus,BuS/eb,ch:1:sloid:74976::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78377,"Neuhausen, Scheidegg",1.0,Neuhausen am Rheinfall,Neuhausen am Rheinfall,Schaffhausen,8.62242816335,47.6875042726,Bus,VBSH-rv,ch:1:sloid:78377:0:439687,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-85.0,ch:1:sloid:92585,"Schaffhausen, Vögelingässchen",1.0,,Büsingen am Hochrhein,,8.65974349115,47.69060790391,Bus,VBSH,ch:1:sloid:92585:0:832691,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+85.0,ch:1:sloid:92585,"Schaffhausen, Vögelingässchen",1.0,,Büsingen am Hochrhein,,8.65974349115,47.69060790391,Bus,VBSH,ch:1:sloid:92585:0:832691,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78977,"Locarno, Paradiso",1.0,Locarno,Locarno,Ticino,8.78813082729,46.1711652433,Bus,FART Auto,ch:1:sloid:78977::304401,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5859,"Orselina, Posta",1.0,Orselina,Orselina,Ticino,8.79640668815,46.1774358617,Bus,FART Auto,ch:1:sloid:5859::304902,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78985,"Orselina, Chiesa",1.0,Orselina,Orselina,Ticino,8.8013815275,46.18008401861,Bus,FART Auto,ch:1:sloid:78985::305201,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -8634,8 +8634,8 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:90224,"Dintikon, Ammerswilerstrasse",1.0,Dintikon,Dintikon,Aargau,8.22748996332,47.36598389831,Bus,RBL,ch:1:sloid:90224:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5776,"Urnerboden, Dorf",1.0,Urnerboden,Spiringen,Uri,8.90057142916,46.88981294841,Bus,AAGU,ch:1:sloid:5776::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5479,Lodano,1.0,Lodano,Maggia,Ticino,8.69047649504,46.26082713592,Bus,FART Auto,ch:1:sloid:5479::313301,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10908:0:250933,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:78349:1:2,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10908:0:250933,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:78349:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:80564,"Lupsingen, Schützenhaus",1.0,Lupsingen,Lupsingen,Basel-Landschaft,7.70513900989,47.45043134758,Bus,AAGL,ch:1:sloid:80564:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:851,"Ziefen, Zentrum",1.0,Ziefen,Ziefen,Basel-Landschaft,7.70724197417,47.43093622602,Bus,AAGL,ch:1:sloid:851:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:851,"Ziefen, Zentrum",1.0,Ziefen,Ziefen,Basel-Landschaft,7.70724197417,47.43093622602,Bus,AAGL,ch:1:sloid:851:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -8657,7 +8657,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:88991,"Bern, Breitfeld",1.0,Bern,Bern,Bern,7.45220473141,46.96255990766,Bus,SVB Auto,ch:1:sloid:88991:0:4,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:71620,"Münsingen, Bahnhof",1.0,Münsingen,Münsingen,Bern,7.55971649977,46.87265320958,Bus,SVB Auto,ch:1:sloid:71620:0:1,C,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:79068,"Münsingen, Bärenmatte",1.0,Münsingen,Münsingen,Bern,7.56205295117,46.87912734183,Bus,SVB Auto,ch:1:sloid:79068:0:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:79021:0:1,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:79021:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:7789,"Gerzensee, Dorf",1.0,Gerzensee,Gerzensee,Bern,7.54413310271,46.83870220399,Bus,SVB Auto,ch:1:sloid:7789:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:88273,"Belp, Giessenbad",1.0,Belp,Belp,Bern,7.50547074997,46.90968586749,Bus,SVB/kmb,ch:1:sloid:88273:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:8367,Turren,1.0,Lungern,Lungern,Obwalden,8.12983254972,46.78923957055,Kabinenbahn,LTBAG,ch:1:sloid:8367:0:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -8673,7 +8673,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:31272,Sogn Martin,1.0,Laax GR 2,Laax,Graubünden,9.21467139392,46.85219431261,Kabinenbahn,BFL,ch:1:sloid:31272:0:427438,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:4351,Biel/Bienne Beaumont,1.0,Biel/Bienne,Biel/Bienne,Bern,7.24223932489,47.14620377043,Standseilbahn,VB-be,ch:1:sloid:4351:0:01,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:76582,"Steffisburg, Ziegelei",1.0,Steffisburg,Steffisburg,Bern,7.63114489205,46.77136683977,Bus,STI,ch:1:sloid:76582:1:4,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:3167::51,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:3167::51,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:6899,"Winterthur, Hauptbahnhof",1.0,Winterthur,Winterthur,Zürich,8.72370375026,47.49973060637,Bus,SBW,ch:1:sloid:6899::53,E,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:96007,"Schlieren, Geissweid",1.0,Schlieren,Schlieren,Zürich,8.44423442917,47.39781472111,BusTram,VBZ,ch:1:sloid:96007::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:91276,"Zürich, Milchbuck",1.0,Zürich,Zürich,Zürich,8.54177503908,47.39778788035,BusTram,VBZ,ch:1:sloid:91276::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -8732,7 +8732,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:4481,Marin-Epagnier,1.0,Marin-Epagnier,La Tène,Neuchâtel,7.01059479053,47.00910688855,Zug,BLS-bn,ch:1:sloid:4481:0:10032,4,1,No,,2099-12-31
 85.0,ch:1:sloid:4487,Rosshäusern,1.0,Rosshäusern,Mühleberg,Bern,7.29686992927,46.93434177602,Zug,BLS-bn,ch:1:sloid:4487:0:841332,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:7480,Reichenbach im Kandertal,1.0,Reichenbach im Kandertal,Reichenbach im Kandertal,Bern,7.69006267569,46.62512156009,Zug,BLS-bls,ch:1:sloid:7480:0:876806,2,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:8084:0:117181,,0,No,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:8084:0:117181,,1,No,,2099-12-31
 85.0,ch:1:sloid:196,Bollement,1.0,Saulcy,Saint-Brais,Jura,7.12386478189,47.2969239035,Zug,CJ,ch:1:sloid:196:0:1,1,1,No,,2099-12-31
 85.0,ch:1:sloid:93336,"Biel/Bienne, Guido-Müller-Pl.",1.0,Nidau,Nidau,Bern,7.24113199195,47.1284010366,Bus,VB,ch:1:sloid:93336:0:02,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:93337,"Biel/Bienne, Gurnigelstrasse",1.0,Nidau,Nidau,Bern,7.24626778276,47.12958812258,Bus,VB,ch:1:sloid:93337:0:02,A,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -9446,7 +9446,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:92588,"Schaffhausen, Wiesli",1.0,Schaffhausen,Schaffhausen,Schaffhausen,8.6212425482,47.70122359578,Bus,VBSH,ch:1:sloid:92588:0:803358,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:81655,"Paradiso, Piscina",1.0,Paradiso,Paradiso,Ticino,8.95441573526,45.98868394555,Bus,SNL Auto,ch:1:sloid:81655::450601,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91573,"Bissone, Arco di Campione",1.0,Bissone,Bissone,Ticino,8.96856696875,45.96176617375,Bus,SNL Auto,ch:1:sloid:91573::440401,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
-85.0,ch:1:sloid:91575,"Campione, Via Tagliaferri",1.0,,Campione d'Italia,,8.97058541037,45.96432426073,Bus,SNL Auto,ch:1:sloid:91575::440901,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+85.0,ch:1:sloid:91575,"Campione, Via Tagliaferri",1.0,,Campione d'Italia,,8.97058541037,45.96432426073,Bus,SNL Auto,ch:1:sloid:91575::440901,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:90577,"Dübendorf, Memphis",1.0,Dübendorf,Dübendorf,Zürich,8.61631540078,47.39992312796,Bus,VBG,ch:1:sloid:90577::51,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:3579,"Birmensdorf ZH, Obere Risi",1.0,Birmensdorf ZH,Birmensdorf (ZH),Zürich,8.45079257868,47.35945774471,Bus,PAG,ch:1:sloid:3579::53,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:94553,"Opfikon, Schwimmbad",1.0,Opfikon,Opfikon,Zürich,8.57155634328,47.43264492544,Bus,VBG,ch:1:sloid:94553::51,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -9592,11 +9592,11 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:95908,"Pratteln, Zurlinden",1.0,Pratteln,Pratteln,Basel-Landschaft,7.69296548068,47.53009860548,Bus,AAGL,ch:1:sloid:95908:1:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:94411,"Chur, Calunastrasse",1.0,Chur,Chur,Graubünden,9.53794480638,46.862372441,Bus,BuS/cb,ch:1:sloid:94411::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5880,"Urnerboden, Klus",1.0,Urnerboden,Spiringen,Uri,8.87518837635,46.86859610392,Bus,AAGU,ch:1:sloid:5880::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:72375::2,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:72375::2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5997,"Urnerboden, Argseeli",1.0,Urnerboden,Spiringen,Uri,8.92819985527,46.9008376895,Bus,AAGU,ch:1:sloid:5997::2,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5740,"Linthal, Frittern",1.0,Linthal,Glarus Süd,Glarus,8.96032877402,46.90857524996,Bus,AAGU,ch:1:sloid:5740::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10915:0:274137,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:10909:0:603637,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10915:0:274137,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10909:0:603637,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:92400,"Ibach, Plätzli",1.0,Ibach,Schwyz,Schwyz,8.64409272036,47.01066472036,Bus,AAGS,ch:1:sloid:92400:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:92396,"Ibach, Husmatt",1.0,Ibach,Schwyz,Schwyz,8.64457781061,47.00224793281,Bus,AAGS,ch:1:sloid:92396:0:01,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:79714,"Arisdorf, Hofacker",1.0,Arisdorf,Arisdorf,Basel-Landschaft,7.76481834121,47.50649156803,Bus,AAGL,ch:1:sloid:79714:1:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -9642,7 +9642,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:74977,"Celerina, Trais Fluors",1.0,Celerina/Schlarigna,Celerina/Schlarigna,Graubünden,9.86205929975,46.51465331138,Bus,BuS/eb,ch:1:sloid:74977::2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:76579,"Steffisburg, Dorf",1.0,Steffisburg,Steffisburg,Bern,7.6338998163,46.78015971578,Bus,STI,ch:1:sloid:76579:1:3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:30437,Pesciüm,1.0,Airolo,Airolo,Ticino,8.60798164292,46.51437135539,Kabinenbahn,VBSA,ch:1:sloid:30437:0:63077,A Monte,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:91824::40,,0,,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:91824::40,,1,,,2099-12-31
 85.0,ch:1:sloid:95609,"Winterthur, Bankstrasse",1.0,Winterthur,Winterthur,Zürich,8.72561524743,47.50025987246,Bus,SBW,ch:1:sloid:95609::54,,1,,,2099-12-31
 85.0,ch:1:sloid:91373,"Zürich, Sonneggstrasse",1.0,Zürich,Zürich,Zürich,8.54369173731,47.38283909882,BusTram,VBZ,ch:1:sloid:91373::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:94198,"Wallisellen, Glatt (Tram)",1.0,Wallisellen,Wallisellen,Zürich,8.59806436923,47.40929173511,Tram,VBG,ch:1:sloid:94198::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -9698,7 +9698,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:76391,"Biel/Bienne, Bahnhof/Gare",1.0,Biel/Bienne,Biel/Bienne,Bern,7.24331441119,47.133468899,Bus,VB,ch:1:sloid:76391:0:14,N,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:79946,"Biel/Bienne, Residenz",1.0,Biel/Bienne,Biel/Bienne,Bern,7.23980135246,47.13042013182,Bus,VB,ch:1:sloid:79946:0:01,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:265,Gänsbrunnen,1.0,Gänsbrunnen,Crémines,Bern,7.46491573111,47.26565247514,Zug,BLS-smb,ch:1:sloid:265:0:108870,2,1,No,,2099-12-31
-85.0,ch:1:sloid:69,"Leymen, Station (F)",1.0,,,,7.48488000298,47.49267999439,Tram,BLT-blt,ch:1:sloid:69:1:2,,0,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
+85.0,ch:1:sloid:69,"Leymen, Station (F)",1.0,,,,7.48488000298,47.49267999439,Tram,BLT-blt,ch:1:sloid:69:1:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:88270,"Belp, Muristrasse Süd",1.0,Belp,Belp,Bern,7.50135113466,46.8999643067,Bus,SVB/kmb,ch:1:sloid:88270:0:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:76391,"Biel/Bienne, Bahnhof/Gare",1.0,Biel/Bienne,Biel/Bienne,Bern,7.24331441119,47.133468899,Bus,VB,ch:1:sloid:76391:0:06,F,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:63,"Oberwil BL, Zentrum",1.0,Oberwil BL,Oberwil (BL),Basel-Landschaft,7.55931000157,47.51475999381,BusTram,BLT-blt,ch:1:sloid:63:1:6,,0,,,2099-12-31
@@ -9899,11 +9899,11 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:37,Trimbach,1.0,Trimbach,Trimbach,Solothurn,7.90428535854,47.36605219046,Zug,SBB,ch:1:sloid:37:1:1,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:91382,"Zürich, Sternen Oerlikon",1.0,Zürich,Zürich,Zürich,8.54623103042,47.41006990646,BusTram,VBZ,ch:1:sloid:91382::3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:94552,"Dielsdorf, Ruchwiesen",1.0,Dielsdorf,Dielsdorf,Zürich,8.46390550088,47.48100701338,Bus,PAG,ch:1:sloid:94552::52,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:6906:0:1,,0,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:6906:0:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:77472,"Schwyz, Nietenbachstrasse",1.0,Schwyz,Schwyz,Schwyz,8.64510781663,47.02623901699,Bus,AAGS,ch:1:sloid:77472:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:77476,"Schwyz, Burg",1.0,Seewen SZ,Schwyz,Schwyz,8.63274699832,47.04551839209,Bus,AAGS,ch:1:sloid:77476:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:92413,"Schwyz, Kollegi",1.0,Schwyz,Schwyz,Schwyz,8.65252526313,47.02439969497,Bus,AAGS,ch:1:sloid:92413:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:8100:3:4,,0,Yes,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:8100:3:4,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:9055,Igis,1.0,Igis,Landquart,Graubünden,9.56475999486,46.94982999675,Zug,RhB,ch:1:sloid:9055:0:482677,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:9269,Sagliains,1.0,Susch,Zernez,Graubünden,10.09657999378,46.76339999453,Zug,RhB,ch:1:sloid:9269:0:863320,3,1,Yes,,2099-12-31
 85.0,ch:1:sloid:9255,Pontresina,1.0,Pontresina,Pontresina,Graubünden,9.89606999641,46.49065000021,Zug,RhB,ch:1:sloid:9255:0:622613,4,1,Yes,,2099-12-31
@@ -10075,7 +10075,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:89715,"Kriens, Hofmatt-Bellpark",1.0,Kriens,Kriens,Luzern,8.28219918867,47.03403425216,Bus,VBL,ch:1:sloid:89715::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:95887,"Grindelwald Grund, Bahnhof",1.0,Grindelwald,Grindelwald,Bern,8.02324824762,46.62245988905,Bus,STI,ch:1:sloid:95887:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76543,"Heiligenschwendi, Alpenblick",1.0,Heiligenschwendi,Heiligenschwendi,Bern,7.6863891098,46.75016635476,Bus,STI,ch:1:sloid:76543:1:4,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:89762::1,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:89762::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89725,"Kriens, Zentrum Pilatus",1.0,Kriens,Kriens,Luzern,8.27947271856,47.03384735631,Bus,VBL,ch:1:sloid:89725::3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:85164,"Grindelwald, Alpenrose",1.0,Grindelwald,Grindelwald,Bern,8.05845310069,46.63081090125,Bus,STI,ch:1:sloid:85164:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:89806,"Luzern, Konservatorium",1.0,Luzern,Luzern,Luzern,8.32228401995,47.05928014515,Bus,VBL,ch:1:sloid:89806::1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -10204,7 +10204,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:76099,"Uster, Turicum",1.0,Uster,Uster,Zürich,8.69504775465,47.34810792274,Bus,VZO,ch:1:sloid:76099::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:76296,"Wasterkingen, Gemeindehaus",1.0,Wasterkingen,Wasterkingen,Zürich,8.46936221447,47.59006249094,Bus,PAG,ch:1:sloid:76296::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:79495,"Wettswil a.A., Rehweid",1.0,Wettswil,Wettswil am Albis,Zürich,8.47050205379,47.34431548342,Bus,PAG,ch:1:sloid:79495::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:90696::50,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:90696::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:82103,"Rafz, Bleiki",1.0,Rafz,Rafz,Zürich,8.5492585017,47.61435655679,Bus,PAG,ch:1:sloid:82103::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:87681,"Bäretswil, Gemeindehaus",1.0,Bäretswil,Bäretswil,Zürich,8.857115522,47.33644267199,Bus,VZO,ch:1:sloid:87681::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:79942,"Eglisau, Altersheim",1.0,Eglisau,Eglisau,Zürich,8.52769683997,47.57549802495,Bus,PAG,ch:1:sloid:79942::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -10324,7 +10324,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:90851,"Volketswil, Chappeli",1.0,Volketswil,Volketswil,Zürich,8.67489565178,47.38946139229,Bus,VBG,ch:1:sloid:90851::50,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:7217,"Ascona, Fiume Maggia",1.0,Ascona,Locarno,Ticino,8.78168615885,46.16188530287,Bus,FART Auto,ch:1:sloid:7217::343601,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:95979,"Vex, le Croux",1.0,Vex,Vex,Valais,7.39672934471,46.20897243321,Bus,TSD-asdt,ch:1:sloid:95979:0:656975,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:94266::125701,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:94266::125701,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:73460,"Schaffhausen, Neubrunn",1.0,Schaffhausen,Schaffhausen,Schaffhausen,8.62592902376,47.7087939259,Bus,VBSH-rv,ch:1:sloid:73460:0:441528,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:76997,"Bern, Markuskirche",1.0,Bern,Bern,Bern,7.45663289902,46.96365674265,Bus,SVB Auto,ch:1:sloid:76997:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:71357,"Bern, Universität",1.0,Bern,Bern,Bern,7.43558485569,46.95088481224,Bus,SVB Auto,ch:1:sloid:71357:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -10485,7 +10485,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:89579,"St. Gallen, Grütlistrasse",1.0,St. Gallen,St. Gallen,St. Gallen,9.40295196562,47.43538870565,Bus,VBSG,ch:1:sloid:89579:0:685252,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:89579,"St. Gallen, Grütlistrasse",1.0,St. Gallen,St. Gallen,St. Gallen,9.40295196562,47.43538870565,Bus,VBSG,ch:1:sloid:89579:0:727703,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:92574,"Schaffhausen, Säntisstrasse",1.0,Schaffhausen,Schaffhausen,Schaffhausen,8.64472393453,47.69675497751,Bus,VBSH,ch:1:sloid:92574:0:572973,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:5544:0:1,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:5544:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:74940,"Pontresina, Godin",1.0,Pontresina,Pontresina,Graubünden,9.89267720968,46.50160288246,Bus,BuS/eb,ch:1:sloid:74940::2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:92531,"Schaffhausen, Ebnatring",1.0,Schaffhausen,Schaffhausen,Schaffhausen,8.65036707374,47.70989987135,Bus,VBSH,ch:1:sloid:92531:0:337722,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:74937,"Pontresina, Schlossgarage",1.0,Pontresina,Pontresina,Graubünden,9.89980274026,46.49552394499,Bus,BuS/eb,ch:1:sloid:74937::1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -10496,7 +10496,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:77389,"Silenen, Efibach",1.0,Silenen,Silenen,Uri,8.66682137915,46.7989344753,Bus,AAGU,ch:1:sloid:77389::2,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:3462,Herblingen,1.0,Schaffhausen,Schaffhausen,Schaffhausen,8.66428877792,47.71721015583,Zug,DB/SH,ch:1:sloid:3462:0:41914,1,1,No,,2099-12-31
 85.0,ch:1:sloid:5333,Zürich Bellevue (See),1.0,Zürich,Zürich,Zürich,8.54485363885,47.36544035356,Schiff,ZSG,ch:1:sloid:5333:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:30822:0:,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:30822:0:,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:3093,Zürich Manegg,1.0,Zürich,Zürich,Zürich,8.51975117912,47.33800891999,Zug,SZU,ch:1:sloid:3093:0:182632,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:89569,"St. Gallen, Dietlistrasse",1.0,St. Gallen,St. Gallen,St. Gallen,9.35823908147,47.42322950652,Bus,VBSG,ch:1:sloid:89569:0:447874,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:89573,"St. Gallen, Friedhof Bruggen",1.0,St. Gallen,St. Gallen,St. Gallen,9.33561255462,47.41027893268,Bus,VBSG,ch:1:sloid:89573:0:429665,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -10603,7 +10603,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:87876,"Thun, Hännisweg",1.0,Gwatt (Thun),Thun,Bern,7.62190976475,46.73506732093,Bus,STI,ch:1:sloid:87876:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:87894,"Zuoz, Aguêl",1.0,Zuoz,Zuoz,Graubünden,9.96244494787,46.60391886318,Bus,BuS/eb,ch:1:sloid:87894::2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:87877,"Thun, Schorenstrasse",1.0,Gwatt (Thun),Thun,Bern,7.62042602403,46.7334864804,Bus,STI,ch:1:sloid:87877:1:4,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:3898::50,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:3898::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:3186,"Stäfa, Uelikon",1.0,Stäfa,Stäfa,Zürich,8.71858852095,47.24917601725,Bus,VZO,ch:1:sloid:3186::51,,1,,,2099-12-31
 85.0,ch:1:sloid:91381,"Zürich, Stauffacher",1.0,Zürich,Zürich,Zürich,8.52924860479,47.37342353563,BusTram,VBZ,ch:1:sloid:91381::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:91119,"Zürich, Englischviertelstrasse",1.0,Zürich,Zürich,Zürich,8.55817337138,47.36673324265,Tram,VBZ,ch:1:sloid:91119::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -10671,7 +10671,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:72,"Oberwil BL, Hüslimatt",1.0,Oberwil BL,Oberwil (BL),Basel-Landschaft,7.55526964045,47.50654006056,BusTram,BLT-blt,ch:1:sloid:72:1:7,,0,,,2099-12-31
 85.0,ch:1:sloid:7297,Oey-Diemtigen,1.0,Oey,Diemtigen,Bern,7.57915212949,46.65988776865,Zug,BLS-sez,ch:1:sloid:7297:0:622347,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:7299,Lattigen bei Spiez,1.0,Spiez,Spiez,Bern,7.65026894498,46.69114124418,Zug,BLS-sez,ch:1:sloid:7299:0:934419,1,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:7473:0:107051,,0,No,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:7473:0:107051,,1,No,,2099-12-31
 85.0,ch:1:sloid:89006,"Bern, Wittigkofen",1.0,Bern,Bern,Bern,7.48141955112,46.93779824191,BusTram,SVB Auto,ch:1:sloid:89006:0:4,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:7306,"Nidau, Strandweg",1.0,Nidau,Nidau,Bern,7.23694316293,47.12431005593,Bus,VB,ch:1:sloid:7306:0:02,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:171,Les Reussilles,1.0,Les Reussilles,Tramelan,Bern,7.08313516691,47.22433843398,Zug,CJ,ch:1:sloid:171:0:2,3,1,No,,2099-12-31
@@ -10934,7 +10934,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:4917,"Châtel-sur-Montsalvens, Rest.",1.0,Châtel-sur-Montsalvens,Châtel-sur-Montsalvens,Fribourg,7.13028434116,46.6141540146,Bus,TPF Auto,ch:1:sloid:4917:0:15912,,1,,,2099-12-31
 85.0,ch:1:sloid:4853,"Corbières, village",1.0,Corbières,Corbières,Fribourg,7.10241881399,46.65930480165,Bus,TPF Auto,ch:1:sloid:4853:0:15922,,1,,,2099-12-31
 85.0,ch:1:sloid:88862,"Epagny, aérodrome",1.0,Epagny,Gruyères,Fribourg,7.08661860157,46.59602664632,Bus,TPF Auto,ch:1:sloid:88862:0:15932,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:77727:0:15877,,0,,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:77727:0:15877,,1,,,2099-12-31
 85.0,ch:1:sloid:4916,"Cerniat FR, bif.",1.0,Crésuz,Crésuz,Fribourg,7.14861552318,46.62087711115,Bus,TPF Auto,ch:1:sloid:4916:0:15901,,1,,,2099-12-31
 85.0,ch:1:sloid:88340,"Villars-sur-Glâne, Rte Soleil",1.0,Villars-sur-Glâne,Villars-sur-Glâne,Fribourg,7.11692777254,46.79373107496,Bus,TPF Auto,ch:1:sloid:88340:0:15191,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:88830,"Morlon, En Perrey",1.0,Morlon,Morlon,Fribourg,7.08366421514,46.624542622,Bus,TPF Auto,ch:1:sloid:88830:0:16007,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -11515,7 +11515,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:94352,"St. Gallen, Bruggwaldpark",1.0,St. Gallen,St. Gallen,St. Gallen,9.39498938587,47.44422370298,Bus,VBSG,ch:1:sloid:94352:0:547171,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:94345,"St. Gallen, Einstein",1.0,St. Gallen,St. Gallen,St. Gallen,9.37389684751,47.42181676482,Bus,VBSG,ch:1:sloid:94345:0:839351,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:73465,"Schaffhausen, Finsterwaldstr.",1.0,Schaffhausen,Schaffhausen,Schaffhausen,8.63798709695,47.70813048198,Bus,VBSH,ch:1:sloid:73465:0:465459,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-85.0,ch:1:sloid:92585,"Schaffhausen, Vögelingässchen",1.0,,Büsingen am Hochrhein,,8.65974349115,47.69060790391,Bus,VBSH,ch:1:sloid:92585:0:185918,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+85.0,ch:1:sloid:92585,"Schaffhausen, Vögelingässchen",1.0,,Büsingen am Hochrhein,,8.65974349115,47.69060790391,Bus,VBSH,ch:1:sloid:92585:0:185918,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:94312,"Schleitheim, Poststrasse",1.0,Schleitheim,Schleitheim,Schaffhausen,8.48298834847,47.74877681119,Bus,VBSH-rv,ch:1:sloid:94312:0:201179,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:89574,"St. Gallen, Gallusmarkt",1.0,St. Gallen,St. Gallen,St. Gallen,9.41341328922,47.43751366502,Bus,VBSG,ch:1:sloid:89574:0:989172,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:74472,"St. Gallen, Grütli",1.0,St. Gallen,St. Gallen,St. Gallen,9.4060733524,47.4326635392,Bus,VBSG,ch:1:sloid:74472:0:334448,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -11561,7 +11561,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:95001,"Chur, Boletta",1.0,Chur,Chur,Graubünden,9.52028388423,46.84942256557,Bus,BuS/cb,ch:1:sloid:95001::2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:87230,"Mägenwil, Gewerbepark",1.0,Mägenwil,Mägenwil,Aargau,8.22448965114,47.41004755601,Bus,RBL,ch:1:sloid:87230:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:73131,"Linthal, Bahnhof",1.0,Linthal,Glarus Süd,Glarus,8.99807339843,46.92535050066,Bus,AAGU,ch:1:sloid:73131::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10915:0:166372,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10915:0:166372,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78354,"Pratteln, Gehrenacker",1.0,Pratteln,Pratteln,Basel-Landschaft,7.70416320905,47.52081156198,Bus,AAGL,ch:1:sloid:78354:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:87112,"Dintikon, Post",1.0,Dintikon,Dintikon,Aargau,8.23033768364,47.36734126546,Bus,RBL,ch:1:sloid:87112:0:01,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78355,"Pratteln, Krummeneich",1.0,Pratteln,Pratteln,Basel-Landschaft,7.70295359326,47.52320669253,Bus,AAGL,ch:1:sloid:78355:1:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -11596,7 +11596,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:90115,"Bern, Dampfzentrale",1.0,Bern,Bern,Bern,7.44097038489,46.94081027231,Bus,SVB Auto,ch:1:sloid:90115:0:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90088,"Ostermundigen, Milchstrasse",1.0,Ostermundigen,Ostermundigen,Bern,7.48285625399,46.96057349322,Bus,SVB Auto,ch:1:sloid:90088:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:90095,"Köniz, Leen",1.0,Köniz,Köniz,Bern,7.3942707185,46.92116478215,Bus,SVB Auto,ch:1:sloid:90095:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:90094:0:4,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:90094:0:4,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76646,"Bern, Bahnhof",1.0,Bern,Bern,Bern,7.44020872063,46.94810537156,BusTram,SVB Auto,ch:1:sloid:76646:0:15,F,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90001,"Spiegel, Gartenstrasse",1.0,Spiegel b. Bern,Köniz,Bern,7.44089125212,46.92721852901,Bus,SVB Auto,ch:1:sloid:90001:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:79897,"Bern, Kocherpark",1.0,Bern,Bern,Bern,7.43404845088,46.94588343052,BusTram,SVB Auto,ch:1:sloid:79897:0:5,D,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -11629,9 +11629,9 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:76859,"Thun, Seeblick",1.0,Gwatt (Thun),Thun,Bern,7.62713409633,46.73245915551,Bus,STI,ch:1:sloid:76859:1:3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:7401,"Steffisburg, Flühli",1.0,Steffisburg,Steffisburg,Bern,7.63080232102,46.78550823007,Bus,STI,ch:1:sloid:7401:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90998,"Winterthur, St. Urban",1.0,Winterthur,Winterthur,Zürich,8.75874370315,47.4873205841,Bus,SBW,ch:1:sloid:90998::13,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:91824::41,,0,,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:91824::41,,1,,,2099-12-31
 85.0,ch:1:sloid:3752,"Hirzel, Post",1.0,Hirzel,Horgen,Zürich,8.61106534673,47.21614586467,Bus,SZU Auto,ch:1:sloid:3752::50,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:90876::50,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:90876::50,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:91363,"Zürich, Siemens",1.0,Zürich,Zürich,Zürich,8.49401873697,47.37846295379,Tram,VBZ,ch:1:sloid:91363::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:91389,"Zürich, Susenbergstrasse",1.0,Zürich,Zürich,Zürich,8.56800920597,47.37853811728,BusTram,VBZ,ch:1:sloid:91389::0,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91105,"Zürich, Bürkliplatz",1.0,Zürich,Zürich,Zürich,8.5407839294,47.36653920873,BusTram,VBZ,ch:1:sloid:91105::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -11687,7 +11687,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:78218,"Reinach BL, Landererstrasse",1.0,Reinach BL,Reinach (BL),Basel-Landschaft,7.5934327667,47.49343644981,BusTram,BLT-blt,ch:1:sloid:78218:1:6,,0,,,2099-12-31
 85.0,ch:1:sloid:95,"Münchenstein, Hofmatt",1.0,Münchenstein,Münchenstein,Basel-Landschaft,7.61814999801,47.51961999716,BusTram,BLT-blt,ch:1:sloid:95:1:5,,0,,,2099-12-31
 85.0,ch:1:sloid:90104,"Wabern, Alpenstrasse",1.0,Wabern,Köniz,Bern,7.46029740546,46.92616422232,Bus,SVB Auto,ch:1:sloid:90104:0:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-85.0,ch:1:sloid:69,"Leymen, Station (F)",1.0,,,,7.48488000298,47.49267999439,Tram,BLT-blt,ch:1:sloid:69:1:1,,0,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
+85.0,ch:1:sloid:69,"Leymen, Station (F)",1.0,,,,7.48488000298,47.49267999439,Tram,BLT-blt,ch:1:sloid:69:1:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:7093,Kehrsatz Nord,1.0,Kehrsatz,Kehrsatz,Bern,7.46610906448,46.91583636835,Zug,BLS-gbs,ch:1:sloid:7093:0:998409,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:262,Lommiswil,1.0,Lommiswil,Lommiswil,Solothurn,7.46951830598,47.21856495544,Zug,BLS-smb,ch:1:sloid:262:0:3901,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:78930,"Münsingen, Krankenhausweg",1.0,Münsingen,Münsingen,Bern,7.56679168162,46.87482241802,Bus,SVB Auto,ch:1:sloid:78930:0:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -11706,9 +11706,9 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:71,"Binningen, Dorenbach",1.0,Binningen,Binningen,Basel-Landschaft,7.57803764466,47.54372254098,Tram,BLT-blt,ch:1:sloid:71:1:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:7478,Frutigen,1.0,Frutigen,Frutigen,Bern,7.65141831454,46.58890754282,Zug,BLS-bls,ch:1:sloid:7478:0:852180,3,1,Yes,,2099-12-31
 85.0,ch:1:sloid:8086,Utzenstorf,1.0,Utzenstorf,Utzenstorf,Bern,7.55362761912,47.12953715,Zug,BLS-ebt,ch:1:sloid:8086:0:545858,2,1,Yes,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:8089:0:28308,,0,No,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:8089:0:28308,,1,No,,2099-12-31
 85.0,ch:1:sloid:165,Le Pied-d'Or,1.0,Les Reussilles,Tramelan,Bern,7.05622164099,47.22210552172,Zug,CJ,ch:1:sloid:165:0:1,1,1,No,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:8183:0:984601,,0,No,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:8183:0:984601,,1,No,,2099-12-31
 85.0,ch:1:sloid:173,Les Breuleux,1.0,Les Breuleux,Les Breuleux,Jura,7.00554767582,47.21070156074,Zug,CJ,ch:1:sloid:173:0:1,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:173,Les Breuleux,1.0,Les Breuleux,Les Breuleux,Jura,7.00554767582,47.21070156074,Zug,CJ,ch:1:sloid:173:0:2,3,1,Yes,,2099-12-31
 85.0,ch:1:sloid:7309,"Nidau Beunden, Bahnhof",1.0,Nidau,Nidau,Bern,7.23956977301,47.11970028019,Bus,VB,ch:1:sloid:7309:0:02,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -11726,7 +11726,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:76080,"Meilen, Bahnhof",1.0,Meilen,Meilen,Zürich,8.64487877491,47.26943774184,Bus,VZO,ch:1:sloid:76080::56,,1,,,2099-12-31
 85.0,ch:1:sloid:76105,"Wetzikon ZH, Bahnhof",1.0,Wetzikon ZH,Wetzikon (ZH),Zürich,8.79162076198,47.31855399938,Bus,VZO,ch:1:sloid:76105::60,,1,,,2099-12-31
 85.0,ch:1:sloid:76239,"Boppelsen, Hand",1.0,Boppelsen,Boppelsen,Zürich,8.40723996081,47.46876760636,Bus,VBG,ch:1:sloid:76239::51,,1,,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:91184::12,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:91184::12,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:4300,Biel/Bienne,1.0,Biel/Bienne,Biel/Bienne,Bern,7.24291060323,47.13289787087,Zug,SBB,ch:1:sloid:4300:5:9,9,1,Yes,,2099-12-31
 85.0,ch:1:sloid:90739,"Oetwil an der Limmat, Zentrum",1.0,Oetwil an der Limmat,Oetwil an der Limmat,Zürich,8.39481690242,47.42781881006,Bus,VBZ,ch:1:sloid:90739::52,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:3504,Baden,1.0,Baden,Baden,Aargau,8.30770947404,47.47642428463,Zug,SBB,ch:1:sloid:3504:3:4,4,1,Yes,,2099-12-31
@@ -11937,7 +11937,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:4893,"Bouloz, école",1.0,Bouloz,Le Flon,Fribourg,6.88308662762,46.61157622778,Bus,TPF Auto,ch:1:sloid:4893:0:17919,,1,,,2099-12-31
 85.0,ch:1:sloid:4032,"Pensier, Buffet de la Gare",1.0,Pensier,Courtepin,Fribourg,7.13892875114,46.84359877948,Bus,TPF Auto,ch:1:sloid:4032:0:17992,,1,,,2099-12-31
 85.0,ch:1:sloid:89168,"Villars-sur-Glâne, Coulat",1.0,Villars-sur-Glâne,Villars-sur-Glâne,Fribourg,7.12888012957,46.79249587176,Bus,TPF Auto,ch:1:sloid:89168:0:15054,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:77742:0:15074,,0,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:77742:0:15074,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:4786,"Crêt-près-Semsales, école",1.0,Le Crêt-près-Semsales,La Verrerie,Fribourg,6.91201843968,46.60978897577,Bus,TPF Auto,ch:1:sloid:4786:0:17853,,1,,,2099-12-31
 85.0,ch:1:sloid:96072,"Lugnorre, école",1.0,Lugnorre,Mont-Vully,Fribourg,7.07385010597,46.94975203432,Bus,TPF Auto,ch:1:sloid:96072:0:17911,,1,,,2099-12-31
 85.0,ch:1:sloid:88351,"Fribourg, Gambach",1.0,Fribourg,Fribourg,Fribourg,7.15104499723,46.8064430058,Bus,TPF Auto,ch:1:sloid:88351:0:15065,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -12014,7 +12014,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:94258,Langenthal Industrie Nord,1.0,Langenthal,Langenthal,Bern,7.78647123805,47.22855696118,Zug,ASM-rvo,ch:1:sloid:94258::942581,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:8161,Kaltenherberg,1.0,Roggwil BE,Roggwil (BE),Bern,7.79959000261,47.23717999743,Zug,ASM-rvo,ch:1:sloid:8161::81612,,1,Yes,,2099-12-31
 85.0,ch:1:sloid:89991,"Bern, Monbijou",1.0,Bern,Bern,Bern,7.43601881905,46.94376064601,BusTram,SVB Auto,ch:1:sloid:89991:0:4,C,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:89991:0:8,,0,,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:89991:0:8,,1,,,2099-12-31
 85.0,ch:1:sloid:88990,"Bern, Bollwerk",1.0,Bern,Bern,Bern,7.44136475241,46.95164045359,Bus,SVB Auto,ch:1:sloid:88990:0:3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90004,"Bern, Aeussere Enge",1.0,Bern,Bern,Bern,7.44199593381,46.96590677377,Bus,SVB Auto,ch:1:sloid:90004:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:88997,"Bern, Luternauweg",1.0,Bern,Bern,Bern,7.46695878918,46.93491515613,Bus,SVB Auto,ch:1:sloid:88997:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -12524,9 +12524,9 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:5659,"Bürglen UR, Loreto",1.0,Bürglen UR,Bürglen (UR),Uri,8.67742212905,46.87709818512,Bus,AAGU,ch:1:sloid:5659::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78326,"Ziefen, Mühlegasse",1.0,Ziefen,Ziefen,Basel-Landschaft,7.70372599841,47.43023377936,Bus,AAGL,ch:1:sloid:78326:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:77379,"Schattdorf, Adlergarten",1.0,Schattdorf,Schattdorf,Uri,8.64853086026,46.86418268111,Bus,AAGU,ch:1:sloid:77379::4,D,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10908:0:429849,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10908:0:429849,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78347,"Augst BL, Schwarzacker",1.0,Augst BL,Augst,Basel-Landschaft,7.72706982797,47.53128875886,Bus,AAGL,ch:1:sloid:78347:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:78348:1:1,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:78348:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90162,"Ammerswil AG, Kirche",1.0,Ammerswil AG,Ammerswil,Aargau,8.20846370648,47.37123504072,Bus,RBL,ch:1:sloid:90162:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:94550,"Lenzburg, Gexistrasse",1.0,Lenzburg,Lenzburg,Aargau,8.19366845375,47.39237808728,Bus,RBL,ch:1:sloid:94550:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:92396,"Ibach, Husmatt",1.0,Ibach,Schwyz,Schwyz,8.64457781061,47.00224793281,Bus,AAGS,ch:1:sloid:92396:0:02,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -12617,7 +12617,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:92476,"Biel/Bienne, Römergüetli",1.0,Biel/Bienne,Biel/Bienne,Bern,7.21674475514,47.12955263844,Bus,VB,ch:1:sloid:92476:0:01,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:96001,"Biel/Bienne, Sägefeldweg/Scie.",1.0,Biel/Bienne,Biel/Bienne,Bern,7.27301229222,47.15423990003,Bus,VB,ch:1:sloid:96001:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:88476,"Thun, Dufourkaserne",1.0,Thun,Thun,Bern,7.61668060675,46.76025385084,Bus,STI,ch:1:sloid:88476:1:6,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:88165:1:8,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:88165:1:8,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:76815,"Thun, Waldeck",1.0,Thun,Thun,Bern,7.59791621874,46.76234139206,Bus,STI,ch:1:sloid:76815:1:3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:87615,"Biel/Bienne, BBZ/CFP",1.0,Biel/Bienne,Biel/Bienne,Bern,7.25414500684,47.14607068705,Bus,VB,ch:1:sloid:87615:0:02,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:87276,"Biel/Bienne, Taubenloch",1.0,Biel/Bienne,Biel/Bienne,Bern,7.26738459862,47.15338609321,Bus,VB,ch:1:sloid:87276:0:02,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -12898,7 +12898,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:4946,"Bonnefontaine, village",1.0,Bonnefontaine,Le Mouret,Fribourg,7.20012477688,46.74079074834,Bus,TPF Auto,ch:1:sloid:4946:0:15865,,1,,,2099-12-31
 85.0,ch:1:sloid:77889,"Bonnefontaine, bif.",1.0,Bonnefontaine,Le Mouret,Fribourg,7.19647809291,46.74570356246,Bus,TPF Auto,ch:1:sloid:77889:0:15867,,1,,,2099-12-31
 85.0,ch:1:sloid:77820,"Fribourg, Vuille",1.0,Fribourg,Fribourg,Fribourg,7.14597099175,46.80956946818,Bus,TPF Auto,ch:1:sloid:77820:0:15175,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:77737:0:15969,,0,,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:77737:0:15969,,1,,,2099-12-31
 85.0,ch:1:sloid:77739,"Morlon, école",1.0,Morlon,Morlon,Fribourg,7.08688738589,46.6268285518,Bus,TPF Auto,ch:1:sloid:77739:0:16006,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:4769,"Düdingen, Bahnhof",1.0,Düdingen,Düdingen,Fribourg,7.18968468376,46.85049456614,Bus,TPF Auto,ch:1:sloid:4769:0:15234,A,1,,,2099-12-31
 85.0,ch:1:sloid:77726,"Epagny, Prâ Dêrê",1.0,Epagny,Gruyères,Fribourg,7.09242539741,46.60218854406,Bus,TPF Auto,ch:1:sloid:77726:0:15909,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -13485,7 +13485,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:72230,"Liestal, Altersheim",1.0,Liestal,Liestal,Basel-Landschaft,7.74246882417,47.48609093906,Bus,AAGL,ch:1:sloid:72230:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:73127,"Unterschächen, Untere Balm",1.0,Unterschächen,Unterschächen,Uri,8.82860532388,46.87415580628,Bus,AAGU,ch:1:sloid:73127::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5996,"Urnerboden, Sonne",1.0,Urnerboden,Spiringen,Uri,8.92182035898,46.89702489778,Bus,AAGU,ch:1:sloid:5996::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10911:0:326819,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10911:0:326819,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78315,"Pratteln, Hülften",1.0,Pratteln,Pratteln,Basel-Landschaft,7.71828657218,47.52014884195,Bus,AAGL,ch:1:sloid:78315:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:95155,"Pratteln, Meierhofweg",1.0,Pratteln,Pratteln,Basel-Landschaft,7.70198284665,47.51753375698,Bus,AAGL,ch:1:sloid:95155:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78349,"Kaiseraugst, Bahnhof",1.0,Kaiseraugst,Kaiseraugst,Aargau,7.72380043043,47.53824907544,Bus,PAG,ch:1:sloid:78349:0:763431,,1,,,2099-12-31
@@ -13497,15 +13497,15 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:73125,"Unterschächen, Ribi",1.0,Unterschächen,Unterschächen,Uri,8.78036009964,46.86446666576,Bus,AAGU,ch:1:sloid:73125::2,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:5892,"Altdorf UR, Telldenkmal",1.0,Altdorf UR,Altdorf (UR),Uri,8.64400619391,46.88177333072,Bus,AAGU,ch:1:sloid:5892::4,B,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78335,"Arboldswil, Dorf",1.0,Arboldswil,Arboldswil,Basel-Landschaft,7.7171563843,47.41567669224,Bus,AAGL,ch:1:sloid:78335:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:10907:0:770807,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
-,,,,,,,,,,,ch:1:sloid:78348:1:2,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:10907:0:770807,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:78348:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:83365,"Göschenen, Grit",1.0,Göschenen,Göschenen,Uri,8.55813300154,46.66429588211,Bus,AAGU,ch:1:sloid:83365::1,A,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:850,"Bubendorf, Zentrum",1.0,Bubendorf,Bubendorf,Basel-Landschaft,7.73591112889,47.44984388762,Bus,AAGL,ch:1:sloid:850:1:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:855,"Bubendorf, Bad",1.0,Bubendorf,Bubendorf,Basel-Landschaft,7.74205296552,47.45964953444,Bus,AAGL,ch:1:sloid:855:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:79141,"Les Bioux, école",1.0,Les Bioux,L'Abbaye,Vaud,6.27149832455,46.62133589978,Bus,AVJ,ch:1:sloid:79141:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:79143,"Les Bioux, AVJ",1.0,Les Bioux,L'Abbaye,Vaud,6.26164604937,46.61629433788,Bus,AVJ,ch:1:sloid:79143:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:5060,Arth am See (Schiff),1.0,Arth,Arth,Schwyz,8.52232378681,47.06470931197,Schiff,SGZ,ch:1:sloid:5060:0:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10913:0:932448,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10913:0:932448,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:80637,"Mägenwil, Gemeindehaus",1.0,Mägenwil,Mägenwil,Aargau,8.23559233382,47.41205301809,Bus,RBL,ch:1:sloid:80637:0:789408,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:95467,"L'Orient, Paul Golay",1.0,L'Orient,Le Chenit,Vaud,6.23223296348,46.59562649002,Bus,AVJ,ch:1:sloid:95467:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:88877,"Frenkendorf, Bächliacker",1.0,Frenkendorf,Frenkendorf,Basel-Landschaft,7.71636261626,47.49999808213,Bus,AAGL,ch:1:sloid:88877:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -13529,7 +13529,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:90091,"Bern, Weltistrasse",1.0,Bern,Bern,Bern,7.47814236637,46.94620089733,Bus,SVB Auto,ch:1:sloid:90091:0:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:90093,"Bern, Dennigkofengässli",1.0,Bern,Bern,Bern,7.48315868092,46.94468790736,Bus,SVB Auto,ch:1:sloid:90093:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:90097,"Köniz, Mösliweg",1.0,Köniz,Köniz,Bern,7.4077805232,46.9207195733,Bus,SVB Auto,ch:1:sloid:90097:0:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:90094:0:3,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:90094:0:3,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:89267,"Köniz, Stapfen Friedhof",1.0,Köniz,Köniz,Bern,7.41933379852,46.92065923441,Bus,SVB Auto,ch:1:sloid:89267:0:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:88991,"Bern, Breitfeld",1.0,Bern,Bern,Bern,7.45220473141,46.96255990766,Bus,SVB Auto,ch:1:sloid:88991:0:3,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:83316,"Wichtrach, Murachere",1.0,Wichtrach,Wichtrach,Bern,7.58002627118,46.82925458288,Bus,SVB Auto,ch:1:sloid:83316:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -13541,7 +13541,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:78954,"Münsingen, PZM",1.0,Münsingen,Münsingen,Bern,7.55397322248,46.8797383948,Bus,SVB Auto,ch:1:sloid:78954:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:79020,"Münsingen, Badi",1.0,Münsingen,Münsingen,Bern,7.54703423987,46.86701678478,Bus,SVB Auto,ch:1:sloid:79020:0:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:31480,Airside Center,1.0,Kloten,Kloten,Zürich,8.56027990435,47.45252486466,Standseilbahn,FZAG-zrh,ch:1:sloid:31480:0:287586,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:3674:0:436119,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:3674:0:436119,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:71630,"Gelterfingen, Schulhaus",1.0,Gelterfingen,Kirchdorf (BE),Bern,7.52305609946,46.83984396396,Bus,SVB Auto,ch:1:sloid:71630:0:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:91918,"Thun, Neufeld",1.0,Thun,Thun,Bern,7.61352072829,46.73834578104,Bus,STI,ch:1:sloid:91918:1:2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:30418,Flüelen (Talstation Eggberge),1.0,Altdorf UR,Altdorf (UR),Uri,8.62756055977,46.89347999499,Kabinenbahn,LFE,ch:1:sloid:30418:0:637879,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
@@ -13552,7 +13552,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:4355,Magglingen/Macolin,1.0,Magglingen/Macolin,Evilard,Bern,7.21446394713,47.13910974252,Standseilbahn,VB-bm,ch:1:sloid:4355:0:01,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:74956,"Surlej, Parkplatz",1.0,Silvaplana-Surlej,Silvaplana,Graubünden,9.81113713443,46.45897583797,Bus,BuS/eb,ch:1:sloid:74956::2,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91005,"Winterthur, Strahlegg",1.0,Winterthur,Winterthur,Zürich,8.75491191512,47.49335501671,Bus,SBW,ch:1:sloid:91005::13,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:88038::51,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:88038::51,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:6899,"Winterthur, Hauptbahnhof",1.0,Winterthur,Winterthur,Zürich,8.72370375026,47.49973060637,Bus,SBW,ch:1:sloid:6899::60,F,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:6899,"Winterthur, Hauptbahnhof",1.0,Winterthur,Winterthur,Zürich,8.72370375026,47.49973060637,Bus,SBW,ch:1:sloid:6899::69,J,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91428,"Zürich, Werdhölzli",1.0,Zürich,Zürich,Zürich,8.48201723703,47.39783154475,BusTram,VBZ,ch:1:sloid:91428::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -13602,7 +13602,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:7070,Uetendorf,1.0,Uetendorf,Uetendorf,Bern,7.57284692281,46.7749241902,Zug,BLS-gbs,ch:1:sloid:7070:0:676013,3,1,Yes,,2099-12-31
 85.0,ch:1:sloid:8292,Hüswil,1.0,Hüswil,Zell (LU),Luzern,7.90586295259,47.12857430435,Zug,BLS-vhb,ch:1:sloid:8292:0:755965,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:8493,Titlis,1.0,Engelberg,Engelberg,Obwalden,8.42291467928,46.77068205987,Kabinenbahn,BET,ch:1:sloid:8493:0:828177,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:88165:1:4,,0,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:88165:1:4,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:692,"Dornach, Bahnhof",1.0,Arlesheim,Arlesheim,Basel-Landschaft,7.61086919162,47.48912183481,BusTram,BLT-blt,ch:1:sloid:692:1:17,,0,,,2099-12-31
 85.0,ch:1:sloid:692,"Dornach, Bahnhof",1.0,Arlesheim,Arlesheim,Basel-Landschaft,7.61086919162,47.48912183481,BusTram,BLT-blt,ch:1:sloid:692:1:3,,0,,,2099-12-31
 85.0,ch:1:sloid:187,Vendlincourt,1.0,Vendlincourt,Vendlincourt,Jura,7.15703956533,47.45215432399,Zug,CJ,ch:1:sloid:187:0:1,1,1,Yes,,2099-12-31
@@ -13612,11 +13612,11 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:95,"Münchenstein, Hofmatt",1.0,Münchenstein,Münchenstein,Basel-Landschaft,7.61814999801,47.51961999716,BusTram,BLT-blt,ch:1:sloid:95:1:6,,0,,,2099-12-31
 85.0,ch:1:sloid:90100,"Liebefeld, Lerbermatt",1.0,Bern,Bern,Bern,7.43574391336,46.93096047761,Bus,SVB Auto,ch:1:sloid:90100:0:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:63,"Oberwil BL, Zentrum",1.0,Oberwil BL,Oberwil (BL),Basel-Landschaft,7.55931000157,47.51475999381,BusTram,BLT-blt,ch:1:sloid:63:1:7,,0,,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:92471:0:04,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:92471:0:04,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:88061,"Frinvillier, gare",1.0,Frinvillier,Sauge,Bern,7.25886614383,47.16911392136,Bus,VB,ch:1:sloid:88061:0:02,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:4488,Riedbach,1.0,Bern,Bern,Bern,7.33404996475,46.94115430247,Zug,BLS-bn,ch:1:sloid:4488:0:768398,2,1,No,,2099-12-31
 85.0,ch:1:sloid:4489,Bern Bümpliz Nord,1.0,Bern,Bern,Bern,7.38975568783,46.94582923829,Zug,BLS-bn,ch:1:sloid:4489:0:366122,5,1,No,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:8088:0:488405,,0,No,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:8088:0:488405,,1,No,,2099-12-31
 85.0,ch:1:sloid:8183,Madiswil,1.0,Madiswil,Madiswil,Bern,7.79579323113,47.16704915355,Zug,BLS-vhb,ch:1:sloid:8183:0:436737,3,1,No,,2099-12-31
 85.0,ch:1:sloid:8253,Heimberg,1.0,Heimberg,Heimberg,Bern,7.60613070754,46.7908736829,Zug,BLS-ebt,ch:1:sloid:8253:0:843610,2,1,No,,2099-12-31
 85.0,ch:1:sloid:7310,"Biel/Bienne, Flurweg",1.0,Biel/Bienne,Biel/Bienne,Bern,7.28234877731,47.14949480228,Bus,VB,ch:1:sloid:7310:0:02,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
@@ -13804,8 +13804,8 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:9259,S-chanf,1.0,S-chanf,S-chanf,Graubünden,9.98181999664,46.61193999883,Zug,RhB,ch:1:sloid:9259:0:494762,2,1,No,,2099-12-31
 85.0,ch:1:sloid:9255,Pontresina,1.0,Pontresina,Pontresina,Graubünden,9.89606999641,46.49065000021,Zug,RhB,ch:1:sloid:9255:0:731480,3,1,Yes,,2099-12-31
 85.0,ch:1:sloid:9353,Morteratsch,1.0,Pontresina,Pontresina,Graubünden,9.94040999534,46.45072000227,Zug,RhB,ch:1:sloid:9353:0:590137,1,1,Yes,,2099-12-31
-85.0,ch:1:sloid:9369,Tirano,1.0,,,,10.16674999422,46.21515999577,Zug,RhB,ch:1:sloid:9369:0:471068,3,0,Yes,,2099-12-31
-85.0,ch:1:sloid:9369,Tirano,1.0,,,,10.16674999422,46.21515999577,Zug,RhB,ch:1:sloid:9369:0:841179,4,0,Yes,,2099-12-31
+85.0,ch:1:sloid:9369,Tirano,1.0,,,,10.16674999422,46.21515999577,Zug,RhB,ch:1:sloid:9369:0:471068,3,1,Yes,,2099-12-31
+85.0,ch:1:sloid:9369,Tirano,1.0,,,,10.16674999422,46.21515999577,Zug,RhB,ch:1:sloid:9369:0:841179,4,1,Yes,,2099-12-31
 85.0,ch:1:sloid:9181,Domat/Ems,1.0,Domat/Ems,Domat/Ems,Graubünden,9.45316000305,46.83313999877,Zug,RhB,ch:1:sloid:9181:0:827653,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:82475,"Grindelwald, Steinbillen",1.0,Grindelwald,Grindelwald,Bern,8.04413986538,46.62955645482,Bus,STI,ch:1:sloid:82475:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:9186,Rothenbrunnen,1.0,Rothenbrunnen,Cazis,Graubünden,9.41960999447,46.7678599938,Zug,RhB,ch:1:sloid:9186:0:452479,1,1,No,,2099-12-31
@@ -14490,7 +14490,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:76581,"Steffisburg, Bösbach",1.0,Steffisburg,Steffisburg,Bern,7.63339781135,46.77529404102,Bus,STI,ch:1:sloid:76581:1:4,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:6899,"Winterthur, Hauptbahnhof",1.0,Winterthur,Winterthur,Zürich,8.72370375026,47.49973060637,Bus,SBW,ch:1:sloid:6899::17,E,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:6899,"Winterthur, Hauptbahnhof",1.0,Winterthur,Winterthur,Zürich,8.72370375026,47.49973060637,Bus,SBW,ch:1:sloid:6899::23,F,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:76024::51,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:76024::51,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:90981,"Winterthur, Ohrbühl",1.0,Winterthur,Winterthur,Zürich,8.76284875533,47.49815786966,Bus,SBW,ch:1:sloid:90981::53,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:91390,"Zürich, Talwiesenstrasse",1.0,Zürich,Zürich,Zürich,8.50964747152,47.36994593425,BusTram,VBZ,ch:1:sloid:91390::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:91282,"Zürich, Museum für Gestaltung",1.0,Zürich,Zürich,Zürich,8.53493599801,47.38212195247,BusTram,VBZ,ch:1:sloid:91282::0,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
@@ -14536,7 +14536,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:88073,"Münchenstein, Schaulager",1.0,Münchenstein,Münchenstein,Basel-Landschaft,7.61162000193,47.52774999804,BusTram,BLT-blt,ch:1:sloid:88073:1:1,,0,,,2099-12-31
 85.0,ch:1:sloid:93326,"Biel/Bienne, Erlacherweg/Cerl.",1.0,Biel/Bienne,Biel/Bienne,Bern,7.25953156951,47.12426672046,Bus,VB,ch:1:sloid:93326:0:01,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:7528,"Niederwangen, Schule Ried",1.0,Niederwangen b. Bern,Köniz,Bern,7.3856535652,46.92580257699,Bus,SVB Auto,ch:1:sloid:7528:0:1,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:87841:0:04,,0,,Für Rollstühle nicht benutzbar.,2099-12-31
+,,,,,,,,,,,ch:1:sloid:87841:0:04,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:7089,Schwarzenburg,1.0,Schwarzenburg,Schwarzenburg,Bern,7.34256155547,46.81910977833,Zug,BLS-gbs,ch:1:sloid:7089:0:370674,2,1,Yes,,2099-12-31
 85.0,ch:1:sloid:88254,"Konolfingen, Haldenweg",1.0,Konolfingen,Konolfingen,Bern,7.61624446587,46.87874161972,Bus,SVB/kmb,ch:1:sloid:88254:0:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:8295,Willisau,1.0,Willisau,Willisau,Luzern,7.99671805022,47.122720681,Zug,BLS-vhb,ch:1:sloid:8295:0:164363,3,1,Yes,,2099-12-31
@@ -14677,7 +14677,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:1609,Brig,1.0,Brig,Brig-Glis,Valais,7.9880947394,46.3194227058,Zug,SBB,ch:1:sloid:1609:4:8,8,1,Yes,,2099-12-31
 85.0,ch:1:sloid:18771,Biel/Bienne Bözingenfeld/Champ,1.0,Biel/Bienne,Biel/Bienne,Bern,7.29464813274,47.15838230222,Zug,SBB,ch:1:sloid:18771:1:1,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:24,Lausen,1.0,Lausen,Lausen,Basel-Landschaft,7.75976281399,47.4703446725,Zug,SBB,ch:1:sloid:24:2:3,3,1,No,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:87501::300402,,0,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:87501::300402,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:15995,Cham Alpenblick,1.0,Cham,Cham,Zug,8.47146327537,47.18228240399,Zug,SBB,ch:1:sloid:15995:1:1,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:18459,Steinhausen Rigiblick,1.0,Steinhausen,Steinhausen,Zug,8.47970387299,47.18786377025,Zug,SBB,ch:1:sloid:18459:1:1,1,1,Yes,,2099-12-31
 85.0,ch:1:sloid:1011,Les Tuileries,1.0,Bellevue,Bellevue,Genève,6.14733745893,46.24994634596,Zug,SBB,ch:1:sloid:1011:1:1,1,1,Yes,,2099-12-31
@@ -14770,7 +14770,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:89173,"Villars-sur-Glâne, Les Dailles",1.0,Villars-sur-Glâne,Villars-sur-Glâne,Fribourg,7.10708757554,46.79433252131,Bus,TPF Auto,ch:1:sloid:89173:0:15055,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:4893,"Bouloz, école",1.0,Bouloz,Le Flon,Fribourg,6.88308662762,46.61157622778,Bus,TPF Auto,ch:1:sloid:4893:0:17920,,1,,,2099-12-31
 85.0,ch:1:sloid:4008,"Neyruz FR, village",1.0,Neyruz FR,Neyruz (FR),Fribourg,7.06514648922,46.76814268263,Bus,TPF Auto,ch:1:sloid:4008:0:18163,,1,,,2099-12-31
-,,,,,,,,,,,ch:1:sloid:77742:0:15073,,0,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
+,,,,,,,,,,,ch:1:sloid:77742:0:15073,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:92378,"Villars-sur-Glâne,Jean Paul II",1.0,Villars-sur-Glâne,Villars-sur-Glâne,Fribourg,7.13769607579,46.80394374363,Bus,TPF Auto,ch:1:sloid:92378:0:15083,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:92379,"Fribourg, Jura Chassotte",1.0,Fribourg,Fribourg,Fribourg,7.13941292316,46.8108657598,Bus,TPF Auto,ch:1:sloid:92379:0:15089,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:4862,"Marly, Cité",1.0,Marly,Marly,Fribourg,7.16044831999,46.77672743966,Bus,TPF Auto,ch:1:sloid:4862:0:15092,,1,,,2099-12-31
@@ -15343,7 +15343,7 @@ LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude
 85.0,ch:1:sloid:78246,"Lauwil, Dorf",1.0,Lauwil,Lauwil,Basel-Landschaft,7.67566106296,47.3902343584,Bus,AAGL,ch:1:sloid:78246:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78247,"Reigoldswil, Marchmatt",1.0,Reigoldswil,Reigoldswil,Basel-Landschaft,7.67202659115,47.40111577078,Bus,AAGL,ch:1:sloid:78247:1:1,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78308,"Birsfelden, Friedhof",1.0,Birsfelden,Birsfelden,Basel-Landschaft,7.62796775293,47.55498422076,Bus,AAGL,ch:1:sloid:78308:1:2,,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
-,,,,,,,,,,,ch:1:sloid:10911:0:146820,,0,,,2099-12-31
+,,,,,,,,,,,ch:1:sloid:10911:0:146820,,1,,,2099-12-31
 85.0,ch:1:sloid:6730,"Zuzwil SG, Industrie",1.0,Zuzwil SG,Zuzwil (SG),St. Gallen,9.11180457715,47.47121259546,Bus,PAG,ch:1:sloid:6730:0:308310,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 85.0,ch:1:sloid:78313,"Pratteln, Saline",1.0,Pratteln,Pratteln,Basel-Landschaft,7.67703198482,47.53132126475,Bus,AAGL,ch:1:sloid:78313:1:2,,1,,Für Rollstühle nicht benutzbar.,2099-12-31
 85.0,ch:1:sloid:78315,"Pratteln, Hülften",1.0,Pratteln,Pratteln,Basel-Landschaft,7.71828657218,47.52014884195,Bus,AAGL,ch:1:sloid:78315:1:1,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
