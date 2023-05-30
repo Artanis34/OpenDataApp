@@ -53,21 +53,22 @@ try:
         features = [] # List to store GeoJSON features
         notFeatures = [] # List to store entries without longitude and/or latitude
         service_list = []  # List to store unique service values
+        kanton_list = []  # List to store unique kanton values
+        gemeinde_in_kanton = {} # Create a dictionary to map Gemeinde to Kanton
 
-        # Create a dictionary to map Gemeinde to Kanton
-        gemeinde_to_kanton = {}
+        
 
         # Iterate over every index
         for index, row in df_from_csv.iterrows():
             if row['Kanton'] != '' and row['Gemeinde'] != '':
                 # Add Gemeinde to Kanton mapping to the dictionary
-                gemeinde_to_kanton[row['Gemeinde']] = row['Kanton']
+                gemeinde_in_kanton[row['Gemeinde']] = row['Kanton']
 
         # Create a new dictionary to store Gemeinde under the same Kanton
         kanton_gemeinde_dict = {}
 
         # Iterate over every Gemeinde and Kanton in the gemeinde_to_kanton dictionary
-        for gemeinde, kanton in gemeinde_to_kanton.items():
+        for gemeinde, kanton in gemeinde_in_kanton.items():
             if kanton not in kanton_gemeinde_dict:
                 # Create a new list for the Gemeinden under the Kanton if it doesn't exist
                 kanton_gemeinde_dict[kanton] = [gemeinde]
@@ -126,6 +127,10 @@ try:
             if row['Service'] != '' and row['Service'] not in service_list:
                 service_list.append(row['Service'])
 
+            # Add service value to the list if it doesn't already exist
+            if row['Kanton'] != '' and row['Kanton'] not in kanton_list:
+                kanton_list.append(row['Kanton'])
+
     except Exception as e:
         print("Error occurred while processing the data:", str(e))
 
@@ -142,7 +147,8 @@ try:
     try:
         gemeinde_list = sorted(gemeinde_list, key=lambda x: x['Kanton'])
         additional_lists = {
-            'Kanton': gemeinde_list,
+            'Kanton': sorted(kanton_list),
+            'Gemeinde':gemeinde_list,
             'Service': sorted(service_list),
             'Last_modified': current_time
         }
