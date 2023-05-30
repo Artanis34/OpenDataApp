@@ -125,6 +125,7 @@ try:
     merged_df = pd.merge(merged_df, df_from_csv_prm, on='SLOID_prm', how= 'outer')
 
     # Update status to 0 for rows with empty or null values in any column, except 
+    merged_df['Status'] = merged_df['Status'].fillna(0)
     # 'Bezeichung', 'VEHICLE_ACCESS', 'Rollstuhl'
     ##columns_to_drop = ['Bezeichung'] 
     #columns_to_check = merged_df.columns.drop(columns_to_drop)
