@@ -127,7 +127,7 @@ try:
     # 'Bezeichung', 'VEHICLE_ACCESS', 'Rollstuhl'
     columns_to_drop = ['Bezeichung'] 
     columns_to_check = merged_df.columns.drop(columns_to_drop)
-    #merged_df.loc[merged_df[columns_to_check].isnull().any(axis=1), 'Status'] = 0
+    merged_df.loc[merged_df[columns_to_check].isnull().any(axis=1), 'Status'] = 0
 
     # Create a new CSV file with the selected columns (with error handling)
     try:
