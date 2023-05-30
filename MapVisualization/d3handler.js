@@ -2,17 +2,17 @@ export function drawChart(status) {
 
     // Step 3
     var svg = d3.select(".chart"),
-    width = svg.attr("width"),
-    height = svg.attr("height"),
+    width = svg.width,
+    height = svg.height,
     radius = 100;
     
     svg.append('asd');
 
     // Step 1        
-    var data = [{name: "Good", share: status['3']}, 
-                {name: "Bad", share: status['1']},
-                {name: "Medium", share: status['2']},
-                {name: "Unavailable", share: status['0']}];
+    var data = [{name: "Good", share: 2}, 
+                {name: "Bad", share: 3},
+                {name: "Medium", share: 2},
+                {name: "Unavailable", share: 1}];
 
     var g = svg.append("g")
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
