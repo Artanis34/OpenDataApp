@@ -114,13 +114,8 @@ try:
     merged_df = pd.merge(df_from_csv_dienst, df_from_csv_vk, left_on='SLOID', right_on='SLOID_dienst', how='left')
     merged_df = pd.merge(merged_df, df_from_csv_prm, left_on='SLOID_prm', right_on='SLOID', how='right')
 
-    # Check if all 'Status' == 1 entries are valid to 31.12.2099
-    is_valid_status = merged_df.loc[merged_df['Status'] == 1, 'VALID_TO'] == '31.12.2099'
-
-    # Update 'Status' to 2 (not yet valid) for invalid entries
-    merged_df.loc[(merged_df['Status'] == 1) & (is_valid_status), 'Status'] = 2
-    # Set status to 9 for null SLOID
-    merged_df.loc[merged_df['Status'].isnull(), 'Status'] = 9
+    # Update status to 0 for empty rows
+    merged_df.loc[merged_df.isnull().any(axis=1), 'Status'] = 0
 
     # Create a new CSV file with the selected columns (with error handling)
     try:
