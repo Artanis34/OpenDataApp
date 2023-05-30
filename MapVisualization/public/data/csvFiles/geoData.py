@@ -67,7 +67,9 @@ try:
                     'Rollstuhl': row['Rollstuhl'],
                     'Status': row['Status'],
                     'Service': row['Service'],
-                    'SLOID': row['SLOID_prm']
+                    'SLOID': row['SLOID_prm'],
+                    'Bezeichung': row['Bezeichung'],
+                    'Bezeichnung_Betrieblich': row['Bezeichnung_Betrieblich']
                 }
                 feature = geojson.Feature(geometry=geometry, properties=properties)
                 features.append(feature)

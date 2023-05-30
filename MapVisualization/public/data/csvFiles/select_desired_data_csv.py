@@ -92,7 +92,7 @@ try:
         'SLOID': 'SLOID_prm',
         'DS_SLOID': 'SLOID_dienst',
         'BEZEICHNUNG': 'Bezeichung',
-        'BEZEICHNUNG_BETRIEBLICH': 'Bezeichnung Betrieblich'
+        'BEZEICHNUNG_BETRIEBLICH': 'Bezeichnung_Betrieblich'
     }
 
     df_from_csv_dienst.rename(columns=new_column_names_dienst, inplace=True)

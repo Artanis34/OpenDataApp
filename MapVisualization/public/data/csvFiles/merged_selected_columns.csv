@@ -1,4 +1,4 @@
-LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude,Latitude,Verkehrsmittel,Service,SLOID_prm,Bezeichung,Bezeichnung Betrieblich,Status,Rollstuhl,VEHICLE_ACCESS,VALID_TO
+LAENDERCODE,SLOID_dienst,Name,IS_HALTESTELLE,Ortschaft,Gemeinde,Kanton,Longitude,Latitude,Verkehrsmittel,Service,SLOID_prm,Bezeichung,Bezeichnung_Betrieblich,Status,Rollstuhl,VEHICLE_ACCESS,VALID_TO
 85.0,ch:1:sloid:90101,"Wabern, Morillon",1.0,Wabern,Köniz,Bern,7.44349124339,46.92989904126,Bus,SVB Auto,ch:1:sloid:90101:0:2,,2,1,,"Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.",2099-12-31
 85.0,ch:1:sloid:90088,"Ostermundigen, Milchstrasse",1.0,Ostermundigen,Ostermundigen,Bern,7.48285625399,46.96057349322,Bus,SVB Auto,ch:1:sloid:90088:0:1,,1,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
 ,,,,,,,,,,,ch:1:sloid:76646:0:17,,,1,,"Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.",2099-12-31
