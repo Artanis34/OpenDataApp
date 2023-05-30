@@ -111,11 +111,12 @@ try:
     replacement_mapping_Rollstuhl = {0: None, 1: 'Yes', 2: 'No'}
     df_from_csv_prm['Rollstuhl'] = df_from_csv_prm['Rollstuhl'].replace(replacement_mapping_Rollstuhl)
     # Handle VEHICLE_ACCESS entries
-    replacement_mapping_VEHICLE_ACCESS = {0: None, 11: 'Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.',
+    replacement_mapping_VEHICLE_ACCESS = {0: 'Zu vervollständigen', 
+                                          11: 'Stufenloser Zugang, niveaugleicher Ein-/Ausstieg.',
                                            12: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, keine Voranmeldung nötig.',
                                              13: 'Stufenloser Zugang, Ein-/Ausstieg durch Personalhilfestellung, Voranmeldung nötig.',
                                                14: 'Für Rollstühle nicht benutzbar.'}
-    df_from_csv_prm['VEHICLE_ACCESS'] = df_from_csv_prm['VEHICLE_ACCESS'].replace(replacement_mapping_VEHICLE_ACCESS)
+    df_from_csv_prm['VEHICLE_ACCESS'] = df_from_csv_prm['VEHICLE_ACCESS'].fillna(0).replace(replacement_mapping_VEHICLE_ACCESS)
 
     # Merge the DataFrames based on SLOIDs
     merged_df = pd.merge(df_from_csv_dienst, df_from_csv_vk, on='SLOID_dienst')
@@ -125,7 +126,7 @@ try:
     #merged_df.loc[merged_df.isnull().any(axis=1), 'Status'] = 0
     # Update status to 0 for rows with empty or null values in any column, except 
     # 'Bezeichung', 'VEHICLE_ACCESS', 'Rollstuhl'
-    columns_to_drop = ['Bezeichung', 'VEHICLE_ACCESS'] 
+    columns_to_drop = ['Bezeichung'] 
     columns_to_check = merged_df.columns.drop(columns_to_drop)
     merged_df.loc[merged_df[columns_to_check].isnull().any(axis=1), 'Status'] = 0
 
