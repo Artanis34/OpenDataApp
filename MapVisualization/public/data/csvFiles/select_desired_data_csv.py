@@ -41,7 +41,7 @@ try:
     # Set the columns to select from the CSV file
     selected_columns_dienst = ['SLOID', 'GEMEINDENAME', 'LAENDERCODE', 'IS_HALTESTELLE', 'BEZEICHNUNG_OFFIZIELL', 'ORTSCHAFTSNAME', 'KANTONSNAME', 'E_WGS84', 'N_WGS84', 'GO_ABKUERZUNG_DE', 'BPVH_VERKEHRSMITTEL_TEXT_DE']
     selected_columns_prm = ['SLOID', 'STATUS', 'LEVEL_ACCESS_WHEELCHAIR', 'VALID_TO', 'VEHICLE_ACCESS']
-    selected_columns_vk = ['BEZEICHNUNG', 'BEZEICHNUNG_BETRIEBLICH', 'DS_SLOID', 'SLOID']
+    selected_columns_vk = ['BEZEICHNUNG', 'DS_SLOID', 'SLOID']
 
     # Read the CSV file and select the specified columns
     try:
@@ -91,8 +91,7 @@ try:
     new_column_names_vk = {
         'SLOID': 'SLOID_prm',
         'DS_SLOID': 'SLOID_dienst',
-        'BEZEICHNUNG': 'Bezeichung',
-        'BEZEICHNUNG_BETRIEBLICH': 'Bezeichnung_Betrieblich'
+        'BEZEICHNUNG': 'Bezeichung'
     }
 
     df_from_csv_dienst.rename(columns=new_column_names_dienst, inplace=True)
@@ -125,7 +124,7 @@ try:
     # Update status to 0 for empty rows
     #merged_df.loc[merged_df.isnull().any(axis=1), 'Status'] = 0
     # Update status to 0 for rows with empty or null values in any column, except 'Bezeichnung'
-    columns_to_check = merged_df.columns.drop('Bezeichung')
+    columns_to_check = merged_df.columns.drop('Bezeichung', 'VEHICLE_ACCESS')
     merged_df.loc[merged_df[columns_to_check].isnull().any(axis=1), 'Status'] = 0
 
     # Create a new CSV file with the selected columns (with error handling)
