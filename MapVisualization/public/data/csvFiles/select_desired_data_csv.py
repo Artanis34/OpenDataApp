@@ -123,8 +123,10 @@ try:
 
     # Update status to 0 for empty rows
     #merged_df.loc[merged_df.isnull().any(axis=1), 'Status'] = 0
-    # Update status to 0 for rows with empty or null values in any column, except 'Bezeichnung'
-    columns_to_check = merged_df.columns.drop('Bezeichung' and 'VEHICLE_ACCESS' and 'Rollstuhl')
+    # Update status to 0 for rows with empty or null values in any column, except 
+    # 'Bezeichung', 'VEHICLE_ACCESS', 'Rollstuhl'
+    columns_to_drop = ['Bezeichung', 'VEHICLE_ACCESS', 'Rollstuhl'] 
+    columns_to_check = merged_df.columns.drop(columns_to_drop)
     merged_df.loc[merged_df[columns_to_check].isnull().any(axis=1), 'Status'] = 0
 
     # Create a new CSV file with the selected columns (with error handling)
