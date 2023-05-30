@@ -123,7 +123,7 @@ try:
     merged_df = pd.merge(merged_df, df_from_csv_prm, on='SLOID_prm', how='right')
 
     # Update status to 0 for empty rows
-    merged_df.loc[merged_df.isnull().any(axis=1), 'Status'] = 0
+    #merged_df.loc[merged_df.isnull().any(axis=1), 'Status'] = 0
 
     # Create a new CSV file with the selected columns (with error handling)
     try:
