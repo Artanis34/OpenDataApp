@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Visualisierung Barrierefreies Reisen Dok</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+  
+    th, td {
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+  
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Visualisierung Barrierefreies Reisen Dok</h1>
+  
+  <h2>Beschreibung</h2>
+  <p>Visualisierung der Daten aller Haltestellen und Haltekanten der Schweizer Transportunternehmen, die vom BAV aufgefordert sind, die Zugänglichkeit zu erfassen.</p>
+  
+  <table>
+    <tr>
+      <th>Daten der Punkte</th>
+      <th>Beschreibung</th>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Offizielle Bezeichnung einer Dienststelle welche von sämtlichen Abnehmern übernommen werden muss.</td>
+    </tr>
+    <tr>
+      <td>Ortschaft*</td>
+      <td>Ortschaft in welcher die Dienststelle liegt.</td>
+    </tr>
+    <tr>
+      <td>Gemeinde*</td>
+      <td>Name der Gemeinde in welcher die Dienststelle liegt.</td>
+    </tr>
+    <tr>
+      <td>Kanton*</td>
+      <td>Name des Kantons in welcher die Dienststelle liegt.</td>
+    </tr>
+    <tr>
+      <td>Verkehrsmittel</td>
+      <td>Art der Verkehrsmittel an der Dienststelle.</td>
+    </tr>
+    <tr>
+      <td>Rollstuhl*</td>
+      <td>Status ob Dienststelle Rollstuhl zugänglich ist.</td>
+    </tr>
+    <tr>
+      <td>VEHICLE_ACCESS*</td>
+      <td>Mehr Informationen wie die Dienststelle zugänglich ist.</td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td>Status über den Erfassungsstand der Dienststelle</td>
+    </tr>
+    <tr>
+      <td>Service</td>
+      <td>Abkürzung der verantwortlichen Geschäftsorganisation.</td>
+    </tr>
+
+    
+    <!-- Add the remaining rows of the table -->
+  </table>
+  <i>*leer , falls keine Daten vorhanden.</i>
+  
+  <h2>Nutzen</h2>
+  <p>Diese Website soll hauptsächlich dem BAV dienen, um den Transportunternehmen konkrete Direktionen zu geben, welche Stellen und Kanten noch erfasst oder vervollständigt werden müssen.</p>
+  
+  <h2>Anwendung</h2>
+  <p>Die Seite funktioniert mit einfachen Zoomen des Nutzers. Die Punkte werden zu Beginn geladen und positioniert und werden je nach Zoom-Level geclustert angezeigt. Zoomt man zu seinem gewünschten Punkt nahe genug, sind die Informationen der einzelnen Punkte einfach ablesbar, wenn man mit der Maus darauf klickt.</p>
+  <ul>
+    <li>Filter:
+      <ul>
+        <li>Service (Transportunternehmen)</li>
+        <li>Status (Erfassungsstand)
+          <ul>
+            <li>0 : Daten nicht vollständig</li>
+            <li>1 : Daten vollständig</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Wenn mehrere Punkte auf demselben Ort sind, kann man mit einem Mausklick das Cluster aufspalten und dort die einzelnen Punkte anklicken.</li>
+    <li>Wenn für einen Punkt keine GeoDaten hinterlegt sind, werden diese stattdessen auf der rechten Seite unter den Filtern angezeigt.</li>
+  </ul>
+  
+  <h2>Daten</h2>
+  <p>Die Daten sind OpenData <a href="https://opentransportdata.swiss/en/dataset/didok">DiDok</a> und werden automatisch (momentan per Permalink) um Mitternacht aktualisiert.</p>
+  
+  <h2>Über diese App</h2>
+  <p>Diese App wurde im Rahmen der Bachelorvorlesung Durchführung eines Open Data Projekts der Forschungsstelle Digitale Nachhaltigkeit an der Universität Bern programmiert.</p>
+  <p>Für die Programmierung der App wurde für:</p>
+  <ul>
+    <li><a href="https://pandas.pydata.org">pandas</a></li>
+    <li><a href="https://docs.python.org/3/library/os.html">os</a></li>
+    <li><a href="https://docs.python.org/3/library/json.html">JSON</a></li>
+    <li><a href="https://python-geojson.readthedocs.io/en/latest/">GeoJSON</a></li>
+    <li><a href="https://leafletjs.com">LeafletJS</a></li>
+  </ul>
+  <p>verwendet.</p>
+  <p>Der Source-Code ist auf <a href="https://github.com/Artanis34/OpenDataApp">Github</a> frei zugänglich.</p>
+  
+  <p><strong>Christian Gafner</strong><br>
+  Student BSc Computer Science, Universität Bern<br>
+  <a href="mailto:christian.gafner@students.unibe.ch">Mail</a></p>
+  
+  <p><strong>Julien Chopin</strong><br>
+  Student BSc Computer Science, Universität Bern<br>
+  <a href="mailto:julien.chopin@students.unibe.ch">Mail</a></p>
+</body>
+</html>
