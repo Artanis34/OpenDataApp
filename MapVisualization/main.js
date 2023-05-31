@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import 'leaflet';
 import 'leaflet.markercluster';
 import 'leaflet.markercluster.placementstrategies';
@@ -8,7 +9,8 @@ import '@kalisio/leaflet.donutcluster/src/Leaflet.DonutCluster.js'
 import * as colors from './colors.js';
 import { tileLayer } from 'leaflet';
 import { valHooks } from 'jquery';
-import { drawChart } from './d3handler.js';
+import { DynamicDonutChart } from './dynamicDonutChart.js';
+//import { DonutChart } from './d3handler.js';
  
 const params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
@@ -52,6 +54,9 @@ legend.onAdd = function(map) {
 
 legend.addTo(map);
 
+//drawChart();
+const donutChart = new DynamicDonutChart();
+//donutChart.drawChart();
 
 // Create the markercluster
 var markers = L.DonutCluster(
@@ -110,7 +115,7 @@ function loadMarkers() {
 
   $.getJSON(pUrl, function(data) {
 
-    //var dataArray = {'0':0,'1':0,'2':0,'3':0,};
+    var statusData = {'0':0,'1':0};
 
     var geoJsonLayer = L.geoJson(data, {
       filter: function(feature, layer) {
@@ -118,7 +123,7 @@ function loadMarkers() {
       },
       pointToLayer: function(feature, latlng) {
 
-        //dataArray[feature.properties.status] += 1;
+        statusData[feature.properties.Status] += 1;
 
         var label = '<h4>' + feature.properties.Name + '<br>' + feature.properties.Verkehrsmittel +' ' + feature.properties.Bezeichnung + '</h4>';
             label += feature.properties.Service + '<br>';
@@ -173,7 +178,7 @@ function loadMarkers() {
 
     // Add the markercluster group to the map
     map.addLayer(markers);
-    drawChart(data);
+    donutChart.updateChart(statusData);
   });
   
 }
@@ -281,7 +286,7 @@ function updateGemeinde() {
         
         var opt = document.createElement('option');
         opt.value = data.Gemeinde[Canton].Gemeinden[gemeinde];
-        opt.innerHTML = data.Gemeinde[Canton].Gemeinden[gemeinde];
+        opt.innerHTML = data.Gemeinde[Canton].Gemeinden[gemeinde].substring(0,12);
         selectGemeinde.appendChild(opt);
         
       }
