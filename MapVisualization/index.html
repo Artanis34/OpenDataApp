@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="style.css">
     
+    <script type="module" src="node_modules/jquery/dist/jquery.js"></script>
 
 
     <title>MapVisualization App</title>
@@ -22,7 +23,7 @@
             <div class="row">
                 <div class="col-xl-9 col-lg-11 container-alt mx-auto">
                     <nav class="navbar navbar-expand-xl toggles-ignore px-3 py-1 text-dark navbar-light" id="topnav">
-                        <a class="navbar-brand me-2 mb-1" href="./" title="Map"><span><b>Barrierefreies Reisen</b></span>.app</a>
+                        <a class="navbar-brand me-2 mb-1" href="./" title="Map"><span><b>BarrierefreiesReisen</b></span>.app</a>
                         <div class="navbar-nav d-none d-xl-block">
                             <a class="nav-link pl-0 me-1" href="#" target="ext" rel="nofollow">
                                 Erfassung der Barrierefreiheit im Öffentlichen Verkehr
@@ -44,31 +45,40 @@
 
       <div class="conatiner horizontal mt-lg-5 p-1">
         <div class="left p-2">
-          <h4>Filter</h4>
+          <div id='chartDiv' class="w-100 h-100 align-text-bottom">
+            <div class="h-50">
+              <h4>Filter</h4>
+              Kanton: 
+              <select name="Kanton" id="Kanton">
+                <option value="">All</option>
+              </select><br>
+              Gemeinde: 
+              <select name="Gemeinde" id="Gemeinde">
+                <option value="">All</option>
+              </select><br>
+              Service: 
+              <select name="Service" id="Service">
+                <option value="">All</option>
+              </select><br>
+              Status: 
+              <select name="Status" id="Status">
+                <option value="">All</option>
+                <option value="1">Erfasst</option>
+                <option value="0">Unvollständig</option>
+              </select><br>
+              OpenRailMap
+              <input type="checkbox" id="showOpenRailMap" name="showOpenRailMap"><br>
 
-          Service: 
-          <select name="Service" id="Service">
-            <option value="">All</option>
-          </select><br>
-          Kanton: 
-          <select name="Kanton" id="Kanton">
-            <option value="">All</option>
-          </select><br>
-          Gemeinde: 
-          <select name="Gemeinde" id="Gemeinde">
-            <option value="">All</option>
-          </select><br>
-          Status: 
-          <select name="Status" id="Status">
-            <option value="">All</option>
-            <option value="1">Erfasst</option>
-            <option value="0">Unvollständig</option>
-          </select><br>
-          OpenRailMap
-          <input type="checkbox" id="showOpenRailMap" name="showOpenRailMap"><br>
-          <div class="container">
-            <!-- <svg class="chart" width="100%" height="100%"></svg>  -->
+          
+              <!-- <div class="" id="my_dataviz"></div> -->
+            </div>
+            <div class="h-25">
+              
+              <div class="" id="my_dataviz"></div>
+              <p style="text-align: center; font-style: italic;">Anteil Erfasst</p>
+            </div>
           </div>
+
         </div>
         <div class="map">
           <div id="mapid"></div>
@@ -81,7 +91,6 @@
       </div>
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script type="module" src="main.js"></script>
   </body>
