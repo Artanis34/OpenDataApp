@@ -16,7 +16,7 @@
 
     <title>MapVisualization App</title>
   </head>
-  <body">
+  <body>
     <div id="app" class="container-fluid px-3">
       <div class="toggles">
         <div class="container-fluid fixed-top bg-secondary check-contrast">
@@ -41,9 +41,9 @@
             </div>
             
         </div>
-    </div>
+      </div>
 
-      <div class="conatiner horizontal mt-lg-5 p-1">
+      <div class="conatiner horizontal mt-lg-5 p-1 mt-5">
         <div class="left p-2">
           <div id='chartDiv' class="w-100 h-100 align-text-bottom">
             <div class="h-50">
@@ -52,7 +52,7 @@
               <select name="Kanton" id="Kanton">
                 <option value="">All</option>
               </select><br>
-              Gemeinde: 
+              Gemeinde:
               <select name="Gemeinde" id="Gemeinde">
                 <option value="">All</option>
               </select><br>
@@ -66,6 +66,10 @@
                 <option value="1">Erfasst</option>
                 <option value="0">Unvollständig</option>
               </select><br>
+              <!-- Verkehrsmittel: 
+              <select name="Verkehrsmittel" id="Verkehrsmittel">
+                <option value="">All</option>
+              </select><br> -->
               OpenRailMap
               <input type="checkbox" id="showOpenRailMap" name="showOpenRailMap"><br>
 
@@ -83,7 +87,7 @@
         <div class="map">
           <div id="mapid"></div>
         </div>
-        <div class="right p-2">
+        <div class="right p-2 mx-3">
           <h4>Inspector</h4>
           <div id="selectionView">No Point selected<br>
           </div>
