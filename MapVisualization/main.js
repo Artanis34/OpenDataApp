@@ -213,6 +213,7 @@ function updateFilter() {
     Kanton: document.getElementById('Kanton').value,
     Gemeinde: document.getElementById('Gemeinde').value,
     Status: document.getElementById('Status').value,
+    //Verkehrsmittel: document.getElementById('Verkehrsmittel').value,
   };
 
   //console.log("filter:" + filter['services']);
@@ -286,7 +287,7 @@ function updateGemeinde() {
         
         var opt = document.createElement('option');
         opt.value = data.Gemeinde[Canton].Gemeinden[gemeinde];
-        opt.innerHTML = data.Gemeinde[Canton].Gemeinden[gemeinde].substring(0,12);
+        opt.innerHTML = data.Gemeinde[Canton].Gemeinden[gemeinde].substring(0,16);
         selectGemeinde.appendChild(opt);
         
       }
@@ -330,7 +331,7 @@ function updateSelectionView(marker) {
   if (selection != null) {
     var outputString = "";
     for (var key in selection.properties) {
-      outputString += key + ": " + selection.properties[key] + "<br>";
+      outputString += "<i>" + key + ": </i> " + selection.properties[key] + "<br>";
     }
     document.getElementById('selectionView').innerHTML = outputString;
   }
